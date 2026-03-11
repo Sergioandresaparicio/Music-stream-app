@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genres | MusicStream</title>
+    <link rel="stylesheet" href="./CSS/views/genres.css">
+    <link rel="icon" href="./assets/icons/favico.ico" type="image/png">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <img src="./assets/img/logo.png" class="logo" alt="MusicStream logo">
+                <span class="header__logo-text">MusicStream</span>
+            </div>
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="discover.html" class="nav__link">Discover</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="library.html" class="nav__link">Library</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Store</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__search">
+                <button class="search__button">
+                    <img class="search__icon" src="./assets/icons/busqueda-de-lupa_1.svg" alt="search">
+                </button>
+                <input type="search" class="search__input" placeholder=" | Artists, albums, tracks">
+            </div>
+            <div class="header__user">
+                <div class="user__avatar">
+                    <img src="./assets/img/jugador.png" alt="User avatar" class="user__avatar-img">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-wrapper">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2 class="sidebar__title">CATEGORIES</h2>
+            <nav class="sidebar__nav">
+                <ul class="sidebar__menu">
+                    <li class="sidebar__menu-item">
+                        <a href="new-releases.html" class="sidebar__link">
+                            <img src="./assets/icons/verificar.svg" class="link__icon" alt="check">
+                            <span class="link__text">New Releases</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__menu-item">
+                        <a href="genres.html" class="sidebar__link sidebar__link--active">
+                            <img src="./assets/icons/nota-musical.svg" class="link__icon" alt="music note">
+                            <span class="link__text">Genres</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__menu-item">
+                        <a href="top-charts.html" class="sidebar__link">
+                            <img src="./assets/icons/tendencia-alcista.svg" class="link__icon" alt="trending">
+                            <span class="link__text">Top Charts</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__menu-item">
+                        <a href="artists.html" class="sidebar__link">
+                            <img src="./assets/icons/herramienta-de-audio-de-voz-de-microfono-con-cable.svg" class="link__icon" alt="microphone">
+                            <span class="link__text">Artists</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+            <div class="content__header">
+                <h1 class="content__title">Browse by Genre</h1>
+                <p class="content__subtitle">Explore music from different genres and discover your next favorite sound</p>
+            </div>
+
+            <!-- Genre Grid -->
+            <section class="genres-section">
+                <div class="genres-grid">
+                    <!-- Rock -->
+                    <article class="genre-card genre-card--rock">
+                        <div class="genre-card__image">
+                            <img src="./assets/img/andjusticeforall.jpeg" alt="Rock genre" class="genre-card__thumbnail">
+                        </div>
+                        <div class="genre-card__overlay">
+                            <h3 class="genre-card__title">Rock</h3>
+                            <p class="genre-card__count">1,234 Albums</p>
+                            <a href="index.html" class="genre-card__link">Explore →</a>
+                        </div>
+                    </article>
+
+                    <!-- Metal -->
+                    <article class="genre-card genre-card--metal">
+                        <div class="genre-card__image">
+                            <img src="./assets/img/One.jpg" alt="Metal genre" class="genre-card__thumbnail">
+                        </div>
+                        <div class="genre-card__overlay">
+                            <h3 class="genre-card__title">Metal</h3>
+                            <p class="genre-card__count">856 Albums</p>
+                            <a href="album-detail2.html" class="genre-card__link">Explore →</a>
+                        </div>
+                    </article>
+
+                    <!-- Vallenato -->
+                    <article class="genre-card genre-card--vallenato">
+                        <div class="genre-card__image">
+                            <img src="./assets/img/diomedesdiaz.jpeg" alt="Vallenato genre" class="genre-card__thumbnail">
+                        </div>
+                        <div class="genre-card__overlay">
+                            <h3 class="genre-card__title">Vallenato</h3>
+                            <p class="genre-card__count">432 Albums</p>
+                            <a href="album-detail1.html" class="genre-card__link">Explore →</a>
+                        </div>
+                    </article>
+
+                    <!-- Alternative -->
+                    <article class="genre-card genre-card--alternative">
+                        <div class="genre-card__image">
+                            <img src="./assets/img/tildeathwasneverenough.jpg" alt="Alternative genre" class="genre-card__thumbnail">
+                        </div>
+                        <div class="genre-card__overlay">
+                            <h3 class="genre-card__title">Alternative</h3>
+                            <p class="genre-card__count">678 Albums</p>
+                            <a href="album-detail3.html" class="genre-card__link">Explore →</a>
+                        </div>
+                    </article>
+
+                    <!-- Grunge -->
+                    <article class="genre-card genre-card--grunge">
+                        <div class="genre-card__image">
+                            <img src="./assets/img/radiohead.jpg" alt="Grunge genre" class="genre-card__thumbnail">
+                        </div>
+                        <div class="genre-card__overlay">
+                            <h3 class="genre-card__title">Grunge</h3>
+                            <p class="genre-card__count">523 Albums</p>
+                            <a href="album-detail4.html" class="genre-card__link">Explore →</a>
+                        </div>
+                    </article>
+
+                    <!-- Pop -->
+                    <article class="genre-card genre-card--pop">
+                        <div class="genre-card__image">
+                            <img src="./assets/img/violentvira.jpeg" alt="Pop genre" class="genre-card__thumbnail">
+                        </div>
+                        <div class="genre-card__overlay">
+                            <h3 class="genre-card__title">Pop</h3>
+                            <p class="genre-card__count">2,145 Albums</p>
+                            <a href="index.html" class="genre-card__link">Explore →</a>
+                        </div>
+                    </article>
+
+                    <!-- Electronic -->
+                    <article class="genre-card genre-card--electronic">
+                        <div class="genre-card__image">
+                            <img src="./assets/img/radcan.jpg" alt="Electronic genre" class="genre-card__thumbnail">
+                        </div>
+                        <div class="genre-card__overlay">
+                            <h3 class="genre-card__title">Electronic</h3>
+                            <p class="genre-card__count">1,567 Albums</p>
+                            <a href="index.html" class="genre-card__link">Explore →</a>
+                        </div>
+                    </article>
+
+                    <!-- Indie -->
+                    <article class="genre-card genre-card--indie">
+                        <div class="genre-card__image">
+                            <img src="./assets/img/cachon.jpg" alt="Indie genre" class="genre-card__thumbnail">
+                        </div>
+                        <div class="genre-card__overlay">
+                            <h3 class="genre-card__title">Indie</h3>
+                            <p class="genre-card__count">934 Albums</p>
+                            <a href="index.html" class="genre-card__link">Explore →</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Featured by Genre -->
+            <section class="featured-genres">
+                <h2 class="section__title">Featured Collections</h2>
+                <div class="collections-grid">
+                    <article class="collection-card">
+                        <div class="collection-card__content">
+                            <h3 class="collection-card__title">Rock Classics</h3>
+                            <p class="collection-card__description">The greatest rock albums of all time</p>
+                            <a href="album-detail2.html" class="collection-card__link">View Collection</a>
+                        </div>
+                    </article>
+                    <article class="collection-card">
+                        <div class="collection-card__content">
+                            <h3 class="collection-card__title">Latin Vibes</h3>
+                            <p class="collection-card__description">Best of Latin music including Vallenato</p>
+                            <a href="album-detail1.html" class="collection-card__link">View Collection</a>
+                        </div>
+                    </article>
+                    <article class="collection-card">
+                        <div class="collection-card__content">
+                            <h3 class="collection-card__title">Modern Alternative</h3>
+                            <p class="collection-card__description">New wave of alternative rock</p>
+                            <a href="album-detail3.html" class="collection-card__link">View Collection</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

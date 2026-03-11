@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicStore | Tienda Oficial</title>
+    <link rel="stylesheet" href="./CSS/views/store.css">
+    <link rel="icon" href="./assets/icons/favico.ico" type="image/png">    
+</head>
+<body>
+    <!-- Header Premium -->
+    <header class="store-header">
+        <div class="store-header__container">
+            <div class="store-header__logo">
+                <img src="./assets/img/logo.png" alt="MusicStream" class="store-logo">
+                <span class="store-header__brand">MusicStore</span>
+            </div>
+            
+            <nav class="store-header__nav">
+                <a href="discover.html" class="store-nav__link">Discover</a>
+                <a href="library.html" class="store-nav__link">Library</a>
+                <a href="index.html" class="store-nav__link store-nav__link--active">Store</a>
+            </nav>
+            
+            <div class="store-header__actions">
+                <div class="store-search">
+                    <img src="./assets/icons/busqueda-de-lupa_1.svg" alt="search" class="store-search__icon">
+                    <input type="search" placeholder="Search music..." class="store-search__input">
+                </div>
+                
+                <button class="store-cart" onclick="window.location.href='cart.html'">
+                    <img src="./assets/icons/carrito-de-compras.svg" alt="cart" class="store-cart__icon">
+                    <span class="store-cart__count">2</span>
+                </button>
+                
+                <div class="store-user">
+                    <img src="./assets/img/jugador.png" alt="profile" class="store-user__avatar">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Banner con Diseño Único -->
+    <section class="store-hero">
+        <div class="store-hero__background">
+            <img src="./assets/img/Banner.jpg" alt="Featured album" class="store-hero__image">
+            <div class="store-hero__overlay"></div>
+        </div>
+        <div class="store-hero__content">
+            <span class="store-hero__badge">🔥 FEATURED RELEASE</span>
+            <h1 class="store-hero__title">The New Album from Avenged Sevenfold</h1>
+            <p class="store-hero__description">
+                Experience the latest masterpiece in high-quality audio. 
+                Available now in digital and vinyl formats.
+            </p>
+            <div class="store-hero__actions">
+                <button class="store-btn store-btn--primary">
+                    <span>Buy Now</span>
+                    <span class="store-btn__price">$14.99</span>
+                </button>
+                <button class="store-btn store-btn--secondary">
+                    <span>Preview Album</span>
+                </button>
+            </div>
+            <div class="store-hero__stats">
+                <div class="store-stat">
+                    <span class="store-stat__number">4.9</span>
+                    <span class="store-stat__label">Rating</span>
+                </div>
+                <div class="store-stat">
+                    <span class="store-stat__number">50K+</span>
+                    <span class="store-stat__label">Sales</span>
+                </div>
+                <div class="store-stat">
+                    <span class="store-stat__number">12</span>
+                    <span class="store-stat__label">Tracks</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Store Content -->
+    <main class="store-main">
+        <!-- Categories Bar -->
+        <div class="store-categories">
+            <button class="store-category__btn store-category__btn--active">All Music</button>
+            <button class="store-category__btn">Albums</button>
+            <button class="store-category__btn">Singles</button>
+            <button class="store-category__btn">Bundles</button>
+            <button class="store-category__btn">Vinyl</button>
+            <button class="store-category__btn">Deals</button>
+        </div>
+
+        <!-- Featured Deals Section -->
+        <section class="store-section store-section--deals">
+            <div class="store-section__header">
+                <h2 class="store-section__title">⚡ Flash Deals</h2>
+                <a href="#" class="store-section__link">View All Deals →</a>
+            </div>
+            <div class="deals-grid">
+                <article class="deal-card deal-card--hot">
+                    <div class="deal-card__badge">-30%</div>
+                    <div class="deal-card__image">
+                        <img src="./assets/img/andjusticeforall.jpeg" alt="Metallica" class="deal-card__img">
+                    </div>
+                    <div class="deal-card__content">
+                        <h3 class="deal-card__title">...And Justice For All</h3>
+                        <p class="deal-card__artist">Metallica</p>
+                        <div class="deal-card__pricing">
+                            <span class="deal-card__price-old">$9.99</span>
+                            <span class="deal-card__price-new">$6.99</span>
+                        </div>
+                        <button class="deal-card__btn">Add to Cart</button>
+                    </div>
+                </article>
+                
+                <article class="deal-card deal-card--hot">
+                    <div class="deal-card__badge">-25%</div>
+                    <div class="deal-card__image">
+                        <img src="./assets/img/diomedesdiaz.jpeg" alt="Diomedes" class="deal-card__img">
+                    </div>
+                    <div class="deal-card__content">
+                        <h3 class="deal-card__title">Vallenato</h3>
+                        <p class="deal-card__artist">Diomedes Diaz</p>
+                        <div class="deal-card__pricing">
+                            <span class="deal-card__price-old">$12.99</span>
+                            <span class="deal-card__price-new">$9.74</span>
+                        </div>
+                        <button class="deal-card__btn">Add to Cart</button>
+                    </div>
+                </article>
+                
+                <article class="deal-card deal-card--hot">
+                    <div class="deal-card__badge">-20%</div>
+                    <div class="deal-card__image">
+                        <img src="./assets/img/radiohead.jpg" alt="Radiohead" class="deal-card__img">
+                    </div>
+                    <div class="deal-card__content">
+                        <h3 class="deal-card__title">Pablo Honey</h3>
+                        <p class="deal-card__artist">Radiohead</p>
+                        <div class="deal-card__pricing">
+                            <span class="deal-card__price-old">$7.99</span>
+                            <span class="deal-card__price-new">$6.39</span>
+                        </div>
+                        <button class="deal-card__btn">Add to Cart</button>
+                    </div>
+                </article>
+                
+                <article class="deal-card deal-card--hot">
+                    <div class="deal-card__badge">-35%</div>
+                    <div class="deal-card__image">
+                        <img src="./assets/img/tildeathwasneverenough.jpg" alt="Violent Vira" class="deal-card__img">
+                    </div>
+                    <div class="deal-card__content">
+                        <h3 class="deal-card__title">Till' Death Was Never Enough</h3>
+                        <p class="deal-card__artist">Violent Vira</p>
+                        <div class="deal-card__pricing">
+                            <span class="deal-card__price-old">$9.99</span>
+                            <span class="deal-card__price-new">$6.49</span>
+                        </div>
+                        <button class="deal-card__btn">Add to Cart</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- New Releases Grid -->
+        <section class="store-section">
+            <div class="store-section__header">
+                <h2 class="store-section__title">🆕 New Releases</h2>
+                <div class="store-section__filters">
+                    <button class="store-filter__btn store-filter__btn--active">This Week</button>
+                    <button class="store-filter__btn">This Month</button>
+                    <button class="store-filter__btn">All Time</button>
+                </div>
+            </div>
+            <div class="music-grid">
+                <article class="music-card">
+                    <div class="music-card__image-wrapper">
+                        <img src="./assets/img/andjusticeforall.jpeg" alt="Metallica album" class="music-card__image">
+                        <div class="music-card__overlay">
+                            <button class="music-card__play">▶</button>
+                            <button class="music-card__cart" onclick="window.location.href='cart.html'">🛒</button>
+                        </div>
+                    </div>
+                    <div class="music-card__info">
+                        <a href="album-detail2.html"><h3 class="music-card__title">...And Justice For All</h3></a>
+                        <p class="music-card__artist">Metallica</p>
+                        <div class="music-card__meta">
+                            <span class="music-card__format">Album</span>
+                            <span class="music-card__price">$9.99</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="music-card">
+                    <div class="music-card__image-wrapper">
+                        <img src="./assets/img/diomedesdiaz.jpeg" alt="Diomedes album" class="music-card__image">
+                        <div class="music-card__overlay">
+                            <button class="music-card__play">▶</button>
+                            <button class="music-card__cart" onclick="window.location.href='cart.html'">🛒</button>
+                        </div>
+                    </div>
+                    <div class="music-card__info">
+                        <a href="album-detail1.html"><h3 class="music-card__title">Vallenato</h3></a>
+                        <p class="music-card__artist">Diomedes Diaz</p>
+                        <div class="music-card__meta">
+                            <span class="music-card__format">Album</span>
+                            <span class="music-card__price">$12.99</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="music-card">
+                    <div class="music-card__image-wrapper">
+                        <img src="./assets/img/tildeathwasneverenough.jpg" alt="Violent Vira album" class="music-card__image">
+                        <div class="music-card__overlay">
+                            <button class="music-card__play">▶</button>
+                            <button class="music-card__cart" onclick="window.location.href='cart.html'">🛒</button>
+                        </div>
+                    </div>
+                    <div class="music-card__info">
+                        <a href="album-detail3.html"><h3 class="music-card__title">Till' Death Was Never Enough</h3></a>
+                        <p class="music-card__artist">Violent Vira</p>
+                        <div class="music-card__meta">
+                            <span class="music-card__format">Album</span>
+                            <span class="music-card__price">$9.99</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="music-card">
+                    <div class="music-card__image-wrapper">
+                        <img src="./assets/img/radiohead.jpg" alt="Radiohead album" class="music-card__image">
+                        <div class="music-card__overlay">
+                            <button class="music-card__play">▶</button>
+                            <button class="music-card__cart" onclick="window.location.href='cart.html'">🛒</button>
+                        </div>
+                    </div>
+                    <div class="music-card__info">
+                        <a href="album-detail4.html"><h3 class="music-card__title">Pablo Honey</h3></a>
+                        <p class="music-card__artist">Radiohead</p>
+                        <div class="music-card__meta">
+                            <span class="music-card__format">Album</span>
+                            <span class="music-card__price">$7.99</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Singles Section -->
+        <section class="store-section">
+            <div class="store-section__header">
+                <h2 class="store-section__title">🎵 Top Singles</h2>
+                <a href="#" class="store-section__link">See All →</a>
+            </div>
+            <div class="singles-list">
+                <article class="single-item">
+                    <div class="single-item__rank">1</div>
+                    <div class="single-item__image">
+                        <img src="./assets/img/Diomedes.jpg" alt="Tu eres la reina" class="single-item__img">
+                    </div>
+                    <div class="single-item__info">
+                        <a href="player1.html"><h4 class="single-item__title">Tu Eres La Reina</h4></a>
+                        <p class="single-item__artist">Diomedes Diaz</p>
+                    </div>
+                    <div class="single-item__meta">
+                        <span class="single-item__plays">2.5M plays</span>
+                    </div>
+                    <button class="single-item__price">$1.29</button>
+                    <button class="single-item__cart" onclick="window.location.href='cart.html'">+</button>
+                </article>
+
+                <article class="single-item">
+                    <div class="single-item__rank">2</div>
+                    <div class="single-item__image">
+                        <img src="./assets/img/One.jpg" alt="One" class="single-item__img">
+                    </div>
+                    <div class="single-item__info">
+                        <a href="player2.html"><h4 class="single-item__title">One</h4></a>
+                        <p class="single-item__artist">Metallica</p>
+                    </div>
+                    <div class="single-item__meta">
+                        <span class="single-item__plays">5.2M plays</span>
+                    </div>
+                    <button class="single-item__price">$1.29</button>
+                    <button class="single-item__cart" onclick="window.location.href='cart.html'">+</button>
+                </article>
+
+                <article class="single-item">
+                    <div class="single-item__rank">3</div>
+                    <div class="single-item__image">
+                        <img src="./assets/img/radcan.jpg" alt="Creep" class="single-item__img">
+                    </div>
+                    <div class="single-item__info">
+                        <a href="player3.html"><h4 class="single-item__title">Creep</h4></a>
+                        <p class="single-item__artist">Radiohead</p>
+                    </div>
+                    <div class="single-item__meta">
+                        <span class="single-item__plays">4.8M plays</span>
+                    </div>
+                    <button class="single-item__price">$0.99</button>
+                    <button class="single-item__cart" onclick="window.location.href='cart.html'">+</button>
+                </article>
+
+                <article class="single-item">
+                    <div class="single-item__rank">4</div>
+                    <div class="single-item__image">
+                        <img src="./assets/img/violentvira.jpeg" alt="Collar Of Truth" class="single-item__img">
+                    </div>
+                    <div class="single-item__info">
+                        <a href="player4.html"><h4 class="single-item__title">Collar Of Truth</h4></a>
+                        <p class="single-item__artist">Violent Vira</p>
+                    </div>
+                    <div class="single-item__meta">
+                        <span class="single-item__plays">2.1M plays</span>
+                    </div>
+                    <button class="single-item__price">$1.29</button>
+                    <button class="single-item__cart" onclick="window.location.href='cart.html'">+</button>
+                </article>
+            </div>
+        </section>
+
+        <!-- Bundle Deals -->
+        <section class="store-section store-section--bundles">
+            <div class="store-section__header">
+                <h2 class="store-section__title">📦 Value Bundles</h2>
+                <p class="store-section__subtitle">Save more when you buy complete collections</p>
+            </div>
+            <div class="bundles-grid">
+                <article class="bundle-card">
+                    <div class="bundle-card__header">
+                        <span class="bundle-card__savings">Save 40%</span>
+                    </div>
+                    <div class="bundle-card__images">
+                        <img src="./assets/img/andjusticeforall.jpeg" alt="Metallica" class="bundle-card__img bundle-card__img--1">
+                        <img src="./assets/img/One.jpg" alt="Metallica 2" class="bundle-card__img bundle-card__img--2">
+                        <img src="./assets/img/One.jpg" alt="Metallica 3" class="bundle-card__img bundle-card__img--3">
+                    </div>
+                    <div class="bundle-card__content">
+                        <h3 class="bundle-card__title">Metallica Complete Collection</h3>
+                        <p class="bundle-card__tracks">15 Albums • 180 Tracks</p>
+                        <div class="bundle-card__pricing">
+                            <span class="bundle-card__old">$149.85</span>
+                            <span class="bundle-card__new">$89.99</span>
+                        </div>
+                        <button class="bundle-card__btn">Get Bundle</button>
+                    </div>
+                </article>
+
+                <article class="bundle-card">
+                    <div class="bundle-card__header">
+                        <span class="bundle-card__savings">Save 35%</span>
+                    </div>
+                    <div class="bundle-card__images">
+                        <img src="./assets/img/diomedesdiaz.jpeg" alt="Diomedes" class="bundle-card__img bundle-card__img--1">
+                        <img src="./assets/img/Diomedes.jpg" alt="Diomedes 2" class="bundle-card__img bundle-card__img--2">
+                        <img src="./assets/img/cachon.jpg" alt="Diomedes 3" class="bundle-card__img bundle-card__img--3">
+                    </div>
+                    <div class="bundle-card__content">
+                        <h3 class="bundle-card__title">Diomedes Diaz Essentials</h3>
+                        <p class="bundle-card__tracks">10 Albums • 120 Tracks</p>
+                        <div class="bundle-card__pricing">
+                            <span class="bundle-card__old">$129.90</span>
+                            <span class="bundle-card__new">$84.99</span>
+                        </div>
+                        <button class="bundle-card__btn">Get Bundle</button>
+                    </div>
+                </article>
+
+                <article class="bundle-card">
+                    <div class="bundle-card__header">
+                        <span class="bundle-card__savings">Save 30%</span>
+                    </div>
+                    <div class="bundle-card__images">
+                        <img src="./assets/img/radiohead.jpg" alt="Radiohead" class="bundle-card__img bundle-card__img--1">
+                        <img src="./assets/img/radcan.jpg" alt="Radiohead 2" class="bundle-card__img bundle-card__img--2">
+                        <img src="./assets/img/radiohead.jpg" alt="Radiohead 3" class="bundle-card__img bundle-card__img--3">
+                    </div>
+                    <div class="bundle-card__content">
+                        <h3 class="bundle-card__title">Radiohead Discography</h3>
+                        <p class="bundle-card__tracks">9 Albums • 110 Tracks</p>
+                        <div class="bundle-card__pricing">
+                            <span class="bundle-card__old">$119.91</span>
+                            <span class="bundle-card__new">$83.99</span>
+                        </div>
+                        <button class="bundle-card__btn">Get Bundle</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Genre Quick Links -->
+        <section class="store-section">
+            <div class="store-section__header">
+                <h2 class="store-section__title">🎼 Browse by Genre</h2>
+            </div>
+            <div class="genre-links">
+                <a href="genres.html" class="genre-link">
+                    <span class="genre-link__icon">🎸</span>
+                    <span class="genre-link__name">Rock</span>
+                </a>
+                <a href="genres.html" class="genre-link">
+                    <span class="genre-link__icon">🤘</span>
+                    <span class="genre-link__name">Metal</span>
+                </a>
+                <a href="genres.html" class="genre-link">
+                    <span class="genre-link__icon">🎺</span>
+                    <span class="genre-link__name">Vallenato</span>
+                </a>
+                <a href="genres.html" class="genre-link">
+                    <span class="genre-link__icon">🎹</span>
+                    <span class="genre-link__name">Alternative</span>
+                </a>
+                <a href="genres.html" class="genre-link">
+                    <span class="genre-link__icon">🎧</span>
+                    <span class="genre-link__name">Electronic</span>
+                </a>
+                <a href="genres.html" class="genre-link">
+                    <span class="genre-link__icon">🎤</span>
+                    <span class="genre-link__name">Pop</span>
+                </a>
+                <a href="genres.html" class="genre-link">
+                    <span class="genre-link__icon">🎷</span>
+                    <span class="genre-link__name">Jazz</span>
+                </a>
+                <a href="genres.html" class="genre-link">
+                    <span class="genre-link__icon">📀</span>
+                    <span class="genre-link__name">Classical</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Store Footer -->
+    <footer class="store-footer">
+        <div class="store-footer__container">
+            <div class="store-footer__section">
+                <h4 class="store-footer__title">MusicStore</h4>
+                <p class="store-footer__text">Your destination for high-quality music downloads and streaming.</p>
+            </div>
+            <div class="store-footer__section">
+                <h4 class="store-footer__title">Quick Links</h4>
+                <a href="new-releases.html" class="store-footer__link">New Releases</a>
+                <a href="top-charts.html" class="store-footer__link">Top Charts</a>
+                <a href="genres.html" class="store-footer__link">Genres</a>
+                <a href="artists.html" class="store-footer__link">Artists</a>
+            </div>
+            <div class="store-footer__section">
+                <h4 class="store-footer__title">Support</h4>
+                <a href="#" class="store-footer__link">Help Center</a>
+                <a href="#" class="store-footer__link">Contact Us</a>
+                <a href="#" class="store-footer__link">Refund Policy</a>
+            </div>
+            <div class="store-footer__section">
+                <h4 class="store-footer__title">Connect</h4>
+                <div class="store-footer__social">
+                    <a href="#" class="store-social__link">📘</a>
+                    <a href="#" class="store-social__link">📸</a>
+                    <a href="#" class="store-social__link">🐦</a>
+                    <a href="#" class="store-social__link">📺</a>
+                </div>
+            </div>
+        </div>
+        <div class="store-footer__bottom">
+            <p>&copy; 2024 MusicStream. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

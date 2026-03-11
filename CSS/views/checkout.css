@@ -1,0 +1,490 @@
+:root {
+    --bg-primary: #0f172a;           /* Fondo principal: oscuro */
+    --bg-secondary: #1e293b;         /* Fondo de tarjetas */
+    --bg-input: #1e293b;             /* Fondo de inputs */
+    --border-color: #334155;         /* Color de bordes */
+    --text-primary: #f8fafc;         /* Texto principal (blanco) */
+    --text-secondary: #94a3b8;       /* Texto secundario (gris) */
+    --text-muted: #64748b;           /* Texto atenuado */
+    --primary-blue: #2563eb;         /* Azul principal para botones */
+    --primary-hover: #1d4ed8;        /* Azul hover */
+    --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--font-family);
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.6;
+    min-height: 100vh;
+}
+/* ============================================
+HEADER
+============================================ */
+.header {
+    background-color: var(--bg-primary);
+    border-bottom: 1px solid var(--border-color);
+    padding: 1rem 1.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.header__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Logo*/
+.header__logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.logo {
+    height: 32px;
+    width: auto;
+}
+.header__logo-icon {
+    height: 24px;
+    width: auto;
+    display: block;
+    background-color: transparent;
+}
+.header__logo-text {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    white-space: nowrap;
+}
+/* Link "Back to Store" */
+.header__back-link {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.875rem;
+    transition: color 0.2s ease;
+}
+.header__back-link:hover {
+    color: var(--text-primary);
+}
+/* ============================================
+CONTENIDO PRINCIPAL
+   ============================================ */
+.checkout-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+/* ============================================
+BREADCRUMB (MIGAS DE PAN)
+   ============================================ */
+.breadcrumb {
+    margin-bottom: 1.5rem;
+    cursor:pointer ;
+}
+.breadcrumb__list {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    list-style: none;
+    flex-wrap: wrap;
+}
+.breadcrumb__link {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 0.875rem;
+    transition: color 0.2s ease;
+}
+.breadcrumb__link:hover {
+    color: var(--text-primary);
+}
+/* Link activo (Payment) */
+.breadcrumb__link--active {
+    color: var(--text-muted);
+    font-weight: 600;
+}
+/* Link deshabilitado (Complete) */
+.breadcrumb__link--disabled {
+    color: var(--text-muted);
+    font-weight: 600;
+}
+.breadcrumb__separator {
+    color: var(--text-muted);
+}
+
+/* ============================================
+TÍTULO DE PÁGINA
+   ============================================ */
+.checkout-page__title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--text-primary);
+}
+/* ============================================
+CONTENEDOR PRINCIPAL (GRID)
+   ============================================ */
+.checkout-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+/* En pantallas más grandes, dos columnas */
+@media (min-width: 768px) {
+    .checkout-container {
+        grid-template-columns: 1fr 380px;
+        align-items: start;
+    }
+    .header__logo{
+        gap: 0.75rem;
+    }
+    .header__logo-icon{
+        height: 32px;
+    }
+    .header__logo-text{
+        font-size: 1.25rem;
+    }
+}
+/* ============================================
+SECCIONES DE FORMULARIO
+   ============================================ */
+.form-section {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+.form-section__title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+}
+.payment-method__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.payment-method__label {
+    font-weight: 500;
+    color: var(--text-primary);
+}
+.payment-method__icons {
+    display: flex;
+    gap: 0.5rem;
+}
+.payment-icon {
+    width: 40px;
+    height: 26px;
+    object-fit: contain;
+    background-color: white;
+    border-radius: 4px;
+    padding: 2px;
+}
+/* ============================================
+FORMULARIOS E INPUTS
+   ============================================ */
+.form-group {
+    margin-bottom: 1.25rem;
+}
+.form-label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+}
+/* Wrapper para inputs con iconos */
+.input-wrapper {
+    position: relative;
+}
+.form-input,
+.form-select {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    background-color: var(--bg-input);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    color: var(--text-primary);
+    font-size: 1rem;
+    font-family: inherit;
+    transition: all 0.2s ease;
+}
+.form-input:focus,
+.form-select:focus {
+    outline: none;
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+.form-input::placeholder {
+    color: var(--text-muted);
+}
+/* Icono dentro del input */
+.input-icon {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    pointer-events: none;
+}
+/* Fila de formularios (para inputs en línea) */
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+@media (min-width: 480px) {
+    .form-row {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+/* ============================================
+SELECT PERSONALIZADO
+   ============================================ */
+.select-wrapper {
+    position: relative;
+}
+.form-select {
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    padding-right: 2.5rem;
+}
+.select-icon {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-muted);
+    font-size: 0.75rem;
+    pointer-events: none;
+}
+/* ============================================
+RESUMEN DE ORDEN (SIDEBAR)
+   ============================================ */
+.order-summary {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 1.5rem;
+    position: sticky;
+    top: 100px;
+}
+.order-summary__title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+}
+/* ============================================
+ITEMS DE LA ORDEN
+   ============================================ */
+.order-items {
+    margin-bottom: 1.5rem;
+}
+.order-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+.order-item:last-child {
+    border-bottom: none;
+}
+.order-item__image {
+    width: 64px;
+    height: 64px;
+    border-radius: 12px;
+    object-fit: cover;
+    background-color: var(--bg-input);
+}
+.order-item__info {
+    flex: 1;
+    min-width: 0;
+}
+.order-item__title {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.25rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.order-item__artist {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+}
+.order-item__price {
+    font-weight: 600;
+    color: var(--text-primary);
+    white-space: nowrap;
+}
+/* ============================================
+TOTALES DE LA ORDEN
+   ============================================ */
+.order-totals {
+    margin-bottom: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+}
+.totals-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+.totals-row__label {
+    color: var(--text-secondary);
+    font-size: 0.9375rem;
+}
+.totals-row__value {
+    color: var(--text-primary);
+    font-weight: 500;
+}
+/* Fila de total*/
+.totals-row--total {
+    margin-top: 0.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+}
+.totals-row--total .totals-row__label,
+.totals-row--total .totals-row__value {
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+/* ============================================
+BOTONES
+   ============================================ */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.875rem 1.5rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    width: 100%;
+}
+/* Botón primario (azul) */
+.btn--primary {
+    background-color: var(--primary-blue);
+    color: white;
+}
+.btn--primary:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+.btn--primary:active {
+    transform: translateY(0);
+}
+/* Botón grande */
+.btn--large {
+    padding: 1rem 1.5rem;
+    font-size: 1.0625rem;
+}
+/* Botón de checkout específico */
+.btn--checkout {
+    margin-bottom: 1rem;
+}
+.btn__icon {
+    font-size: 1.25rem;
+}
+/* ============================================
+TÉRMINOS Y CONDICIONES
+   ============================================ */
+.order-summary__terms {
+    font-size: 0.8125rem;
+    color: var(--text-muted);
+    text-align: center;
+    line-height: 1.5;
+}
+/* Links dentro de los términos */
+.link {
+    color: var(--text-secondary);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: color 0.2s ease;
+}
+.link:hover {
+    color: var(--text-primary);
+}
+/* ============================================
+MEDIA QUERIES PARA 375px
+   ============================================ */
+@media (max-width: 375px) {
+    .checkout-page {
+        padding: 1.5rem 1rem;
+    }
+    
+    .checkout-page__title {
+        font-size: 1.75rem;
+    }
+    
+    .form-section {
+        padding: 1.25rem;
+        border-radius: 12px;
+    }
+    
+    .order-summary {
+        padding: 1.25rem;
+    }
+    
+    .payment-method__header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .order-item {
+        gap: 0.75rem;
+    }
+    
+    .order-item__image {
+        width: 56px;
+        height: 56px;
+    }
+    
+    .btn--large {
+        padding: 0.875rem 1.25rem;
+        font-size: 1rem;
+    }
+}
+/* ============================================
+UTILIDADES Y MEJORAS DE ACCESIBILIDAD
+   ============================================ */
+/* Focus visible para navegación por teclado */
+*:focus-visible {
+    outline: 2px solid var(--primary-blue);
+    outline-offset: 2px;
+}
+/* Reducir animaciones si el usuario lo prefiere */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+/* Asegurar que los inputs sean legibles en móvil */
+input, select, textarea {
+    font-size: 16px; 
+}

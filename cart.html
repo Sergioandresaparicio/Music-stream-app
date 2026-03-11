@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart - Store | MusicStream</title>
+    <link rel="stylesheet" href="./CSS/views/cart.css">
+    <link rel="icon" href="./assets/icons/favico.ico" type="image/png">
+</head>
+<body>
+    <!-- Header / Navegación superior -->
+    <header class="header">
+        <div class="header__container">
+            <!-- Logo -->
+            <div class="header__logo">
+                <img src="./assets/img/logo.png" class="logo" alt="MusicStream">
+                <span class="header__logo-text">MusicStream</span>
+            </div>
+            <!-- Navegación principal -->
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="discover.html" class="nav__link">Discover</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="library.html" class="nav__link">Library</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="store.html" class="nav__link">Store</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Iconos de usuario -->
+            <div class="header__actions">
+                <button class="action__button action__button--cart">
+                    <img class="action__icon" src="assets/icons/carrito-de-compras.svg" alt="carrito-de-compras">
+                </button>
+                <div class="user__profile">
+                    <img src="./assets/img/jugador.png" alt="User profile" class="user__avatar">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Contenido principal -->
+    <main class="cart-page">
+        <!-- Breadcrumb / Migas de pan -->
+        <nav class="breadcrumb">
+            <ul class="breadcrumb__list">
+                <li class="breadcrumb__item">
+                    <a href="store.html" class="breadcrumb__link">Store</a>
+                </li>
+                <li class="breadcrumb__separator">/</li>
+                <li class="breadcrumb__item">
+                    <span class="breadcrumb__link breadcrumb__link--current">Your Cart</span>
+                </li>
+            </ul>
+        </nav>
+        <!-- Título de la página -->
+        <h1 class="page-title">Your Cart</h1>
+        <!-- Contenedor principal del carrito -->
+        <div class="cart-container">
+            <!-- Lista de items del carrito -->
+            <section class="cart-items">
+                <!-- Item 1: Currents -->
+                <article class="cart-item">
+                    <div class="cart-item__image">
+                        <img src="./assets/img/cachon.jpg" alt="Currents album cover" class="cart-item__thumbnail">
+                    </div>
+                    <div class="cart-item__info">
+                        <h3 class="cart-item__title">El Santo Cachon</h3>
+                        <p class="cart-item__artist">Diomedes Diaz</p>
+                        <p class="cart-item__format">Vallenato</p>
+                    </div>
+                    <div class="cart-item__quantity">
+                        <button class="quantity__button quantity__button--decrease">
+                            <span class="quantity__icon">−</span>
+                        </button>
+                        <span class="quantity__value">1</span>
+                        <button class="quantity__button quantity__button--increase">
+                            <span class="quantity__icon">+</span>
+                        </button>
+                    </div>
+                    <div class="cart-item__price">
+                        <span class="price__amount">$12.99</span>
+                    </div>
+                    <button class="cart-item__remove">
+                        <span class="remove__icon">🗑</span>
+                    </button>
+                </article>
+                <!-- Item 2: Blonde -->
+                <article class="cart-item">
+                    <div class="cart-item__image">
+                        <img src="./assets/img/Diomedes.jpg" alt="cancion diomedes cover" class="cart-item__thumbnail">
+                    </div>
+                    <div class="cart-item__info">
+                        <h3 class="cart-item__title">La Ventana Marroncita</h3>
+                        <p class="cart-item__artist">Diomedes Diaz</p>
+                        <p class="cart-item__format">Vallenato</p>
+                    </div>
+                    <div class="cart-item__quantity">
+                        <button class="quantity__button quantity__button--decrease">
+                            <span class="quantity__icon">−</span>
+                        </button>
+                        <span class="quantity__value">1</span>
+                        <button class="quantity__button quantity__button--increase">
+                            <span class="quantity__icon">+</span>
+                        </button>
+                    </div>
+                    <div class="cart-item__price">
+                        <span class="price__amount">$9.99</span>
+                    </div>
+                    <button class="cart-item__remove">
+                        <span class="remove__icon">🗑</span>
+                    </button>
+                </article>
+            </section>
+            <!-- Resumen del pedido -->
+            <aside class="order-summary">
+                <h2 class="order-summary__title">Order Summary</h2>
+                <div class="order-summary__details">
+                    <div class="summary__row">
+                        <span class="summary__label">Subtotal</span>
+                        <span class="summary__value">$22.98</span>
+                    </div>
+                    <div class="summary__row">
+                        <span class="summary__label">Estimated Tax</span>
+                        <span class="summary__value">$1.84</span>
+                    </div>
+                    <div class="summary__row summary__row--total">
+                        <span class="summary__label">Total</span>
+                        <span class="summary__value">$24.82</span>
+                    </div>
+                </div>
+                <div class="order-summary__actions">
+                    <button class="btn btn--primary btn--large btn--checkout">
+                        <a href="/music-stream-app/checkout.html" class="btn btn--primary btn--large btn--checkout">
+                            <span class="btn__icon">🔒</span>
+                        <span class="btn__text">Proceed to Checkout</span>
+                        </a>
+                    </button>
+                    <a href="/music-stream-app/index.html" class="btn btn--link">
+                        Continue Shopping
+                    </a>
+                </div>
+            </aside>
+        </div>
+    </main>
+</body>
+</html>

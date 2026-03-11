@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Releases | MusicStream</title>
+    <link rel="stylesheet" href="./CSS/views/new-releases.css">
+    <link rel="icon" href="./assets/icons/favico.ico" type="image/png">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <img src="./assets/img/logo.png" class="logo" alt="MusicStream logo">
+                <span class="header__logo-text">MusicStream</span>
+            </div>
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="discover.html" class="nav__link">Discover</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="library.html" class="nav__link">Library</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Store</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__search">
+                <button class="search__button">
+                    <img class="search__icon" src="./assets/icons/busqueda-de-lupa_1.svg" alt="search">
+                </button>
+                <input type="search" class="search__input" placeholder=" | Artists, albums, tracks">
+            </div>
+            <div class="header__user">
+                <div class="user__avatar">
+                    <img src="./assets/img/jugador.png" alt="User avatar" class="user__avatar-img">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-wrapper">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2 class="sidebar__title">CATEGORIES</h2>
+            <nav class="sidebar__nav">
+                <ul class="sidebar__menu">
+                    <li class="sidebar__menu-item">
+                        <a href="new-releases.html" class="sidebar__link sidebar__link--active">
+                            <img src="./assets/icons/verificar.svg" class="link__icon" alt="check">
+                            <span class="link__text">New Releases</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__menu-item">
+                        <a href="genres.html" class="sidebar__link">
+                            <img src="./assets/icons/nota-musical.svg" class="link__icon" alt="music note">
+                            <span class="link__text">Genres</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__menu-item">
+                        <a href="top-charts.html" class="sidebar__link">
+                            <img src="./assets/icons/tendencia-alcista.svg" class="link__icon" alt="trending">
+                            <span class="link__text">Top Charts</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__menu-item">
+                        <a href="artists.html" class="sidebar__link">
+                            <img src="./assets/icons/herramienta-de-audio-de-voz-de-microfono-con-cable.svg" class="link__icon" alt="microphone">
+                            <span class="link__text">Artists</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+            <div class="content__header">
+                <h1 class="content__title">New Releases</h1>
+                <p class="content__subtitle">The latest albums and tracks from your favorite artists</p>
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="filter-tabs">
+                <button class="filter-tab filter-tab--active">All</button>
+                <button class="filter-tab">Albums</button>
+                <button class="filter-tab">Singles</button>
+                <button class="filter-tab">This Week</button>
+                <button class="filter-tab">This Month</button>
+            </div>
+
+            <!-- Featured Release -->
+            <section class="featured-release">
+                <div class="featured-release__content">
+                    <img src="./assets/img/tildeathwasneverenough.jpg" alt="Featured album" class="featured-release__image">
+                    <div class="featured-release__info">
+                        <span class="featured-release__label">FEATURED RELEASE</span>
+                        <h2 class="featured-release__title">Till' Death Was Never Enough</h2>
+                        <p class="featured-release__artist">Violent Vira</p>
+                        <p class="featured-release__description">
+                            The breakthrough debut album from alternative rock sensation Violent Vira. 
+                            A raw and emotional journey through modern rock landscapes.
+                        </p>
+                        <div class="featured-release__actions">
+                            <button class="btn btn--primary">Buy Now - $9.99</button>
+                            <button class="btn btn--secondary">Add to Wishlist</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- This Week's Releases -->
+            <section class="releases-section">
+                <h2 class="section__title">This Week's Releases</h2>
+                <div class="albums-grid">
+                    <article class="album-card">
+                        <div class="album-card__image-container">
+                            <img src="./assets/img/andjusticeforall.jpeg" alt="Metallica album" class="album-card__image">
+                            <span class="album-card__badge">NEW</span>
+                        </div>
+                        <div class="album-card__info">
+                            <a href="album-detail2.html"><h3 class="album-card__title">...And Justice For All</h3></a>
+                            <p class="album-card__artist">Metallica</p>
+                            <span class="album-card__date">Released: Feb 15, 2024</span>
+                            <button class="album-card__price">$9.99</button>
+                        </div>
+                    </article>
+                    <article class="album-card">
+                        <div class="album-card__image-container">
+                            <img src="./assets/img/diomedesdiaz.jpeg" alt="Diomedes album" class="album-card__image">
+                            <span class="album-card__badge">NEW</span>
+                        </div>
+                        <div class="album-card__info">
+                            <a href="album-detail1.html"><h3 class="album-card__title">Vallenato</h3></a>
+                            <p class="album-card__artist">Diomedes Diaz</p>
+                            <span class="album-card__date">Released: Feb 12, 2024</span>
+                            <button class="album-card__price">$12.99</button>
+                        </div>
+                    </article>
+                    <article class="album-card">
+                        <div class="album-card__image-container">
+                            <img src="./assets/img/radiohead.jpg" alt="Radiohead album" class="album-card__image">
+                            <span class="album-card__badge">NEW</span>
+                        </div>
+                        <div class="album-card__info">
+                            <a href="album-detail4.html"><h3 class="album-card__title">Pablo Honey</h3></a>
+                            <p class="album-card__artist">Radiohead</p>
+                            <span class="album-card__date">Released: Feb 10, 2024</span>
+                            <button class="album-card__price">$7.99</button>
+                        </div>
+                    </article>
+                    <article class="album-card">
+                        <div class="album-card__image-container">
+                            <img src="./assets/img/tildeathwasneverenough.jpg" alt="Violent Vira album" class="album-card__image">
+                            <span class="album-card__badge">HOT</span>
+                        </div>
+                        <div class="album-card__info">
+                            <a href="album-detail3.html"><h3 class="album-card__title">Till' Death Was Never Enough</h3></a>
+                            <p class="album-card__artist">Violent Vira</p>
+                            <span class="album-card__date">Released: Feb 8, 2024</span>
+                            <button class="album-card__price">$9.99</button>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Recent Singles -->
+            <section class="releases-section">
+                <h2 class="section__title">Recent Singles</h2>
+                <div class="tracks-grid">
+                    <article class="track-card">
+                        <div class="track-card__image-container">
+                            <img src="./assets/img/One.jpg" alt="One song" class="track-card__image">
+                        </div>
+                        <div class="track-card__info">
+                            <a href="player2.html"><h3 class="track-card__title">One</h3></a>
+                            <p class="track-card__artist">Metallica</p>
+                            <button class="track-card__price">$1.29</button>
+                        </div>
+                    </article>
+                    <article class="track-card">
+                        <div class="track-card__image-container">
+                            <img src="./assets/img/radcan.jpg" alt="Creep song" class="track-card__image">
+                        </div>
+                        <div class="track-card__info">
+                            <a href="player3.html"><h3 class="track-card__title">Creep</h3></a>
+                            <p class="track-card__artist">Radiohead</p>
+                            <button class="track-card__price">$0.99</button>
+                        </div>
+                    </article>
+                    <article class="track-card">
+                        <div class="track-card__image-container">
+                            <img src="./assets/img/Diomedes.jpg" alt="La Plata song" class="track-card__image">
+                        </div>
+                        <div class="track-card__info">
+                            <a href="player1.html"><h3 class="track-card__title">La Plata</h3></a>
+                            <p class="track-card__artist">Diomedes Diaz</p>
+                            <button class="track-card__price">$1.29</button>
+                        </div>
+                    </article>
+                    <article class="track-card">
+                        <div class="track-card__image-container">
+                            <img src="./assets/img/violentvira.jpeg" alt="Collar Of Truth" class="track-card__image">
+                        </div>
+                        <div class="track-card__info">
+                            <a href="player4.html"><h3 class="track-card__title">Collar Of Truth</h3></a>
+                            <p class="track-card__artist">Violent Vira</p>
+                            <button class="track-card__price">$1.29</button>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

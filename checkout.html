@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Checkout | MusicStream</title>
+    <link rel="stylesheet" href="./CSS/views/checkout.css">
+    <link rel="icon" href="./assets/icons/favico.ico" type="image/png">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <img src="./assets/img/logo.png" class="logo" alt="logo">
+                <span class="header__logo-text">MusicStream</span>
+            </div>
+            <a href="/music-stream-app/index.html" class="header__back-link">Back to Store</a>
+        </div>
+    </header>
+    <!-- Main Content -->
+    <main class="checkout-page">
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb">
+            <ul class="breadcrumb__list">
+                <li class="breadcrumb__item">
+                    <a href="cart.html" class="breadcrumb__link">Cart</a>
+                </li>
+                <li class="breadcrumb__separator">/</li>
+                <li class="breadcrumb__item">
+                    <span class="breadcrumb__link breadcrumb__link--active">Payment</span>
+                </li>
+                <li class="breadcrumb__separator">/</li>
+                <li class="breadcrumb__item">
+                    <span class="breadcrumb__link breadcrumb__link--disabled">Complete</span>
+                </li>
+            </ul>
+        </nav>
+        <!-- Page Title -->
+        <h1 class="checkout-page__title">Secure Checkout</h1>
+        <div class="checkout-container">
+            <!-- Left Column - Forms -->
+            <div class="checkout-forms">
+                <!-- Payment Method Section -->
+                <section class="form-section">
+                    <h2 class="form-section__title">Payment Method</h2>
+                    <div class="payment-method">
+                        <div class="payment-method__header">
+                            <span class="payment-method__label">Pay with Credit Card</span>
+                            <div class="payment-method__icons">
+                                <img src="/music-stream-app/assets/icons/logo_nequi.jpg" alt="Nequi" class="payment-icon">
+                                <img src="/music-stream-app/assets/icons/patrocinador.jfif" alt="ochoaexpress" class="payment-icon">
+                                <img src="/music-stream-app/assets/icons/daviplata.png" alt="Daviplata" class="payment-icon">
+                            </div>
+                        </div>
+                        <form class="payment-form" action="#" method="POST">
+                            <!-- Card Number -->
+                            <div class="form-group">
+                                <label for="card-number" class="form-label">Card Number</label>
+                                <div class="input-wrapper">
+                                    <input 
+                                        type="text" 
+                                        id="card-number" 
+                                        name="cardNumber" 
+                                        class="form-input" 
+                                        placeholder="0000 0000 0000 0000"
+                                        required>
+                                    <span class="input-icon">💳</span>
+                                </div>
+                            </div>
+                            <!-- Expiration and CVC -->
+                            <div class="form-row">
+                                <div class="form-group form-group--half">
+                                    <label for="expiration" class="form-label">Expiration (MM/YY)</label>
+                                    <input 
+                                        type="text" 
+                                        id="expiration" 
+                                        name="expiration" 
+                                        class="form-input" 
+                                        placeholder="MM/YY"
+                                        required>
+                                </div>
+                                <div class="form-group form-group--half">
+                                    <label for="cvc" class="form-label">CVC</label>
+                                    <div class="input-wrapper">
+                                        <input 
+                                            type="text" 
+                                            id="cvc" 
+                                            name="cvc" 
+                                            class="form-input" 
+                                            placeholder="666"
+                                            required>
+                                        <span class="input-icon">🔒</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Name on Card -->
+                            <div class="form-group">
+                                <label for="card-name" class="form-label">Name on Card</label>
+                                <input 
+                                    type="text" 
+                                    id="card-name" 
+                                    name="cardName" 
+                                    class="form-input" 
+                                    placeholder="Jhon Doe"
+                                    required>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+                <!-- Billing Address Section -->
+                <section class="form-section">
+                    <h2 class="form-section__title">Billing Address</h2>
+                    <form class="billing-form" action="#" method="POST">
+                        <!-- Country/Region -->
+                        <div class="form-group">
+                            <label for="country" class="form-label">Country/Region</label>
+                            <div class="select-wrapper">
+                                <select id="country" name="country" class="form-select" required>
+                                    <option value="US" selected>Colombia</option>
+                                    <option value="CA">Aruba</option>
+                                    <option value="MX">España</option>
+                                </select>
+                                <span class="select-icon">▼</span>
+                            </div>
+                        </div>
+                        <!-- Street Address -->
+                        <div class="form-group">
+                            <label for="street" class="form-label">Street Address</label>
+                            <input 
+                                type="text" 
+                                id="street" 
+                                name="street" 
+                                class="form-input" 
+                                placeholder="Cra 57 #44-68"
+                                required>
+                        </div>
+                        <!-- City and State -->
+                        <div class="form-row">
+                            <div class="form-group form-group--half">
+                                <label for="city" class="form-label">City</label>
+                                <input 
+                                    type="text" 
+                                    id="city" 
+                                    name="city" 
+                                    class="form-input" 
+                                    placeholder="Monterrey"
+                                    required>
+                            </div>
+                            <div class="form-group form-group--half">
+                                <label for="state" class="form-label">State/Province</label>
+                                <input 
+                                    type="text" 
+                                    id="state" 
+                                    name="state" 
+                                    class="form-input" 
+                                    placeholder="Pasto"
+                                    required>
+                            </div>
+                        </div>
+                        <!-- Postal Code -->
+                        <div class="form-group">
+                            <label for="postal-code" class="form-label">Postal Code</label>
+                            <input 
+                                type="text" 
+                                id="postal-code" 
+                                name="postalCode" 
+                                class="form-input" 
+                                placeholder="37203"
+                                required>
+                        </div>
+                    </form>
+                </section>
+            </div>
+            <!-- Right Column - Order Summary -->
+            <aside class="order-summary">
+                <h2 class="order-summary__title">Order Summary</h2>
+                <!-- Order Items -->
+                <div class="order-items">
+                    <!-- Item 1 -->
+                    <div class="order-item">
+                        <img src="/music-stream-app/assets/img/cachon.jpg" alt="santo cachon cover" class="order-item__image">
+                        <div class="order-item__info">
+                            <h3 class="order-item__title">El Santo Cachon</h3>
+                            <p class="order-item__artist">Diomedes Diaz</p>
+                        </div>
+                        <span class="order-item__price">$12.99</span>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="order-item">
+                        <img src="/music-stream-app/assets/img/Diomedes.jpg" alt="diomedes diaz cover" class="order-item__image">
+                        <div class="order-item__info">
+                            <h3 class="order-item__title">La Ventana Marroncita</h3>
+                            <p class="order-item__artist">Diomedes Diaz</p>
+                        </div>
+                        <span class="order-item__price">$9.99</span>
+                    </div>
+                </div>
+                <!-- Order Totals -->
+                <div class="order-totals">
+                    <div class="totals-row">
+                        <span class="totals-row__label">Subtotal</span>
+                        <span class="totals-row__value">$2.58</span>
+                    </div>
+                    <div class="totals-row">
+                        <span class="totals-row__label">Taxes</span>
+                        <span class="totals-row__value">$1.84</span>
+                    </div>
+                    <div class="totals-row totals-row--total">
+                        <span class="totals-row__label">Total</span>
+                        <span class="totals-row__value">$24.82</span>
+                    </div>
+                </div>
+                <!-- Place Order Button -->
+                <a href="success.html" type="submit" class="btn btn--primary btn--large btn--checkout" form="payment-form">
+                    <span class="btn__icon">🔒</span>
+                    <span class="btn__text">Place Order & Pay $24.82</span>
+                </a>
+                <!-- Terms -->
+                <p class="order-summary__terms">
+                    By placing this order, you agree to our 
+                    <a href="#" class="link">Terms of Service</a> and 
+                    <a href="#" class="link">Privacy Policy</a>.
+                </p>
+            </aside>
+        </div>
+    </main>
+</body>
+</html>

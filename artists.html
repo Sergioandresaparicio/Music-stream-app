@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artists | MusicStream</title>
+    <link rel="stylesheet" href="./CSS/views/artists.css">
+    <link rel="icon" href="./assets/icons/favico.ico" type="image/png">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <img src="./assets/img/logo.png" class="logo" alt="MusicStream logo">
+                <span class="header__logo-text">MusicStream</span>
+            </div>
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="discover.html" class="nav__link">Discover</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="library.html" class="nav__link">Library</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Store</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__search">
+                <button class="search__button">
+                    <img class="search__icon" src="./assets/icons/busqueda-de-lupa_1.svg" alt="search">
+                </button>
+                <input type="search" class="search__input" placeholder=" | Artists, albums, tracks">
+            </div>
+            <div class="header__user">
+                <div class="user__avatar">
+                    <img src="./assets/img/jugador.png" alt="User avatar" class="user__avatar-img">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-wrapper">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2 class="sidebar__title">CATEGORIES</h2>
+            <nav class="sidebar__nav">
+                <ul class="sidebar__menu">
+                    <li class="sidebar__menu-item">
+                        <a href="new-releases.html" class="sidebar__link">
+                            <img src="./assets/icons/verificar.svg" class="link__icon" alt="check">
+                            <span class="link__text">New Releases</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__menu-item">
+                        <a href="genres.html" class="sidebar__link">
+                            <img src="./assets/icons/nota-musical.svg" class="link__icon" alt="music note">
+                            <span class="link__text">Genres</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__menu-item">
+                        <a href="top-charts.html" class="sidebar__link">
+                            <img src="./assets/icons/tendencia-alcista.svg" class="link__icon" alt="trending">
+                            <span class="link__text">Top Charts</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__menu-item">
+                        <a href="artists.html" class="sidebar__link sidebar__link--active">
+                            <img src="./assets/icons/herramienta-de-audio-de-voz-de-microfono-con-cable.svg" class="link__icon" alt="microphone">
+                            <span class="link__text">Artists</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+            <div class="content__header">
+                <h1 class="content__title">Featured Artists</h1>
+                <p class="content__subtitle">Discover amazing artists from around the world</p>
+            </div>
+
+            <!-- Filter -->
+            <div class="filter-tabs">
+                <button class="filter-tab filter-tab--active">All Artists</button>
+                <button class="filter-tab">A-Z</button>
+                <button class="filter-tab">Popular</button>
+                <button class="filter-tab">New</button>
+            </div>
+
+            <!-- Artists Grid -->
+            <section class="artists-section">
+                <div class="artists-grid">
+                    <!-- Metallica -->
+                    <article class="artist-card">
+                        <div class="artist-card__image">
+                            <img src="./assets/img/andjusticeforall.jpeg" alt="Metallica" class="artist-card__thumbnail">
+                        </div>
+                        <div class="artist-card__info">
+                            <h3 class="artist-card__name">Metallica</h3>
+                            <p class="artist-card__genre">Thrash Metal</p>
+                            <p class="artist-card__followers">25.4M Followers</p>
+                            <a href="album-detail2.html" class="artist-card__button">View Profile</a>
+                        </div>
+                    </article>
+
+                    <!-- Diomedes Diaz -->
+                    <article class="artist-card">
+                        <div class="artist-card__image">
+                            <img src="./assets/img/diomedesdiaz.jpeg" alt="Diomedes Diaz" class="artist-card__thumbnail">
+                        </div>
+                        <div class="artist-card__info">
+                            <h3 class="artist-card__name">Diomedes Diaz</h3>
+                            <p class="artist-card__genre">Vallenato</p>
+                            <p class="artist-card__followers">18.2M Followers</p>
+                            <a href="album-detail1.html" class="artist-card__button">View Profile</a>
+                        </div>
+                    </article>
+
+                    <!-- Violent Vira -->
+                    <article class="artist-card">
+                        <div class="artist-card__image">
+                            <img src="./assets/img/tildeathwasneverenough.jpg" alt="Violent Vira" class="artist-card__thumbnail">
+                        </div>
+                        <div class="artist-card__info">
+                            <h3 class="artist-card__name">Violent Vira</h3>
+                            <p class="artist-card__genre">Alternative Rock</p>
+                            <p class="artist-card__followers">5.8M Followers</p>
+                            <a href="album-detail3.html" class="artist-card__button">View Profile</a>
+                        </div>
+                    </article>
+
+                    <!-- Radiohead -->
+                    <article class="artist-card">
+                        <div class="artist-card__image">
+                            <img src="./assets/img/radiohead.jpg" alt="Radiohead" class="artist-card__thumbnail">
+                        </div>
+                        <div class="artist-card__info">
+                            <h3 class="artist-card__name">Radiohead</h3>
+                            <p class="artist-card__genre">Alternative Rock</p>
+                            <p class="artist-card__followers">22.1M Followers</p>
+                            <a href="album-detail4.html" class="artist-card__button">View Profile</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Trending Artists -->
+            <section class="trending-section">
+                <h2 class="section__title">🔥 Trending Artists</h2>
+                <div class="trending-grid">
+                    <article class="trending-card">
+                        <div class="trending-card__content">
+                            <img src="./assets/img/One.jpg" alt="Metallica trending" class="trending-card__image">
+                            <div class="trending-card__overlay">
+                                <h3 class="trending-card__name">Metallica</h3>
+                                <p class="trending-card__stats">+15% this week</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="trending-card">
+                        <div class="trending-card__content">
+                            <img src="./assets/img/violentvira.jpeg" alt="Violent Vira trending" class="trending-card__image">
+                            <div class="trending-card__overlay">
+                                <h3 class="trending-card__name">Violent Vira</h3>
+                                <p class="trending-card__stats">+28% this week</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="trending-card">
+                        <div class="trending-card__content">
+                            <img src="./assets/img/radcan.jpg" alt="Radiohead trending" class="trending-card__image">
+                            <div class="trending-card__overlay">
+                                <h3 class="trending-card__name">Radiohead</h3>
+                                <p class="trending-card__stats">+8% this week</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

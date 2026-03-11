@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicStream | Store</title>
+    <link rel="icon" href="favico.ico" type="image/png">
+    <link rel="stylesheet" href="./CSS/main.css">
+    <link rel="icon" href="./assets/icons/favico.ico" type="image/png">
+</head>
+<body>
+    <!-- Header / Barra denavegaciónsuperior -->
+    <header class="header">
+        <div class="header__container">
+            <!-- Logo -->
+            <div class="header__logo">
+                <img src="./assets/img/logo.png" class="logo" alt="MusicStream logo">
+                <span class="header__logo-text">MusicStream</span>
+            </div>
+            <!-- Navegación principal -->
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="./discover.html" class="nav__link">Discover</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="./library.html" class="nav__link">Library</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="./store.html" class="nav__link nav__link--active">Store</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Barra de búsqueda -->
+            <div class="header__search">
+                <button class="search__button"><img class="search__icon" src="./assets/icons/busqueda-de-lupa_1.svg" alt="lupa de busqueda"></button>
+                <input type="search" class="search__input" placeholder=" | Artists, albums, tracks">
+            </div>
+            <!-- Perfil de usuario -->
+            <div class="header__user">
+                <div class="user__avatar">
+                    <img src="./assets/img/jugador.png" alt="User avatar" class="user__avatar-img">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Contenedor principal -->
+    <div class="main-wrapper">
+        <!-- Sidebar / Menú lateral -->
+        <aside class="sidebar">
+            <h2 class="sidebar__title">CATEGORIES</h2>
+            <nav class="sidebar__nav">
+                <ul class="sidebar__menu">
+                    <li class="sidebar__menu-item">
+                        <a href="./new-releases.html" class="sidebar__link sidebar__link--active">
+                            <img src="./assets/icons/verificar.svg" class="link__icon" alt="check verificador">
+                            <span class="link__text">New Releases</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__menu-item">
+                        <a href="./genres.html" class="sidebar__link">
+                            <img src="./assets/icons/nota-musical.svg" class="link__icon" alt="simbolo musical">
+                            <span class="link__text">Genres</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__menu-item">
+                        <a href="./top-charts.html" class="sidebar__link">
+                            <img src="./assets/icons/tendencia-alcista.svg" class="link__icon" alt="flecha alcista">
+                            <span class="link__text">Top Charts</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__menu-item">
+                        <a href="./artists.html" class="sidebar__link">
+                            <img src="./assets/icons/herramienta-de-audio-de-voz-de-microfono-con-cable.svg" class="link__icon" alt="microfono con cable">
+                            <span class="link__text">Artists</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <!-- Contenido principal -->
+        <main class="content">
+            <!-- Banner principal / Hero -->
+            <section class="hero-banner">
+                <div class="hero-banner__content">
+                    <img src="./assets/img/Banner.jpg" class="banner" alt="avenged sevenfold album cover">
+                    <span class="hero-banner__label">EDITOR'S PICK</span>
+                    <h1 class="hero-banner__title">The new album from Avenged Sevenfold</h1>
+                    <button class="hero-banner__button">Buy Now - $14.99</button>
+                </div>
+            </section>
+            <!-- Sección: Nuevos Álbumes -->
+            <section class="albums-section">
+                <h2 class="section__title">New Albums This Week</h2>
+                <div class="albums-grid">
+                    <!-- Álbum 1 -->
+                    <article class="album-card">
+                        <div class="album-card__image-container">
+                            <img src="./assets/img/andjusticeforall.jpeg" alt="metallica album cover" class="album-card__image">
+                        </div>
+                        <div class="album-card__info">
+                            <a href="album-detail2.html"><h3 class="album-card__title">...And Justice For All</h3></a>
+                            <p class="album-card__artist">Metallica</p>
+                            <button class="album-card__price">$9.99</button>
+                        </div>
+                    </article>
+                    <!-- Álbum 2 -->
+                    <article class="album-card">
+                        <div class="album-card__image-container">
+                            <img src="./assets/img/diomedesdiaz.jpeg" alt="vallenato album cover" class="album-card__image">
+                        </div>
+                        <div class="album-card__info">
+                            <a href="album-detail1.html"><h3 class="album-card__title">Vallenato</h3></a>
+                            <a href="album-detail1.html"><p class="album-card__artist">Diomedes Diaz</p></a>
+                            <button class="album-card__price">$12.99</button>
+                        </div>
+                    </article>
+                    <!-- Álbum 3 -->
+                    <article class="album-card">
+                        <div class="album-card__image-container">
+                            <img src="./assets/img/tildeathwasneverenough.jpg" alt="violent vira album cover" class="album-card__image">
+                        </div>
+                        <div class="album-card__info">
+                            <a href="album-detail3.html"><h3 class="album-card__title">Till' Death Was Never Enough</h3></a>
+                            <a href="album-detail3.html"><p class="album-card__artist">Violent Vira</p></a>
+                            <button class="album-card__price">$9.99</button>
+                        </div>
+                    </article>
+                    <!-- Álbum 4 -->
+                    <article class="album-card">
+                        <div class="album-card__image-container">
+                            <img src="./assets/img/radiohead.jpg" alt="pablo honey album cover" class="album-card__image">
+                        </div>
+                        <div class="album-card__info">
+                            <a href="album-detail4.html"><h3 class="album-card__title">Pablo Honey</h3></a>
+                            <a href="album-detail4.html"><p class="album-card__artist">Radiohead</p></a>
+                            <button class="album-card__price">$7.99</button>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <!-- Sección: Top Selling Tracks -->
+            <section class="tracks-section">
+                <h2 class="section__title">Top Selling Tracks</h2>
+                <div class="tracks-grid">
+                    <!-- Track 1 -->
+                    <article class="track-card">
+                        <div class="track-card__image-container">
+                            <img src="./assets/img/Diomedes.jpg" alt="Tu eres la reina song cover" class="track-card__image">
+                        </div>
+                        <div class="track-card__info">
+                            <a href="player1.html"><h3 class="track-card__title">Tu Eres La Reina</h3></a>
+                            <a href="player1.html"><p class="track-card__artist">Diomedes Diaz</p></a>
+                            <button class="track-card__price">$1.29</button>
+                        </div>
+                    </article>
+                    <!-- Track 2 -->
+                    <article class="track-card">
+                        <div class="track-card__image-container">
+                            <img src="./assets/img/One.jpg" alt="One song cover" class="track-card__image">
+                        </div>
+                        <div class="track-card__info">
+                            <a href="player2.html"><h3 class="track-card__title">One</h3></a>
+                            <a href="player2.html"><p class="track-card__artist">Metallica</p></a>
+                            <button class="track-card__price">$1.29</button>
+                        </div>
+                    </article>
+                    <!-- Track 3 -->
+                    <article class="track-card">
+                        <div class="track-card__image-container">
+                            <img src="./assets/img/radcan.jpg" alt="Creep song cover" class="track-card__image">
+                        </div>
+                        <div class="track-card__info">
+                            <a href="player3.html"><h3 class="track-card__title">Creep</h3></a>
+                            <a href="player3.html"><p class="track-card__artist">Radiohead</p></a>
+                            <button class="track-card__price">$0.99</button>
+                        </div>
+                    </article>
+                    <!-- Track 4 -->
+                    <article class="track-card">
+                        <div class="track-card__image-container">
+                            <img src="./assets/img/violentvira.jpeg" alt="violent vira song cover" class="track-card__image">
+                        </div>
+                        <div class="track-card__info">
+                            <a href="player4.html"><h3 class="track-card__title">Collar Of Truth</h3></a>
+                            <a href="player4.html"><p class="track-card__artist">Violent Vira</p></a>
+                            <button class="track-card__price">$1.29</button>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

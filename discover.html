@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover | MusicStream</title>
+    <link rel="stylesheet" href="./CSS/views/discover.css">
+    <link rel="icon" href="./assets/icons/favico.ico" type="image/png">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <img src="./assets/img/logo.png" class="logo" alt="MusicStream logo">
+                <span class="header__logo-text">MusicStream</span>
+            </div>
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="discover.html" class="nav__link nav__link--active">Discover</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="library.html" class="nav__link">Library</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Store</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__search">
+                <button class="search__button">
+                    <img class="search__icon" src="./assets/icons/busqueda-de-lupa_1.svg" alt="search">
+                </button>
+                <input type="search" class="search__input" placeholder=" | Artists, albums, tracks">
+            </div>
+            <div class="header__user">
+                <div class="user__avatar">
+                    <img src="./assets/img/jugador.png" alt="User avatar" class="user__avatar-img">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-wrapper">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2 class="sidebar__title">CATEGORIES</h2>
+            <nav class="sidebar__nav">
+                <ul class="sidebar__menu">
+                    <li class="sidebar__menu-item">
+                        <a href="new-releases.html" class="sidebar__link">
+                            <img src="./assets/icons/verificar.svg" class="link__icon" alt="check">
+                            <span class="link__text">New Releases</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__menu-item">
+                        <a href="genres.html" class="sidebar__link">
+                            <img src="./assets/icons/nota-musical.svg" class="link__icon" alt="music note">
+                            <span class="link__text">Genres</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__menu-item">
+                        <a href="top-charts.html" class="sidebar__link">
+                            <img src="./assets/icons/tendencia-alcista.svg" class="link__icon" alt="trending">
+                            <span class="link__text">Top Charts</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__menu-item">
+                        <a href="artists.html" class="sidebar__link">
+                            <img src="./assets/icons/herramienta-de-audio-de-voz-de-microfono-con-cable.svg" class="link__icon" alt="microphone">
+                            <span class="link__text">Artists</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="hero-section__content">
+                    <h1 class="hero-section__title">Discover Your Next Favorite Song</h1>
+                    <p class="hero-section__subtitle">Personalized recommendations just for you</p>
+                </div>
+            </section>
+
+            <!-- Made For You -->
+            <section class="content-section">
+                <div class="section__header">
+                    <h2 class="section__title">Made For You</h2>
+                    <a href="#" class="section__link">See all</a>
+                </div>
+                <div class="cards-grid cards-grid--large">
+                    <article class="recommendation-card">
+                        <div class="recommendation-card__image-container">
+                            <img src="./assets/img/andjusticeforall.jpeg" alt="Daily Mix 1" class="recommendation-card__image">
+                            <button class="play-button">
+                                <img src="./assets/icons/video-pause-button.svg" alt="play" class="play-button__icon">
+                            </button>
+                        </div>
+                        <h3 class="recommendation-card__title">Daily Mix 1</h3>
+                        <p class="recommendation-card__description">Metallica, Radiohead, Violent Vira and more</p>
+                    </article>
+                    <article class="recommendation-card">
+                        <div class="recommendation-card__image-container">
+                            <img src="./assets/img/diomedesdiaz.jpeg" alt="Daily Mix 2" class="recommendation-card__image">
+                            <button class="play-button">
+                                <img src="./assets/icons/video-pause-button.svg" alt="play" class="play-button__icon">
+                            </button>
+                        </div>
+                        <h3 class="recommendation-card__title">Daily Mix 2</h3>
+                        <p class="recommendation-card__description">Diomedes Diaz and similar artists</p>
+                    </article>
+                    <article class="recommendation-card">
+                        <div class="recommendation-card__image-container">
+                            <img src="./assets/img/tildeathwasneverenough.jpg" alt="Discover Weekly" class="recommendation-card__image">
+                            <button class="play-button">
+                                <img src="./assets/icons/video-pause-button.svg" alt="play" class="play-button__icon">
+                            </button>
+                        </div>
+                        <h3 class="recommendation-card__title">Discover Weekly</h3>
+                        <p class="recommendation-card__description">Your weekly mixtape of fresh music</p>
+                    </article>
+                    <article class="recommendation-card">
+                        <div class="recommendation-card__image-container">
+                            <img src="./assets/img/radiohead.jpg" alt="Release Radar" class="recommendation-card__image">
+                            <button class="play-button">
+                                <img src="./assets/icons/video-pause-button.svg" alt="play" class="play-button__icon">
+                            </button>
+                        </div>
+                        <h3 class="recommendation-card__title">Release Radar</h3>
+                        <p class="recommendation-card__description">Catch up on the latest releases</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Trending Now -->
+            <section class="content-section">
+                <div class="section__header">
+                    <h2 class="section__title">Trending Now</h2>
+                    <a href="top-charts.html" class="section__link">See all</a>
+                </div>
+                <div class="cards-grid">
+                    <article class="album-card">
+                        <div class="album-card__image-container">
+                            <img src="./assets/img/andjusticeforall.jpeg" alt="Metallica album" class="album-card__image">
+                        </div>
+                        <div class="album-card__info">
+                            <a href="album-detail2.html"><h3 class="album-card__title">...And Justice For All</h3></a>
+                            <p class="album-card__artist">Metallica</p>
+                            <button class="album-card__price">$9.99</button>
+                        </div>
+                    </article>
+                    <article class="album-card">
+                        <div class="album-card__image-container">
+                            <img src="./assets/img/tildeathwasneverenough.jpg" alt="Violent Vira album" class="album-card__image">
+                        </div>
+                        <div class="album-card__info">
+                            <a href="album-detail3.html"><h3 class="album-card__title">Till' Death Was Never Enough</h3></a>
+                            <p class="album-card__artist">Violent Vira</p>
+                            <button class="album-card__price">$9.99</button>
+                        </div>
+                    </article>
+                    <article class="album-card">
+                        <div class="album-card__image-container">
+                            <img src="./assets/img/radiohead.jpg" alt="Radiohead album" class="album-card__image">
+                        </div>
+                        <div class="album-card__info">
+                            <a href="album-detail4.html"><h3 class="album-card__title">Pablo Honey</h3></a>
+                            <p class="album-card__artist">Radiohead</p>
+                            <button class="album-card__price">$7.99</button>
+                        </div>
+                    </article>
+                    <article class="album-card">
+                        <div class="album-card__image-container">
+                            <img src="./assets/img/diomedesdiaz.jpeg" alt="Diomedes album" class="album-card__image">
+                        </div>
+                        <div class="album-card__info">
+                            <a href="album-detail1.html"><h3 class="album-card__title">Vallenato</h3></a>
+                            <p class="album-card__artist">Diomedes Diaz</p>
+                            <button class="album-card__price">$12.99</button>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Jump Back In -->
+            <section class="content-section">
+                <div class="section__header">
+                    <h2 class="section__title">Jump Back In</h2>
+                    <a href="library.html" class="section__link">See all</a>
+                </div>
+                <div class="cards-grid">
+                    <article class="track-card">
+                        <div class="track-card__image-container">
+                            <img src="./assets/img/One.jpg" alt="One song" class="track-card__image">
+                        </div>
+                        <div class="track-card__info">
+                            <a href="player2.html"><h3 class="track-card__title">One</h3></a>
+                            <p class="track-card__artist">Metallica</p>
+                            <button class="track-card__price">$1.29</button>
+                        </div>
+                    </article>
+                    <article class="track-card">
+                        <div class="track-card__image-container">
+                            <img src="./assets/img/radcan.jpg" alt="Creep song" class="track-card__image">
+                        </div>
+                        <div class="track-card__info">
+                            <a href="player3.html"><h3 class="track-card__title">Creep</h3></a>
+                            <p class="track-card__artist">Radiohead</p>
+                            <button class="track-card__price">$0.99</button>
+                        </div>
+                    </article>
+                    <article class="track-card">
+                        <div class="track-card__image-container">
+                            <img src="./assets/img/Diomedes.jpg" alt="La Plata song" class="track-card__image">
+                        </div>
+                        <div class="track-card__info">
+                            <a href="player1.html"><h3 class="track-card__title">La Plata</h3></a>
+                            <p class="track-card__artist">Diomedes Diaz</p>
+                            <button class="track-card__price">$1.29</button>
+                        </div>
+                    </article>
+                    <article class="track-card">
+                        <div class="track-card__image-container">
+                            <img src="./assets/img/violentvira.jpeg" alt="Collar Of Truth" class="track-card__image">
+                        </div>
+                        <div class="track-card__info">
+                            <a href="player4.html"><h3 class="track-card__title">Collar Of Truth</h3></a>
+                            <p class="track-card__artist">Violent Vira</p>
+                            <button class="track-card__price">$1.29</button>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

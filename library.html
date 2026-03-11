@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Library | MusicStream</title>
+    <link rel="stylesheet" href="./CSS/views/library.css">
+    <link rel="icon" href="./assets/icons/favico.ico" type="image/png">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <img src="./assets/img/logo.png" class="logo" alt="MusicStream logo">
+                <span class="header__logo-text">MusicStream</span>
+            </div>
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="discover.html" class="nav__link">Discover</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="library.html" class="nav__link nav__link--active">Library</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Store</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__search">
+                <button class="search__button">
+                    <img class="search__icon" src="./assets/icons/busqueda-de-lupa_1.svg" alt="search">
+                </button>
+                <input type="search" class="search__input" placeholder=" | Search your library...">
+            </div>
+            <div class="header__user">
+                <div class="user__avatar">
+                    <img src="./assets/img/jugador.png" alt="User avatar" class="user__avatar-img">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-wrapper">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2 class="sidebar__title">MY LIBRARY</h2>
+            <nav class="sidebar__nav">
+                <ul class="sidebar__menu">
+                    <li class="sidebar__menu-item">
+                        <a href="library.html" class="sidebar__link sidebar__link--active">
+                            <img src="./assets/icons/verificar.svg" class="link__icon" alt="library">
+                            <span class="link__text">All Music</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__menu-item">
+                        <a href="top-charts.html" class="sidebar__link">
+                            <img src="./assets/icons/nota-musical.svg" class="link__icon" alt="albums">
+                            <span class="link__text">Albums</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__menu-item">
+                        <a href="discover.html" class="sidebar__link">
+                            <img src="./assets/icons/tendencia-alcista.svg" class="link__icon" alt="tracks">
+                            <span class="link__text">Tracks</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__menu-item">
+                        <a href="artists.html" class="sidebar__link">
+                            <img src="./assets/icons/herramienta-de-audio-de-voz-de-microfono-con-cable.svg" class="link__icon" alt="artists">
+                            <span class="link__text">Artists</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+            <div class="content__header">
+                <h1 class="content__title">My Library</h1>
+                <div class="content__filters">
+                    <button class="filter__button filter__button--active">All</button>
+                    <button class="filter__button">Albums</button>
+                    <button class="filter__button">Tracks</button>
+                    <button class="filter__button">Artists</button>
+                </div>
+            </div>
+
+            <!-- Recently Played -->
+            <section class="library-section">
+                <h2 class="section__title">Recently Played</h2>
+                <div class="cards-grid">
+                    <article class="album-card">
+                        <div class="album-card__image-container">
+                            <img src="./assets/img/andjusticeforall.jpeg" alt="Metallica album" class="album-card__image">
+                        </div>
+                        <div class="album-card__info">
+                            <a href="album-detail2.html"><h3 class="album-card__title">...And Justice For All</h3></a>
+                            <p class="album-card__artist">Metallica</p>
+                            <span class="album-card__date">Played 2 hours ago</span>
+                        </div>
+                    </article>
+                    <article class="album-card">
+                        <div class="album-card__image-container">
+                            <img src="./assets/img/radiohead.jpg" alt="Radiohead album" class="album-card__image">
+                        </div>
+                        <div class="album-card__info">
+                            <a href="album-detail4.html"><h3 class="album-card__title">Pablo Honey</h3></a>
+                            <p class="album-card__artist">Radiohead</p>
+                            <span class="album-card__date">Played yesterday</span>
+                        </div>
+                    </article>
+                    <article class="album-card">
+                        <div class="album-card__image-container">
+                            <img src="./assets/img/diomedesdiaz.jpeg" alt="Diomedes album" class="album-card__image">
+                        </div>
+                        <div class="album-card__info">
+                            <a href="album-detail1.html"><h3 class="album-card__title">Vallenato</h3></a>
+                            <p class="album-card__artist">Diomedes Diaz</p>
+                            <span class="album-card__date">Played 3 days ago</span>
+                        </div>
+                    </article>
+                    <article class="album-card">
+                        <div class="album-card__image-container">
+                            <img src="./assets/img/tildeathwasneverenough.jpg" alt="Violent Vira album" class="album-card__image">
+                        </div>
+                        <div class="album-card__info">
+                            <a href="album-detail3.html"><h3 class="album-card__title">Till' Death Was Never Enough</h3></a>
+                            <p class="album-card__artist">Violent Vira</p>
+                            <span class="album-card__date">Played last week</span>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- My Albums -->
+            <section class="library-section">
+                <h2 class="section__title">My Albums</h2>
+                <div class="cards-grid">
+                    <article class="album-card">
+                        <div class="album-card__image-container">
+                            <img src="./assets/img/andjusticeforall.jpeg" alt="Metallica album" class="album-card__image">
+                        </div>
+                        <div class="album-card__info">
+                            <a href="album-detail2.html"><h3 class="album-card__title">...And Justice For All</h3></a>
+                            <p class="album-card__artist">Metallica</p>
+                            <button class="album-card__price">12 Tracks</button>
+                        </div>
+                    </article>
+                    <article class="album-card">
+                        <div class="album-card__image-container">
+                            <img src="./assets/img/diomedesdiaz.jpeg" alt="Diomedes album" class="album-card__image">
+                        </div>
+                        <div class="album-card__info">
+                            <a href="album-detail1.html"><h3 class="album-card__title">Vallenato</h3></a>
+                            <p class="album-card__artist">Diomedes Diaz</p>
+                            <button class="album-card__price">10 Tracks</button>
+                        </div>
+                    </article>
+                    <article class="album-card">
+                        <div class="album-card__image-container">
+                            <img src="./assets/img/radiohead.jpg" alt="Radiohead album" class="album-card__image">
+                        </div>
+                        <div class="album-card__info">
+                            <a href="album-detail4.html"><h3 class="album-card__title">Pablo Honey</h3></a>
+                            <p class="album-card__artist">Radiohead</p>
+                            <button class="album-card__price">12 Tracks</button>
+                        </div>
+                    </article>
+                    <article class="album-card">
+                        <div class="album-card__image-container">
+                            <img src="./assets/img/tildeathwasneverenough.jpg" alt="Violent Vira album" class="album-card__image">
+                        </div>
+                        <div class="album-card__info">
+                            <a href="album-detail3.html"><h3 class="album-card__title">Till' Death Was Never Enough</h3></a>
+                            <p class="album-card__artist">Violent Vira</p>
+                            <button class="album-card__price">10 Tracks</button>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Favorite Tracks -->
+            <section class="library-section">
+                <h2 class="section__title">Favorite Tracks</h2>
+                <div class="tracks-list">
+                    <article class="track-list-item">
+                        <div class="track-list-item__number">1</div>
+                        <div class="track-list-item__image">
+                            <img src="./assets/img/One.jpg" alt="One song" class="track-list-item__thumbnail">
+                        </div>
+                        <div class="track-list-item__info">
+                            <a href="player2.html"><h3 class="track-list-item__title">One</h3></a>
+                            <p class="track-list-item__artist">Metallica</p>
+                        </div>
+                        <div class="track-list-item__album">...And Justice For All</div>
+                        <div class="track-list-item__date">Added 2 weeks ago</div>
+                        <div class="track-list-item__duration">7:26</div>
+                        <button class="track-list-item__favorite">♡</button>
+                    </article>
+                    <article class="track-list-item">
+                        <div class="track-list-item__number">2</div>
+                        <div class="track-list-item__image">
+                            <img src="./assets/img/radcan.jpg" alt="Creep song" class="track-list-item__thumbnail">
+                        </div>
+                        <div class="track-list-item__info">
+                            <a href="player3.html"><h3 class="track-list-item__title">Creep</h3></a>
+                            <p class="track-list-item__artist">Radiohead</p>
+                        </div>
+                        <div class="track-list-item__album">Pablo Honey</div>
+                        <div class="track-list-item__date">Added 3 weeks ago</div>
+                        <div class="track-list-item__duration">3:58</div>
+                        <button class="track-list-item__favorite">♡</button>
+                    </article>
+                    <article class="track-list-item">
+                        <div class="track-list-item__number">3</div>
+                        <div class="track-list-item__image">
+                            <img src="./assets/img/Diomedes.jpg" alt="La Plata song" class="track-list-item__thumbnail">
+                        </div>
+                        <div class="track-list-item__info">
+                            <a href="player1.html"><h3 class="track-list-item__title">La Plata</h3></a>
+                            <p class="track-list-item__artist">Diomedes Diaz</p>
+                        </div>
+                        <div class="track-list-item__album">Vallenato</div>
+                        <div class="track-list-item__date">Added 1 month ago</div>
+                        <div class="track-list-item__duration">4:38</div>
+                        <button class="track-list-item__favorite">♡</button>
+                    </article>
+                    <article class="track-list-item">
+                        <div class="track-list-item__number">4</div>
+                        <div class="track-list-item__image">
+                            <img src="./assets/img/violentvira.jpeg" alt="Collar Of Truth" class="track-list-item__thumbnail">
+                        </div>
+                        <div class="track-list-item__info">
+                            <a href="player4.html"><h3 class="track-list-item__title">Collar Of Truth</h3></a>
+                            <p class="track-list-item__artist">Violent Vira</p>
+                        </div>
+                        <div class="track-list-item__album">Till' Death Was Never Enough</div>
+                        <div class="track-list-item__date">Added 1 month ago</div>
+                        <div class="track-list-item__duration">3:07</div>
+                        <button class="track-list-item__favorite">♡</button>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

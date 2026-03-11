@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Now Playing - One | MusicStream</title>
+    <link rel="stylesheet" href="./CSS/views/player.css">
+    <link rel="icon" href="./assets/icons/favico.ico" type="image/png">    
+</head>
+<body>
+    <!-- Header / Navegación superior -->
+    <header class="header">
+        <div class="header__container">
+            <!-- Logo -->
+            <div class="header__logo">
+                <img src="./assets/img/logo.png" class="logo">
+                <span class="header__logo-text">MusicStream</span>
+            </div>
+            <!-- Barra de búsqueda -->
+            <div class="header__search">
+                <button class="search__button">
+                    <img class="search__icon" src="./assets/icons/busqueda-de-lupa_1.svg" alt="lupa de busqueda">
+                </button>
+                <input type="search" class="search__input" placeholder="Search">
+            </div>
+            <!-- Navegación principal -->
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Browse</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="library.html" class="nav__link">Library</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="store.html" class="nav__link">Store</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Iconos de usuario -->
+            <div class="header__actions">
+                <button class="action__button action__button--notifications">
+                    <img class="action__icon" src="assets/icons/notificacion.svg" alt="notificacion">
+                </button>
+                <div class="user__profile">
+                    <img src="./assets/img/jugador.png" alt="User profile" class="user__avatar">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Contenido principal -->
+    <main class="player-page">
+        <!-- Columna izquierda - Reproducción actual -->
+        <section class="now-playing">
+            <div class="now-playing__container">
+                <!-- Portada del álbum -->
+                <div class="album-display">
+                    <div class="album-display__frame">
+                        <img src="./assets/img/One.jpg" alt="One-song cover" class="album-display__image">
+                    </div>
+                </div>
+                <!-- Información de la canción -->
+                <div class="track-info">
+                    <div class="track-info__header">
+                        <h1 class="track-info__title">One</h1>
+                        <button class="track-info__favorite">
+                            <span class="favorite__icon">♡</span>
+                        </button>
+                    </div>
+                    <p class="track-info__artist">Metallica</p>
+                    <p class="track-info__album">...And Justice For All</p>
+                </div>
+            </div>
+        </section>
+        <!-- Columna derecha - Cola de reproducción -->
+        <aside class="up-next">
+            <div class="up-next__container">
+                <h2 class="up-next__title">Up Next</h2>
+                <ul class="queue__list">
+                    <!-- Canción 1 -->
+                    <li class="queue__item">
+                        <div class="queue__item-container">
+                            <img src="./assets/img/One.jpg" alt="One-song-cover" class="queue__thumbnail">
+                            <div class="queue__info">
+                                <h3 class="queue__title">Blackened</h3>
+                                <p class="queue__artist">Metallica</p>
+                            </div>
+                        </div>
+                        <span class="queue__duration">6:42</span>
+                    </li>
+                    <!-- Canción 2 -->
+                    <li class="queue__item">
+                        <div class="queue__item-container">
+                            <img src="./assets/img/One.jpg" alt="One-song-cover" class="queue__thumbnail">
+                            <div class="queue__info">
+                                <h3 class="queue__title">...And Justice For All</h3>
+                                <p class="queue__artist">Metallica</p>
+                            </div>
+                        </div>
+                        <span class="queue__duration">9:45</span>
+                    </li>
+                    <!-- Canción 3 -->
+                    <li class="queue__item">
+                        <div class="queue__item-container">
+                            <img src="./assets/img/One.jpg" alt="One-song-cover" class="queue__thumbnail">
+                            <div class="queue__info">
+                                <h3 class="queue__title">Harvester Of Sorrow</h3>
+                                <p class="queue__artist">Metallica</p>
+                            </div>
+                        </div>
+                        <span class="queue__duration">5:45</span>
+                    </li>
+                    <!-- Canción 4 -->
+                    <li class="queue__item">
+                        <div class="queue__item-container">
+                            <img src="./assets/img/One.jpg" alt="One-song-cover" class="queue__thumbnail">
+                            <div class="queue__info">
+                                <h3 class="queue__title">To Live Is To Die</h3>
+                                <p class="queue__artist">Metallica</p>
+                            </div>
+                        </div>
+                        <span class="queue__duration">9:48</span>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+    <!-- Reproductor inferior -->
+    <footer class="player-bar">
+        <div class="player-bar__container">
+            <!-- Información de la canción actual -->
+            <div class="player-bar__info">
+                <img src="./assets/img/One.jpg" alt="one-cover song" class="player-bar__thumbnail">
+                <div class="player-bar__track-info">
+                    <h4 class="player-bar__title">One</h4>
+                    <p class="player-bar__artist">Metallica</p>
+                </div>
+                <button class="player-bar__favorite">
+                    <span class="player-bar__favorite-icon">♡</span>
+                </button>
+            </div>
+            <!-- Controles de reproducción -->
+            <div class="player-bar__controls">
+                <div class="player-bar__buttons">
+                    <button class="control__button control__button--shuffle">
+                        <img class="control__icon" src="assets/icons/reloj.svg" alt="reloj">
+                    </button>
+                    <button class="control__button control__button--previous">
+                        <img class="control__icon" src="assets/icons/back.svg" alt="backwards">
+                    </button>
+                    <button class="control__button control__button--play">
+                        <img class="control__icon" src="assets/icons/video-pause-button.svg" alt="pause">
+                    </button>
+                    <button class="control__button control__button--next">
+                        <img class="control__icon" src="assets/icons/fast-forward.svg" alt="forward">
+                    </button>
+                    <button class="control__button control__button--repeat">
+                        <img class="control__icon" src="assets/icons/cicle.svg" alt="bucle">
+                    </button>
+                </div>
+                <!-- Barra de progreso -->
+                <div class="player-bar__progress">
+                    <span class="progress__time progress__time--current">3:42</span>
+                    <div class="progress__container">
+                        <div class="progress__bar">
+                            <div class="progress__fill"></div>
+                        </div>
+                    </div>
+                    <span class="progress__time progress__time--total">7:26</span>
+                </div>
+            </div>
+            <!-- Controles de volumen y pantalla completa -->
+            <div class="player-bar__extras">
+                <div class="volume__control">
+                    <button class="volume__button">
+                        <img class="volume__icon" src="assets/icons/volume-up.svg" alt="volumen">
+                        <input type="range" class="volume__slider" min="0" max="100" value="70">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

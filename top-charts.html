@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Charts | MusicStream</title>
+    <link rel="stylesheet" href="./CSS/views/top-charts.css">
+    <link rel="icon" href="./assets/icons/favico.ico" type="image/png">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <img src="./assets/img/logo.png" class="logo" alt="MusicStream logo">
+                <span class="header__logo-text">MusicStream</span>
+            </div>
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="discover.html" class="nav__link">Discover</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="library.html" class="nav__link">Library</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Store</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__search">
+                <button class="search__button">
+                    <img class="search__icon" src="./assets/icons/busqueda-de-lupa_1.svg" alt="search">
+                </button>
+                <input type="search" class="search__input" placeholder=" | Artists, albums, tracks">
+            </div>
+            <div class="header__user">
+                <div class="user__avatar">
+                    <img src="./assets/img/jugador.png" alt="User avatar" class="user__avatar-img">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-wrapper">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2 class="sidebar__title">CATEGORIES</h2>
+            <nav class="sidebar__nav">
+                <ul class="sidebar__menu">
+                    <li class="sidebar__menu-item">
+                        <a href="new-releases.html" class="sidebar__link">
+                            <img src="./assets/icons/verificar.svg" class="link__icon" alt="check">
+                            <span class="link__text">New Releases</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__menu-item">
+                        <a href="genres.html" class="sidebar__link">
+                            <img src="./assets/icons/nota-musical.svg" class="link__icon" alt="music note">
+                            <span class="link__text">Genres</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__menu-item">
+                        <a href="top-charts.html" class="sidebar__link sidebar__link--active">
+                            <img src="./assets/icons/tendencia-alcista.svg" class="link__icon" alt="trending">
+                            <span class="link__text">Top Charts</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__menu-item">
+                        <a href="artists.html" class="sidebar__link">
+                            <img src="./assets/icons/herramienta-de-audio-de-voz-de-microfono-con-cable.svg" class="link__icon" alt="microphone">
+                            <span class="link__text">Artists</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+            <div class="content__header">
+                <h1 class="content__title">Top Charts</h1>
+                <p class="content__subtitle">The most popular albums and tracks right now</p>
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="filter-tabs">
+                <button class="filter-tab filter-tab--active">All Time</button>
+                <button class="filter-tab">This Week</button>
+                <button class="filter-tab">This Month</button>
+                <button class="filter-tab">This Year</button>
+            </div>
+
+            <!-- Top Albums -->
+            <section class="charts-section">
+                <h2 class="section__title">🏆 Top Albums</h2>
+                <div class="top-list">
+                    <!-- #1 -->
+                    <article class="top-item top-item--1">
+                        <div class="top-item__rank">
+                            <span class="rank__number">1</span>
+                            <span class="rank__trend">↑</span>
+                        </div>
+                        <div class="top-item__image">
+                            <img src="./assets/img/andjusticeforall.jpeg" alt="Metallica album" class="top-item__thumbnail">
+                        </div>
+                        <div class="top-item__info">
+                            <a href="album-detail2.html"><h3 class="top-item__title">...And Justice For All</h3></a>
+                            <p class="top-item__artist">Metallica</p>
+                        </div>
+                        <div class="top-item__stats">
+                            <span class="stats__value">2.5M</span>
+                            <span class="stats__label">Sales</span>
+                        </div>
+                        <button class="top-item__button">$9.99</button>
+                    </article>
+
+                    <!-- #2 -->
+                    <article class="top-item top-item--2">
+                        <div class="top-item__rank">
+                            <span class="rank__number">2</span>
+                            <span class="rank__trend">→</span>
+                        </div>
+                        <div class="top-item__image">
+                            <img src="./assets/img/diomedesdiaz.jpeg" alt="Diomedes album" class="top-item__thumbnail">
+                        </div>
+                        <div class="top-item__info">
+                            <a href="album-detail1.html"><h3 class="top-item__title">Vallenato</h3></a>
+                            <p class="top-item__artist">Diomedes Diaz</p>
+                        </div>
+                        <div class="top-item__stats">
+                            <span class="stats__value">1.8M</span>
+                            <span class="stats__label">Sales</span>
+                        </div>
+                        <button class="top-item__button">$12.99</button>
+                    </article>
+
+                    <!-- #3 -->
+                    <article class="top-item top-item--3">
+                        <div class="top-item__rank">
+                            <span class="rank__number">3</span>
+                            <span class="rank__trend">↑</span>
+                        </div>
+                        <div class="top-item__image">
+                            <img src="./assets/img/tildeathwasneverenough.jpg" alt="Violent Vira album" class="top-item__thumbnail">
+                        </div>
+                        <div class="top-item__info">
+                            <a href="album-detail3.html"><h3 class="top-item__title">Till' Death Was Never Enough</h3></a>
+                            <p class="top-item__artist">Violent Vira</p>
+                        </div>
+                        <div class="top-item__stats">
+                            <span class="stats__value">1.2M</span>
+                            <span class="stats__label">Sales</span>
+                        </div>
+                        <button class="top-item__button">$9.99</button>
+                    </article>
+
+                    <!-- #4 -->
+                    <article class="top-item top-item--4">
+                        <div class="top-item__rank">
+                            <span class="rank__number">4</span>
+                            <span class="rank__trend">↓</span>
+                        </div>
+                        <div class="top-item__image">
+                            <img src="./assets/img/radiohead.jpg" alt="Radiohead album" class="top-item__thumbnail">
+                        </div>
+                        <div class="top-item__info">
+                            <a href="album-detail4.html"><h3 class="top-item__title">Pablo Honey</h3></a>
+                            <p class="top-item__artist">Radiohead</p>
+                        </div>
+                        <div class="top-item__stats">
+                            <span class="stats__value">980K</span>
+                            <span class="stats__label">Sales</span>
+                        </div>
+                        <button class="top-item__button">$7.99</button>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Top Tracks -->
+            <section class="charts-section">
+                <h2 class="section__title">🎵 Top Tracks</h2>
+                <div class="top-list">
+                    <!-- #1 -->
+                    <article class="top-item top-item--1">
+                        <div class="top-item__rank">
+                            <span class="rank__number">1</span>
+                            <span class="rank__trend">↑</span>
+                        </div>
+                        <div class="top-item__image">
+                            <img src="./assets/img/One.jpg" alt="One song" class="top-item__thumbnail">
+                        </div>
+                        <div class="top-item__info">
+                            <a href="player2.html"><h3 class="top-item__title">One</h3></a>
+                            <p class="top-item__artist">Metallica</p>
+                        </div>
+                        <div class="top-item__stats">
+                            <span class="stats__value">5.2M</span>
+                            <span class="stats__label">Streams</span>
+                        </div>
+                        <button class="top-item__button">$1.29</button>
+                    </article>
+
+                    <!-- #2 -->
+                    <article class="top-item top-item--2">
+                        <div class="top-item__rank">
+                            <span class="rank__number">2</span>
+                            <span class="rank__trend">→</span>
+                        </div>
+                        <div class="top-item__image">
+                            <img src="./assets/img/radcan.jpg" alt="Creep song" class="top-item__thumbnail">
+                        </div>
+                        <div class="top-item__info">
+                            <a href="player3.html"><h3 class="top-item__title">Creep</h3></a>
+                            <p class="top-item__artist">Radiohead</p>
+                        </div>
+                        <div class="top-item__stats">
+                            <span class="stats__value">4.8M</span>
+                            <span class="stats__label">Streams</span>
+                        </div>
+                        <button class="top-item__button">$0.99</button>
+                    </article>
+
+                    <!-- #3 -->
+                    <article class="top-item top-item--3">
+                        <div class="top-item__rank">
+                            <span class="rank__number">3</span>
+                            <span class="rank__trend">↑</span>
+                        </div>
+                        <div class="top-item__image">
+                            <img src="./assets/img/Diomedes.jpg" alt="La Plata song" class="top-item__thumbnail">
+                        </div>
+                        <div class="top-item__info">
+                            <a href="player1.html"><h3 class="top-item__title">La Plata</h3></a>
+                            <p class="top-item__artist">Diomedes Diaz</p>
+                        </div>
+                        <div class="top-item__stats">
+                            <span class="stats__value">3.5M</span>
+                            <span class="stats__label">Streams</span>
+                        </div>
+                        <button class="top-item__button">$1.29</button>
+                    </article>
+
+                    <!-- #4 -->
+                    <article class="top-item top-item--4">
+                        <div class="top-item__rank">
+                            <span class="rank__number">4</span>
+                            <span class="rank__trend">NEW</span>
+                        </div>
+                        <div class="top-item__image">
+                            <img src="./assets/img/violentvira.jpeg" alt="Collar Of Truth" class="top-item__thumbnail">
+                        </div>
+                        <div class="top-item__info">
+                            <a href="player4.html"><h3 class="top-item__title">Collar Of Truth</h3></a>
+                            <p class="top-item__artist">Violent Vira</p>
+                        </div>
+                        <div class="top-item__stats">
+                            <span class="stats__value">2.1M</span>
+                            <span class="stats__label">Streams</span>
+                        </div>
+                        <button class="top-item__button">$1.29</button>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

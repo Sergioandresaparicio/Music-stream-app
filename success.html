@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase Successful | MusicStream</title>
+    <link rel="stylesheet" href="./CSS/views/success.css">
+    <link rel="icon" href="./assets/icons/favico.ico" type="image/png">
+</head>
+<body>
+    <!-- Header / Barra de navegación superior -->
+    <header class="header">
+        <div class="header__container">
+            <!-- Logo -->
+            <div class="header__logo">
+                <img src="./assets/img/logo.png" class="logo" alt="MusicStream">
+                <span class="header__logo-text">MusicStream</span>
+            </div>
+            <!-- Navegación principal -->
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="discover.html" class="nav__link">Discover</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="library.html" class="nav__link">Library</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="store.html" class="nav__link">Store</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Barra de búsqueda -->
+            <div class="header__search">
+                <button class="search__button">
+                    <img class="search__icon" src="./assets/icons/busqueda-de-lupa_1.svg" alt="lupa de busqueda">
+                </button>
+                <input type="search" class="search__input" placeholder="Artists, albums, tracks">
+            </div>
+            <!-- Perfil de usuario -->
+            <div class="header__user">
+                <div class="user__avatar">
+                    <img src="/music-stream-app/assets/img/jugador.png" alt="User avatar" class="user__avatar-img">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Contenedor principal con Sidebar -->
+    <div class="page-layout">
+        <!-- Sidebar / Menú lateral -->
+        <aside class="sidebar">
+            <h2 class="sidebar__title">MY MUSIC</h2>
+            <nav class="sidebar__nav">
+                <ul class="sidebar__menu">
+                    <li class="sidebar__menu-item">
+                        <a href="#" class="sidebar__link sidebar__link--active">
+                            <img src="./assets/icons/reloj2.svg" class="link__icon" alt="check verificador">
+                            <span class="link__text">Recently Purchased</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__menu-item">
+                        <a href="#" class="sidebar__link">
+                            <img src="./assets/icons/unidad-de-cd-convertido-de-png.svg" class="link__icon" alt="simbolo musical">
+                            <span class="link__text">My Albums</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__menu-item">
+                        <a href="#" class="sidebar__link">
+                            <img src="./assets/icons/amor-de-corazon.svg" class="link__icon" alt="flecha alcista">
+                            <span class="link__text">Liked Songs</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <!-- Contenido Principal (Confirmación) -->
+        <main class="content content--centered">
+            <!-- Tarjeta de confirmación -->
+            <div class="confirmation-card">
+                <!-- Icono de éxito -->
+                <div class="confirmation-card__icon-container">
+                    <img src="./assets/icons/comprobado-convertido-de-png.svg" class="confirmation-card__icon" alt="check verificador">
+                </div>
+                <!-- Título y Mensaje -->
+                <div class="confirmation-card__header">
+                    <h1 class="confirmation-card__title">Purchase Successful!</h1>
+                    <p class="confirmation-card__message">
+                        Thank you for your purchase. A confirmation email has been sent to your registered address. You can now find your new music in your library.
+                    </p>
+                </div>
+                <!-- Resumen del pedido -->
+                <div class="order-summary-card">
+                    <h2 class="order-summary-card__title">Order Summary</h2>
+                    <div class="order-summary-card__item">
+                        <div class="order-summary-card__item-image">
+                            <img src="/music-stream-app/assets/img/cachon.jpg" alt="Santo cachon cover" class="order-summary-card__thumbnail">
+                        </div>
+                        <div class="order-summary-card__item-info">
+                            <h3 class="order-summary-card__item-title">El Santo Cachon</h3>
+                            <p class="order-summary-card__item-artist">Diomedes Diaz</p>
+                        </div>
+                        <div class="order-summary-card__item-price">
+                            $12.99
+                        </div>
+                        <div class="order-summary-card__item-image">
+                            <img src="/music-stream-app/assets/img/Diomedes.jpg" alt="diomedes cover" class="order-summary-card__thumbnail">
+                        </div>
+                        <div class="order-summary-card__item-info">
+                            <h3 class="order-summary-card__item-title">La Ventana Marroncita</h3>
+                            <p class="order-summary-card__item-artist">Diomedes Diaz</p>
+                        </div>
+                        <div class="order-summary-card__item-price">
+                            $9.99
+                        </div>
+                    </div>
+                    <div class="order-summary-card__divider"></div>
+                    <div class="order-summary-card__totals">
+                        <div class="order-summary-card__total-row">
+                            <span class="order-summary-card__total-label">Total:</span>
+                            <span class="order-summary-card__total-value">$24.82</span>
+                        </div>
+                        <div class="order-summary-card__total-row">
+                            <span class="order-summary-card__total-label">Order ID:</span>
+                            <span class="order-summary-card__total-id">#ZPX-754-XLK-092</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Botones de acción -->
+                <div class="confirmation-card__actions">
+                    <button class="btn btn--secondary">
+                        View Order History
+                    </button>
+                    <a href="index.html" class="btn btn--primary">
+                        Return to Store
+                    </a>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicStream | Violent Vira</title>
+    <link rel="stylesheet" href="./CSS/views/album.css">
+    <link rel="icon" href="./assets/icons/favico.ico" type="image/png">
+</head>
+<body>
+    <!-- Header / Navegación principal -->
+    <header class="header">
+        <div class="header__container">
+            <!-- Logo -->
+            <div class="header__logo">
+                <img src="/music-stream-app/assets/img/logo.png" class="header__logo-icon" alt="MusicStream logo">
+                <span class="header__logo-text">MusicStream</span>
+            </div>
+            <!-- Barra de búsqueda -->
+            <div class="header__search">
+                <button class="search__button">
+                    <img class="search__icon" src="./assets/icons/busqueda-de-lupa_1.svg" alt="lupa de busqueda">
+                </button>
+                <input type="search" class="search__input" placeholder="  | Search artists, albums...">
+            </div>
+            <!-- Navegación principal -->
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link nav__link--active">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Browse</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="library.html" class="nav__link">Library</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Iconos de usuario -->
+            <div class="header__actions">
+                <button class="action__button">
+                    <a href="./cart.html"><img class="action__icon" src="assets/icons/carrito-de-compras.svg" alt="carrito-de-compras"></a>
+                </button>
+                <button class="action__button">
+                    <img class="action__icon" src="assets/icons/amor-de-corazon.svg" alt="favorito">
+                </button>
+                <div class="user__profile">
+                    <img src="assets/img/jugador.png" alt="User profile" class="user__avatar">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Contenido principal -->
+    <main class="main">
+        <!-- Breadcrumb / Migas de pan -->
+        <nav class="breadcrumb">
+            <ul class="breadcrumb__list">
+                <li class="breadcrumb__item">
+                    <a href="index.html" class="breadcrumb__link">Home</a>
+                </li>
+                <li class="breadcrumb__separator">/</li>
+                <li class="breadcrumb__item">
+                    <a href="artists.html" class="breadcrumb__link">Artist</a>
+                </li>
+                <li class="breadcrumb__separator">/</li>
+                <li class="breadcrumb__item">
+                    <span class="breadcrumb__link breadcrumb__link--current">Violent Vira</span>
+                </li>
+            </ul>
+        </nav>
+        <!-- Contenedor del álbum -->
+        <div class="album-container">
+            <!-- Columna izquierda - Información del álbum -->
+            <div class="album-info">
+                <!-- Portada del álbum -->
+                <div class="album-cover">
+                    <img src="./assets/img/tildeathwasneverenough.jpg" alt="Violent Vira album cover" class="album-cover__image">
+                </div>
+                <!-- Título y detalles -->
+                <div class="album-details">
+                    <h1 class="album-details__title">Till' Death Was Never Enough</h1>
+                    <p class="album-details__meta">
+                        <span class="album-details__artist">Violent Vira </span>
+                        <span class="album-details__separator">•</span>
+                        <span class="album-details__year"> 2023 </span>
+                        <span class="album-details__separator">•</span>
+                        <span class="album-details__genre"> Alternative/Independient, Rock</span>
+                    </p>
+                </div>
+                <!-- Botones de acción -->
+                <div class="album-actions">
+                    <button class="btn btn--primary btn--large">
+                        Add Album to Cart - $9.99
+                    </button>
+                    <div class="album-actions__secondary">
+                        <button class="btn btn--secondary">
+                            <span class="btn__icon">♡</span>
+                            <span class="btn__text">Wishlist</span>
+                        </button>
+                        <button class="btn btn--secondary">
+                            <span class="btn__icon">↗</span>
+                            <span class="btn__text">Share</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Columna derecha - Tracklist y contenido -->
+            <div class="album-content">
+                <!-- Lista de canciones -->
+                <section class="tracklist">
+                    <h2 class="tracklist__title">Tracklist</h2>
+                    <table class="tracklist__table">
+                        <thead class="tracklist__header">
+                            <tr class="tracklist__row tracklist__row--header">
+                                <th class="tracklist__cell tracklist__cell--number">#</th>
+                                <th class="tracklist__cell tracklist__cell--title">TITLE</th>
+                                <th class="tracklist__cell tracklist__cell--artist">ARTIST</th>
+                                <th class="tracklist__cell tracklist__cell--duration">
+                                    <img class="duration__icon" src="assets/icons/reloj.svg">
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="tracklist__body">
+                            <!-- Track 1 -->
+                            <tr class="tracklist__row">
+                                <td class="tracklist__cell tracklist__cell--number">1</td>
+                                <td class="tracklist__cell tracklist__cell--title">
+                                    <span class="track__title">You're Not Gone, You're Just Dead!</span>
+                                </td>
+                                <td class="tracklist__cell tracklist__cell--artist">
+                                    <span class="track__artist">Violent Vira</span>
+                                </td>
+                                <td class="tracklist__cell tracklist__cell--duration">
+                                    <span class="track__duration">2:55</span>
+                                </td>
+                            </tr>
+                            <!-- Track 2 -->
+                            <tr class="tracklist__row">
+                                <td class="tracklist__cell tracklist__cell--number">2</td>
+                                <td class="tracklist__cell tracklist__cell--title">
+                                    <span class="track__title">Amphetamines (Use Me)</span>
+                                </td>
+                                <td class="tracklist__cell tracklist__cell--artist">
+                                    <span class="track__artist">Violent Vira</span>
+                                </td>
+                                <td class="tracklist__cell tracklist__cell--duration">
+                                    <span class="track__duration">3:09</span>
+                                </td>
+                            </tr>
+                            <!-- Track 3 -->
+                            <tr class="tracklist__row">
+                                <td class="tracklist__cell tracklist__cell--number">3</td>
+                                <td class="tracklist__cell tracklist__cell--title">
+                                    <span class="track__title">Waiting Outside A Hospital</span>
+                                </td>
+                                <td class="tracklist__cell tracklist__cell--artist">
+                                    <span class="track__artist">Violent Vira</span>
+                                </td>
+                                <td class="tracklist__cell tracklist__cell--duration">
+                                    <span class="track__duration">3:22</span>
+                                </td>
+                            </tr>
+                            <!-- Track 4 -->
+                            <tr class="tracklist__row">
+                                <td class="tracklist__cell tracklist__cell--number">4</td>
+                                <td class="tracklist__cell tracklist__cell--title">
+                                    <span class="track__title">
+                                        <a href="player4.html">Collar Of Truth</a></span>
+                                </td>
+                                <td class="tracklist__cell tracklist__cell--artist">
+                                    <span class="track__artist">Violent Vira</span>
+                                </td>
+                                <td class="tracklist__cell tracklist__cell--duration">
+                                    <span class="track__duration">3:07</span>
+                                </td>
+                            </tr>
+                            <!-- Track 5 -->
+                            <tr class="tracklist__row">
+                                <td class="tracklist__cell tracklist__cell--number">5</td>
+                                <td class="tracklist__cell tracklist__cell--title">
+                                    <span class="track__title">God Complex</span>
+                                </td>
+                                <td class="tracklist__cell tracklist__cell--artist">
+                                    <span class="track__artist">Violent Vira</span>
+                                </td>
+                                <td class="tracklist__cell tracklist__cell--duration">
+                                    <span class="track__duration">2:09</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <!-- Tabs de información -->
+                <section class="album-tabs">
+                    <!-- Inputs radio ocultos para controlar las tabs con CSS puro -->
+                    <input type="radio" name="tabs" id="tab-about" class="tabs__input" checked>
+                    <input type="radio" name="tabs" id="tab-reviews" class="tabs__input">
+                    <input type="radio" name="tabs" id="tab-credits" class="tabs__input">
+                    <div class="tabs__navigation">
+                        <label for="tab-about" class="tabs__tab tabs__tab--active">About the Artist</label>
+                        <label for="tab-reviews" class="tabs__tab">Reviews</label>
+                        <label for="tab-credits" class="tabs__tab">Credits</label>
+                    </div>
+                    <div class="tabs__content">
+                        <!-- Panel 1: About the Artist -->
+                        <div class="tab-panel tab-panel--active">
+                            <p class="artist__description">
+                                Violent Vira es una artista emergente de rock y metal alternativo que ha captado la atención global gracias a su estilo visceral y cargado de emoción. Con una propuesta que fusiona texturas del alt-rock con elementos de metal, la cantante y compositora se ha consolidado como una figura destacada de la escena actual, destacando por sus letras introspectivas y una puesta en escena dinámica que conecta profundamente con una nueva generación de oyentes.
+                            </p>
+                            <a href="https://open.spotify.com/intl-es/artist/298H8XdYsBHii98wfAZT1S" class="artist__link" target="_blank">
+                                Read more on their page →
+                            </a>
+                        </div>
+                        <!-- Panel 2: Reviews -->
+                        <div class="tab-panel">
+                            <h3 class="reviews__title">Recepción de la Crítica</h3>
+                            <div class="reviews__list">
+                                <div class="review__item">
+                                    <div class="review__header">
+                                        <span class="review__source">Kerrang!</span>
+                                        <span class="review__rating">★★★★☆</span>
+                                    </div>
+                                    <p class="review__text">
+                                        "Violent Vira entrega un álbum crudo y honesto que resuena con la angustia de una generación. 'Till Death Was Never Enough' es una declaración poderosa de una artista que no tiene miedo de mostrar vulnerabilidad."
+                                    </p>
+                                    <span class="review__date">Marzo 2023</span>
+                                </div>
+                                <div class="review__item">
+                                    <div class="review__header">
+                                        <span class="review__source">Alternative Press</span>
+                                        <span class="review__rating">★★★★★</span>
+                                    </div>
+                                    <p class="review__text">
+                                        "Una obra maestra del rock alternativo moderno. La voz de Violent Vira combina perfectamente melodías cautivadoras con riffs pesados, creando un sonido único que define el género en 2023."
+                                    </p>
+                                    <span class="review__date">Abril 2023</span>
+                                </div>
+                                <div class="review__item">
+                                    <div class="review__header">
+                                        <span class="review__source">Pitchfork</span>
+                                        <span class="review__rating">★★★★☆</span>
+                                    </div>
+                                    <p class="review__text">
+                                        "Un debut impresionante que establece a Violent Vira como una voz importante en el rock contemporáneo. Las letras personales y la producción impecable hacen de este álbum una escucha obligatoria."
+                                    </p>
+                                    <span class="review__date">Febrero 2023</span>
+                                </div>
+                            </div>
+                            <div class="reviews__summary">
+                                <h4>Puntuación General</h4>
+                                <div class="reviews__score">
+                                    <span class="score__number">85</span>
+                                    <span class="score__label">de 100 basado en 32 reseñas</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Panel 3: Credits -->
+                        <div class="tab-panel">
+                            <h3 class="credits__title">Créditos del Álbum</h3>
+                            <div class="credits__grid">
+                                <div class="credits__section">
+                                    <h4 class="credits__section-title">Banda y Músicos</h4>
+                                    <ul class="credits__list">
+                                        <li><strong>Violent Vira</strong> - Voz principal, guitarra rítmica, composición</li>
+                                        <li><strong>Marcus Steel</strong> - Guitarra líder</li>
+                                        <li><strong>Elena Cross</strong> - Bajo eléctrico</li>
+                                        <li><strong>Jake Morrison</strong> - Batería, percusión</li>
+                                        <li><strong>Sarah Chen</strong> - Teclados, sintetizadores</li>
+                                    </ul>
+                                </div>
+                                <div class="credits__section">
+                                    <h4 class="credits__section-title">Producción</h4>
+                                    <ul class="credits__list">
+                                        <li><strong>Productor Ejecutivo:</strong> David Richardson</li>
+                                        <li><strong>Productor Musical:</strong> Violent Vira, Tom Anderson</li>
+                                        <li><strong>Ingeniero de Sonido:</strong> Mike Thompson</li>
+                                        <li><strong>Mezclado en:</strong> Abbey Road Studios, Londres</li>
+                                        <li><strong>Masterizado por:</strong> Emily Watts en Sterling Sound, NYC</li>
+                                    </ul>
+                                </div>
+                                <div class="credits__section">
+                                    <h4 class="credits__section-title">Información Técnica</h4>
+                                    <ul class="credits__list">
+                                        <li><strong>Grabado en:</strong> Sound City Studios, Los Angeles</li>
+                                        <li><strong>Fechas de grabación:</strong> Septiembre - Diciembre 2022</li>
+                                        <li><strong>Sello discográfico:</strong> Independent Records</li>
+                                        <li><strong>Duración total:</strong> 48:23</li>
+                                        <li><strong>Formato:</strong> Digital, Vinilo, CD</li>
+                                    </ul>
+                                </div>
+                                <div class="credits__section">
+                                    <h4 class="credits__section-title">Arte y Diseño</h4>
+                                    <ul class="credits__list">
+                                        <li><strong>Portada:</strong> "Fractured Soul" por Alex Rivera</li>
+                                        <li><strong>Diseño gráfico:</strong> Violent Vira, Studio Creative</li>
+                                        <li><strong>Fotografía:</strong> Jessica Moore</li>
+                                        <li><strong>Dirección de Arte:</strong> Brandon Lee</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="credits__notes">
+                                <h4>Notas Adicionales</h4>
+                                <p>
+                                    Este álbum marca el debut oficial de Violent Vira como artista solista después de años de colaboración 
+                                    con diversas bandas underground. Grabado principalmente en analógico para capturar la calidez del sonido 
+                                    clásico del rock, el álbum fue dedicado a todos aquellos que han luchado contra la salud mental. 
+                                    El 15% de las ganancias se donan a organizaciones de apoyo psicológico para jóvenes artistas.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <!-- Reproductor de música -->
+    <footer class="player">
+        <div class="player__container">
+            <!-- Información de la canción actual -->
+            <div class="player__info">
+                <img src="/music-stream-app/assets/img/violentvira.jpeg" alt="violentvira cover" class="player__thumbnail">
+                <div class="player__track-info">
+                    <h4 class="player__track-title">You're Not Gone, You're Just Dead!</h4>
+                    <p class="player__track-artist">Violent Vira</p>
+                </div>
+            </div>
+            <!-- Controles del reproductor -->
+            <div class="player__controls">
+                <div class="player__buttons">
+                    <button class="control__button">
+                        <img class="control__icon" src="assets/icons/reloj.svg" alt="reloj">
+                    </button>
+                    <button class="control__button">
+                        <img class="control__icon" src="assets/icons/back.svg" alt="backwards">
+                    </button>
+                    <button class="control__button control__button--play">
+                        <img class="control__icon" src="assets/icons/video-pause-button.svg" alt="pause">
+                    </button>
+                    <button class="control__button">
+                        <img class="control__icon" src="assets/icons/fast-forward.svg" alt="forward">
+                    </button>
+                    <button class="control__button">
+                        <img class="control__icon" src="assets/icons/cicle.svg" alt="bucle">
+                    </button>
+                </div>
+                <div class="player__progress">
+                    <span class="progress__time progress__time--current">0:45</span>
+                    <div class="progress__bar">
+                        <div class="progress__fill"></div>
+                    </div>
+                    <span class="progress__time progress__time--total">2:55</span>
+                </div>
+            </div>
+            <!-- Control de volumen -->
+            <div class="player__volume">
+                <button class="volume__button">
+                    <img class="volume__icon" src="assets/icons/volume-up.svg" alt="volumen">
+                    <input type="range" class="volume__slider" min="0" max="100" value="70">
+                </button>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
