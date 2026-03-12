@@ -8566,3 +8566,1551 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
 }
 
 ```
+______________________
+mansory de generos
+```
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Géneros | MusicStream</title>
+    <link rel="stylesheet" href="./CSS/views/mansory.css">
+    <link rel="icon" href="./assets/icons/favico.ico" type="image/png">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <img src="./assets/img/logo.png" class="logo" alt="MusicStream logo">
+                <span class="header__logo-text">MusicStream</span>
+            </div>
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="discover.html" class="nav__link">Discover</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="library.html" class="nav__link">Library</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Store</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__search">
+                <button class="search__button">
+                    <img class="search__icon" src="./assets/icons/busqueda-de-lupa_1.svg" alt="search">
+                </button>
+                <input type="search" class="search__input" placeholder=" | Artists, albums, tracks">
+            </div>
+            <div class="header__user">
+                <div class="user__avatar">
+                    <img src="./assets/img/jugador.png" alt="User avatar" class="user__avatar-img">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-wrapper">
+        <div class="content__header">
+            <h1 class="content__title">Galería de Géneros</h1>
+            <p class="content__subtitle">Explora música de diferentes géneros y descubre tu próximo sonido favorito</p>
+        </div>
+
+        <!-- Masonry Grid -->
+        <section class="masonry-section">
+            <div class="masonry-grid">
+                <!-- Rock -->
+                <article class="genre-card genre-card--rock">
+                    <div class="genre-card__gradient"></div>
+                    <div class="genre-card__image">
+                        <img src="./assets/img/andjusticeforall.jpeg" alt="Rock genre" class="genre-card__thumbnail">
+                    </div>
+                    <div class="genre-card__content">
+                        <h3 class="genre-card__title">Rock</h3>
+                        <p class="genre-card__count">1,234 Álbumes</p>
+                        <a href="index.html" class="genre-card__link">Explorar →</a>
+                    </div>
+                </article>
+
+                <!-- Metal -->
+                <article class="genre-card genre-card--metal">
+                    <div class="genre-card__gradient"></div>
+                    <div class="genre-card__image">
+                        <img src="./assets/img/One.jpg" alt="Metal genre" class="genre-card__thumbnail">
+                    </div>
+                    <div class="genre-card__content">
+                        <h3 class="genre-card__title">Metal</h3>
+                        <p class="genre-card__count">856 Álbumes</p>
+                        <a href="album-detail2.html" class="genre-card__link">Explorar →</a>
+                    </div>
+                </article>
+
+                <!-- Vallenato -->
+                <article class="genre-card genre-card--vallenato">
+                    <div class="genre-card__gradient"></div>
+                    <div class="genre-card__image">
+                        <img src="./assets/img/diomedesdiaz.jpeg" alt="Vallenato genre" class="genre-card__thumbnail">
+                    </div>
+                    <div class="genre-card__content">
+                        <h3 class="genre-card__title">Vallenato</h3>
+                        <p class="genre-card__count">432 Álbumes</p>
+                        <a href="album-detail1.html" class="genre-card__link">Explorar →</a>
+                    </div>
+                </article>
+
+                <!-- Alternative -->
+                <article class="genre-card genre-card--alternative">
+                    <div class="genre-card__gradient"></div>
+                    <div class="genre-card__image">
+                        <img src="./assets/img/tildeathwasneverenough.jpg" alt="Alternative genre" class="genre-card__thumbnail">
+                    </div>
+                    <div class="genre-card__content">
+                        <h3 class="genre-card__title">Alternative</h3>
+                        <p class="genre-card__count">678 Álbumes</p>
+                        <a href="album-detail3.html" class="genre-card__link">Explorar →</a>
+                    </div>
+                </article>
+
+                <!-- Grunge -->
+                <article class="genre-card genre-card--grunge">
+                    <div class="genre-card__gradient"></div>
+                    <div class="genre-card__image">
+                        <img src="./assets/img/radiohead.jpg" alt="Grunge genre" class="genre-card__thumbnail">
+                    </div>
+                    <div class="genre-card__content">
+                        <h3 class="genre-card__title">Grunge</h3>
+                        <p class="genre-card__count">523 Álbumes</p>
+                        <a href="album-detail4.html" class="genre-card__link">Explorar →</a>
+                    </div>
+                </article>
+
+                <!-- Pop -->
+                <article class="genre-card genre-card--pop">
+                    <div class="genre-card__gradient"></div>
+                    <div class="genre-card__image">
+                        <img src="./assets/img/violentvira.jpeg" alt="Pop genre" class="genre-card__thumbnail">
+                    </div>
+                    <div class="genre-card__content">
+                        <h3 class="genre-card__title">Pop</h3>
+                        <p class="genre-card__count">2,145 Álbumes</p>
+                        <a href="index.html" class="genre-card__link">Explorar →</a>
+                    </div>
+                </article>
+
+                <!-- Electronic -->
+                <article class="genre-card genre-card--electronic">
+                    <div class="genre-card__gradient"></div>
+                    <div class="genre-card__image">
+                        <img src="./assets/img/radcan.jpg" alt="Electronic genre" class="genre-card__thumbnail">
+                    </div>
+                    <div class="genre-card__content">
+                        <h3 class="genre-card__title">Electronic</h3>
+                        <p class="genre-card__count">1,567 Álbumes</p>
+                        <a href="index.html" class="genre-card__link">Explorar →</a>
+                    </div>
+                </article>
+
+                <!-- Indie -->
+                <article class="genre-card genre-card--indie">
+                    <div class="genre-card__gradient"></div>
+                    <div class="genre-card__image">
+                        <img src="./assets/img/cachon.jpg" alt="Indie genre" class="genre-card__thumbnail">
+                    </div>
+                    <div class="genre-card__content">
+                        <h3 class="genre-card__title">Indie</h3>
+                        <p class="genre-card__count">934 Álbumes</p>
+                        <a href="index.html" class="genre-card__link">Explorar →</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
+
+```
+
+```
+/* ========================================
+   RESET & BASE STYLES
+   ======================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0f172a;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* ========================================
+   HEADER STYLES
+   ======================================== */
+.header {
+    background-color: #161920;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.header__container {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.header__logo .logo {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.header__logo-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1db954;
+}
+
+.header__nav .nav__list {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav__link {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav__link:hover {
+    color: #ffffff;
+}
+
+.header__search {
+    display: flex;
+    align-items: center;
+    background-color: #282828;
+    border-radius: 50px;
+    padding: 0.5rem 1rem;
+}
+
+.search__button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.25rem;
+}
+
+.search__icon {
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+}
+
+.search__input {
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    padding: 0.25rem 0.5rem;
+    outline: none;
+    width: 200px;
+}
+
+.search__input::placeholder {
+    color: #b3b3b3;
+}
+
+.header__user .user__avatar-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* ========================================
+   MAIN CONTENT
+   ======================================== */
+.main-wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.content__header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.content__title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(135deg, #ffffff, #2962ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.content__subtitle {
+    color: #b3b3b3;
+    font-size: 1.1rem;
+}
+
+/* ========================================
+   MASONRY GRID - 4 COLUMNAS RESPONSIVAS
+   ======================================== */
+.masonry-section {
+    padding: 1rem 0;
+}
+
+.masonry-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    width: 100%;
+}
+
+/* ========================================
+   GENRE CARD STYLES
+   ======================================== */
+.genre-card {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    aspect-ratio: 1;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.genre-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+/* Degradados por género usando linear-gradient */
+.genre-card--rock .genre-card__gradient {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #dc143c 0%, #ff6b6b 100%);
+    opacity: 0.9;
+}
+
+.genre-card--metal .genre-card__gradient {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #2c2c2c 0%, #4a4a4a 100%);
+    opacity: 0.9;
+}
+
+.genre-card--vallenato .genre-card__gradient {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #f39c12 0%, #e74c3c 100%);
+    opacity: 0.9;
+}
+
+.genre-card--alternative .genre-card__gradient {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #9b59b6 0%, #3498db 100%);
+    opacity: 0.9;
+}
+
+.genre-card--grunge .genre-card__gradient {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #34495e 0%, #7f8c8d 100%);
+    opacity: 0.9;
+}
+
+.genre-card--pop .genre-card__gradient {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #ff69b4 0%, #ff1493 100%);
+    opacity: 0.9;
+}
+
+.genre-card--electronic .genre-card__gradient {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #00d4ff 0%, #7b2cbf 100%);
+    opacity: 0.9;
+}
+
+.genre-card--indie .genre-card__gradient {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #27ae60 0%, #1abc9c 100%);
+    opacity: 0.9;
+}
+
+/* Imagen en la esquina con object-fit: cover */
+.genre-card__image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    z-index: 2;
+}
+
+.genre-card__thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px 0 0 0;
+    box-shadow: -4px -4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Contenido de la tarjeta */
+.genre-card__content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1.5rem;
+    z-index: 3;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
+}
+
+.genre-card__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.genre-card__count {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 0.5rem;
+}
+
+.genre-card__link {
+    color: #1db954;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.genre-card__link:hover {
+    color: #1ed760;
+}
+
+/* ========================================
+   MEDIA QUERIES - RESPONSIVE
+   ======================================== */
+
+/* Tablet - 3 columnas */
+@media screen and (max-width: 1200px) {
+    .masonry-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Tablet pequeña - 2 columnas */
+@media screen and (max-width: 900px) {
+    .masonry-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .header__container {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    
+    .header__nav .nav__list {
+        gap: 1rem;
+    }
+    
+    .search__input {
+        width: 150px;
+    }
+}
+
+/* Móvil - 1 columna */
+@media screen and (max-width: 600px) {
+    .masonry-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .header {
+        padding: 1rem;
+    }
+    
+    .header__container {
+        justify-content: center;
+    }
+    
+    .header__nav {
+        order: 3;
+        width: 100%;
+    }
+    
+    .header__nav .nav__list {
+        justify-content: center;
+        gap: 1.5rem;
+    }
+    
+    .header__search {
+        order: 2;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .search__input {
+        width: 200px;
+    }
+    
+    .content__title {
+        font-size: 1.8rem;
+    }
+    
+    .content__subtitle {
+        font-size: 1rem;
+    }
+    
+    .main-wrapper {
+        padding: 1rem;
+    }
+    
+    .genre-card__image {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .genre-card__title {
+        font-size: 1.3rem;
+    }
+}
+
+/* Móvil pequeño */
+@media screen and (max-width: 400px) {
+    .header__nav .nav__list {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    
+    .genre-card__image {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+```
+____________________________________
+
+newslewtter
+```
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark">
+    <title>MusicStream Newsletter - Album of the Week</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/views/newsletter.css">
+</head>
+<body>
+    <!-- Contenedor principal del email -->
+    <div class="email-container">
+        
+        <!-- Header -->
+        <header class="email-header">
+            <div class="header__content">
+                <div class="header__logo">
+                    <img src="./assets/img/logo.png" alt="MusicStream logo" class="logo">
+                    <span class="header__logo-text">MusicStream</span>
+                </div>
+                <div class="header__user">
+                    <img src="./assets/img/jugador.png" alt="User" class="user-avatar">
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero__badge">ALBUM OF THE WEEK</div>
+            <div class="hero__content">
+                <div class="hero__image-wrapper">
+                    <img src="./assets/img/tildeathwasneverenough.jpg" alt="Till' Death Was Never Enough - Violent Vira" class="hero__album-cover">
+                </div>
+                <div class="hero__info">
+                    <h1 class="hero__title">Till' Death Was Never Enough</h1>
+                    <p class="hero__artist">Violent Vira</p>
+                    <p class="hero__description">The breakthrough debut album from alternative rock sensation Violent Vira. A raw and emotional journey through modern rock landscapes.</p>
+                    <div class="hero__cta">
+                        <button class="btn btn--primary">Buy Now - $9.99</button>
+                        <button class="btn btn--secondary">Listen Preview</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tracks Section -->
+        <section class="tracks-section">
+            <h2 class="section__title">TRACK LIST</h2>
+            <div class="tracks-list">
+                
+                <!-- Track 1 -->
+                <div class="track-item">
+                    <div class="track__number">01</div>
+                    <div class="track__image-wrapper">
+                        <img src="./assets/img/tildeathwasneverenough.jpg" alt="Collar Of Truth" class="track__thumb">
+                    </div>
+                    <div class="track__info">
+                        <h3 class="track__title">Collar Of Truth</h3>
+                        <p class="track__duration">4:32</p>
+                    </div>
+                    <div class="track__price">$1.29</div>
+                </div>
+
+                <!-- Track 2 -->
+                <div class="track-item">
+                    <div class="track__number">02</div>
+                    <div class="track__image-wrapper">
+                        <img src="./assets/img/tildeathwasneverenough.jpg" alt="Broken Promises" class="track__thumb">
+                    </div>
+                    <div class="track__info">
+                        <h3 class="track__title">Broken Promises</h3>
+                        <p class="track__duration">3:45</p>
+                    </div>
+                    <div class="track__price">$1.29</div>
+                </div>
+
+                <!-- Track 3 -->
+                <div class="track-item">
+                    <div class="track__number">03</div>
+                    <div class="track__image-wrapper">
+                        <img src="./assets/img/tildeathwasneverenough.jpg" alt="Fading Memories" class="track__thumb">
+                    </div>
+                    <div class="track__info">
+                        <h3 class="track__title">Fading Memories</h3>
+                        <p class="track__duration">5:12</p>
+                    </div>
+                    <div class="track__price">$1.29</div>
+                </div>
+
+                <!-- Track 4 -->
+                <div class="track-item">
+                    <div class="track__number">04</div>
+                    <div class="track__image-wrapper">
+                        <img src="./assets/img/tildeathwasneverenough.jpg" alt="Silent Screams" class="track__thumb">
+                    </div>
+                    <div class="track__info">
+                        <h3 class="track__title">Silent Screams</h3>
+                        <p class="track__duration">4:08</p>
+                    </div>
+                    <div class="track__price">$1.29</div>
+                </div>
+
+                <!-- Track 5 -->
+                <div class="track-item">
+                    <div class="track__number">05</div>
+                    <div class="track__image-wrapper">
+                        <img src="./assets/img/tildeathwasneverenough.jpg" alt="Last Goodbye" class="track__thumb">
+                    </div>
+                    <div class="track__info">
+                        <h3 class="track__title">Last Goodbye</h3>
+                        <p class="track__duration">3:58</p>
+                    </div>
+                    <div class="track__price">$1.29</div>
+                </div>
+
+            </div>
+            <div class="tracks__footer">
+                <p class="tracks__total">12 tracks total • 52:18 min</p>
+                <button class="btn btn--full">Buy Full Album - $9.99</button>
+            </div>
+        </section>
+
+        <!-- Special Offer Section -->
+        <section class="offer-section">
+            <div class="offer__content">
+                <h3 class="offer__title">🎵 Special Offer</h3>
+                <p class="offer__text">Get 20% off your first purchase with code: <strong>NEWRELEASE20</strong></p>
+                <p class="offer__validity">Valid until March 31, 2026</p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="email-footer">
+            <div class="footer__social">
+                <h4 class="footer__title">Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#" class="social-icon" aria-label="Facebook">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Twitter">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Instagram">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="YouTube">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Spotify">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer__links">
+                <a href="#" class="footer__link">Unsubscribe</a>
+                <span class="footer__separator">•</span>
+                <a href="#" class="footer__link">Preferences</a>
+                <span class="footer__separator">•</span>
+                <a href="#" class="footer__link">Privacy Policy</a>
+            </div>
+            
+            <div class="footer__info">
+                <p class="footer__text">© 2026 MusicStream. All rights reserved.</p>
+                <p class="footer__address">123 Music Street, Sound City, SC 12345</p>
+                <p class="footer__disclaimer">You received this email because you subscribed to our newsletter.</p>
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>
+
+```
+
+```
+/* =========================================
+   NEWSLETTER STYLES - MusicStream
+   ========================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Variables */
+:root {
+    /* Colores - Mismos que el sitio principal */
+    --bg-body: #0f172a;
+    --bg-header: #161920;
+    --bg-card: #1e293b;
+    --bg-card-hover: #252932;
+    --primary-blue: #2962ff;
+    --primary-blue-light: rgba(41, 98, 255, 0.15);
+    --text-main: #ffffff;
+    --text-secondary: #94a3b8;
+    --border-color: #2a2e38;
+    
+    /* Dimensiones - Exactamente como el sitio principal */
+    --header-height: 80px;
+    --radius-lg: 24px;
+    --radius-md: 16px;
+    --radius-sm: 8px;
+    
+    /* Fuente Roboto */
+    --font-roboto: 'Roboto', system-ui, -apple-system, sans-serif;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-roboto);
+    background-color: var(--bg-body);
+    color: var(--text-main);
+    line-height: 1.6;
+    width: 100%;
+    min-width: 320px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* =========================================
+   EMAIL CONTAINER
+   ========================================= */
+.email-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--bg-body);
+    overflow: hidden;
+}
+
+/* =========================================
+   HEADER
+   ========================================= */
+.email-header {
+    background-color: var(--bg-header);
+    border-bottom: 1px solid var(--border-color);
+    padding: 1rem 1.5rem;
+}
+
+.header__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    height: 32px;
+    width: auto;
+    min-width: 32px;
+}
+
+.header__logo-text {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-main);
+    white-space: nowrap;
+}
+
+.header__user {
+    flex-shrink: 0;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--border-color);
+}
+
+/* =========================================
+   HERO SECTION
+   ========================================= */
+.hero-section {
+    background: linear-gradient(135deg, var(--bg-card) 0%, var(--bg-body) 100%);
+    padding: 2rem 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.hero__badge {
+    display: inline-block;
+    background-color: var(--primary-blue);
+    color: var(--text-main);
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.hero__image-wrapper {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.hero__album-cover {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.hero__info {
+    text-align: center;
+}
+
+.hero__title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--text-main);
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+
+.hero__artist {
+    font-size: 1.25rem;
+    color: var(--primary-blue);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.hero__description {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    max-width: 100%;
+}
+
+.hero__cta {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Buttons */
+.btn {
+    font-family: var(--font-roboto);
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.btn--primary {
+    background-color: var(--primary-blue);
+    color: var(--text-main);
+    box-shadow: 0 4px 15px rgba(41, 98, 255, 0.4);
+}
+
+.btn--primary:hover {
+    background-color: #1e4bd1;
+    transform: translateY(-2px);
+}
+
+.btn--secondary {
+    background-color: transparent;
+    color: var(--text-main);
+    border: 2px solid var(--border-color);
+}
+
+.btn--secondary:hover {
+    border-color: var(--primary-blue);
+    color: var(--primary-blue);
+}
+
+.btn--full {
+    width: 100%;
+    background-color: var(--primary-blue);
+    color: var(--text-main);
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+/* =========================================
+   TRACKS SECTION
+   ========================================= */
+.tracks-section {
+    padding: 2rem 1.5rem;
+    background-color: var(--bg-body);
+}
+
+.section__title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.tracks-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.track-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--bg-card);
+    padding: 1rem;
+    border-radius: var(--radius-sm);
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.track-item:hover {
+    background-color: var(--bg-card-hover);
+    border-color: rgba(41, 98, 255, 0.3);
+    transform: translateX(5px);
+}
+
+.track__number {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--primary-blue);
+    min-width: 32px;
+    text-align: center;
+}
+
+.track__image-wrapper {
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.track__thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.track__info {
+    flex-grow: 1;
+    min-width: 0;
+}
+
+.track__title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-main);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 0.25rem;
+}
+
+.track__duration {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.track__price {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--primary-blue);
+    white-space: nowrap;
+}
+
+.tracks__footer {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.tracks__total {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+/* =========================================
+   OFFER SECTION
+   ========================================= */
+.offer-section {
+    background: linear-gradient(135deg, var(--primary-blue-light) 0%, var(--bg-card) 100%);
+    padding: 2rem 1.5rem;
+    text-align: center;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.offer__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 0.75rem;
+}
+
+.offer__text {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+}
+
+.offer__text strong {
+    color: var(--primary-blue);
+    font-weight: 700;
+}
+
+.offer__validity {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+/* =========================================
+   FOOTER
+   ========================================= */
+.email-footer {
+    background-color: var(--bg-header);
+    padding: 2rem 1.5rem;
+    text-align: center;
+}
+
+.footer__social {
+    margin-bottom: 1.5rem;
+}
+
+.footer__title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-main);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: var(--bg-card);
+    border-radius: 50%;
+    color: var(--text-secondary);
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: var(--primary-blue);
+    color: var(--text-main);
+    transform: translateY(-3px);
+}
+
+.social-icon svg {
+    width: 20px;
+    height: 20px;
+}
+
+.footer__links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.footer__link {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    transition: color 0.3s ease;
+}
+
+.footer__link:hover {
+    color: var(--primary-blue);
+}
+
+.footer__separator {
+    color: var(--border-color);
+}
+
+.footer__info {
+    border-top: 1px solid var(--border-color);
+    padding-top: 1.5rem;
+}
+
+.footer__text {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+}
+
+.footer__address {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+}
+
+.footer__disclaimer {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    opacity: 0.7;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+   ========================================= */
+
+/* Tablets (769px - 1024px) */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .email-container {
+        max-width: 100%;
+    }
+    
+    .hero__title {
+        font-size: 1.75rem;
+    }
+    
+    .hero__artist {
+        font-size: 1.1rem;
+    }
+}
+
+/* Mobile Large (481px - 768px) */
+@media (max-width: 768px) and (min-width: 481px) {
+    .email-header {
+        padding: 1rem;
+    }
+    
+    .hero-section {
+        padding: 1.5rem 1rem;
+    }
+    
+    .hero__title {
+        font-size: 1.5rem;
+    }
+    
+    .hero__artist {
+        font-size: 1rem;
+    }
+    
+    .hero__description {
+        font-size: 0.9rem;
+    }
+    
+    .hero__cta {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .btn {
+        width: 100%;
+    }
+    
+    .tracks-section {
+        padding: 1.5rem 1rem;
+    }
+    
+    .track-item {
+        padding: 0.75rem;
+    }
+    
+    .track__image-wrapper {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .track__title {
+        font-size: 0.9rem;
+    }
+    
+    .offer-section {
+        padding: 1.5rem 1rem;
+    }
+    
+    .offer__title {
+        font-size: 1.25rem;
+    }
+    
+    .email-footer {
+        padding: 1.5rem 1rem;
+    }
+}
+
+/* Mobile Small (320px - 480px) */
+@media (max-width: 480px) and (min-width: 320px) {
+    .email-header {
+        padding: 0.75rem;
+    }
+    
+    .logo {
+        height: 28px;
+    }
+    
+    .header__logo-text {
+        font-size: 1.1rem;
+    }
+    
+    .user-avatar {
+        width: 36px;
+        height: 36px;
+    }
+    
+    .hero-section {
+        padding: 1.25rem 1rem;
+    }
+    
+    .hero__badge {
+        font-size: 0.7rem;
+        padding: 0.4rem 0.8rem;
+    }
+    
+    .hero__title {
+        font-size: 1.25rem;
+    }
+    
+    .hero__artist {
+        font-size: 0.95rem;
+    }
+    
+    .hero__description {
+        font-size: 0.85rem;
+    }
+    
+    .hero__cta {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .btn {
+        width: 100%;
+        padding: 0.75rem 1.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .section__title {
+        font-size: 1.1rem;
+    }
+    
+    .tracks-section {
+        padding: 1.25rem 1rem;
+    }
+    
+    .track-item {
+        padding: 0.75rem;
+        gap: 0.75rem;
+    }
+    
+    .track__number {
+        font-size: 0.9rem;
+        min-width: 28px;
+    }
+    
+    .track__image-wrapper {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .track__title {
+        font-size: 0.85rem;
+    }
+    
+    .track__duration {
+        font-size: 0.8rem;
+    }
+    
+    .track__price {
+        font-size: 0.85rem;
+    }
+    
+    .offer-section {
+        padding: 1.25rem 1rem;
+    }
+    
+    .offer__title {
+        font-size: 1.1rem;
+    }
+    
+    .offer__text {
+        font-size: 0.9rem;
+    }
+    
+    .email-footer {
+        padding: 1.25rem 1rem;
+    }
+    
+    .footer__title {
+        font-size: 0.9rem;
+    }
+    
+    .social-icons {
+        gap: 0.75rem;
+    }
+    
+    .social-icon {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .social-icon svg {
+        width: 18px;
+        height: 18px;
+    }
+    
+    .footer__links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .footer__separator {
+        display: none;
+    }
+    
+    .footer__link {
+        font-size: 0.8rem;
+    }
+    
+    .footer__text,
+    .footer__address {
+        font-size: 0.75rem;
+    }
+    
+    .footer__disclaimer {
+        font-size: 0.7rem;
+    }
+}
+
+/* Mobile Very Small (320px - 392px) */
+@media (max-width: 392px) and (min-width: 320px) {
+    .header__logo-text {
+        font-size: 1rem;
+    }
+    
+    .logo {
+        height: 26px;
+    }
+    
+    .user-avatar {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .hero__title {
+        font-size: 1.1rem;
+    }
+    
+    .hero__artist {
+        font-size: 0.9rem;
+    }
+    
+    .track-item {
+        padding: 0.6rem;
+    }
+    
+    .track__image-wrapper {
+        width: 36px;
+        height: 36px;
+    }
+    
+    .track__title {
+        font-size: 0.8rem;
+    }
+    
+    .track__duration {
+        font-size: 0.75rem;
+    }
+    
+    .track__price {
+        font-size: 0.8rem;
+    }
+}
+
+/* Specific adjustments for 393px width */
+@media (width: 393px) {
+    .header__logo-text {
+        font-size: 1.1rem;
+    }
+    
+    .logo {
+        height: 28px;
+    }
+    
+    .user-avatar {
+        width: 36px;
+        height: 36px;
+    }
+    
+    .hero__title {
+        font-size: 1.3rem;
+    }
+}
+
+/* Prevent overflow */
+@media screen and (max-width: 100vw) {
+    body {
+        overflow-x: hidden;
+    }
+    
+    .email-container {
+        max-width: 100%;
+    }
+}
+
+/* Animation for tracks */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.track-item {
+    animation: slideIn 0.4s ease forwards;
+}
+
+.track-item:nth-child(1) { animation-delay: 0.1s; }
+.track-item:nth-child(2) { animation-delay: 0.2s; }
+.track-item:nth-child(3) { animation-delay: 0.3s; }
+.track-item:nth-child(4) { animation-delay: 0.4s; }
+.track-item:nth-child(5) { animation-delay: 0.5s; }
+
+/* Hover effects for better UX */
+@media (hover: hover) {
+    .track-item:hover .track__thumb {
+        transform: scale(1.05);
+    }
+    
+    .hero__image-wrapper:hover {
+        box-shadow: 0 15px 40px rgba(41, 98, 255, 0.3);
+    }
+}
+
+```
