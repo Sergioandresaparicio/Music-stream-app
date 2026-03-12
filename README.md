@@ -6470,3 +6470,2099 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
 .results-section:nth-child(4) { animation-delay: 0.2s; }
 ```
 
+_________________________________________________________
+ejercicio 1 barras
+```
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artists | MusicStream</title>
+    <link rel="stylesheet" href="./CSS/views/artists.css">
+    <link rel="icon" href="./assets/icons/favico.ico" type="image/png">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <img src="./assets/img/logo.png" class="logo" alt="MusicStream logo">
+                <span class="header__logo-text">MusicStream</span>
+            </div>
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="discover.html" class="nav__link">Discover</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="library.html" class="nav__link">Library</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Store</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__search">
+                <button class="search__button">
+                    <img class="search__icon" src="./assets/icons/busqueda-de-lupa_1.svg" alt="search">
+                </button>
+                <input type="search" class="search__input" placeholder=" | Artists, albums, tracks">
+            </div>
+            <div class="header__user">
+                <div class="user__avatar">
+                    <img src="./assets/img/jugador.png" alt="User avatar" class="user__avatar-img">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-wrapper">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2 class="sidebar__title">CATEGORIES</h2>
+            <nav class="sidebar__nav">
+                <ul class="sidebar__menu">
+                    <li class="sidebar__menu-item">
+                        <a href="new-releases.html" class="sidebar__link">
+                            <img src="./assets/icons/verificar.svg" class="link__icon" alt="check">
+                            <span class="link__text">New Releases</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__menu-item">
+                        <a href="genres.html" class="sidebar__link">
+                            <img src="./assets/icons/nota-musical.svg" class="link__icon" alt="music note">
+                            <span class="link__text">Genres</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__menu-item">
+                        <a href="top-charts.html" class="sidebar__link">
+                            <img src="./assets/icons/tendencia-alcista.svg" class="link__icon" alt="trending">
+                            <span class="link__text">Top Charts</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__menu-item">
+                        <a href="artists.html" class="sidebar__link sidebar__link--active">
+                            <img src="./assets/icons/herramienta-de-audio-de-voz-de-microfono-con-cable.svg" class="link__icon" alt="microphone">
+                            <span class="link__text">Artists</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+            <div class="content__header">
+                <h1 class="content__title">Featured Artists</h1>
+                <p class="content__subtitle">Discover amazing artists from around the world</p>
+            </div>
+
+            <!-- Artist Statistics Dashboard -->
+            <section class="stats-dashboard">
+                <h2 class="section__title">📊 Artist Statistics Dashboard</h2>
+                <div class="dashboard-grid">
+                    <!-- Monthly Listeners Widget -->
+                    <div class="dashboard-widget widget-listeners">
+                        <div class="widget__header">
+                            <img src="./assets/icons/nota-musical.svg" class="widget__icon" alt="listeners">
+                            <h3 class="widget__title">Monthly Listeners</h3>
+                        </div>
+                        <div class="widget__content">
+                            <span class="widget__value">847,293</span>
+                            <span class="widget__change widget__change--positive">+12.5% vs last month</span>
+                        </div>
+                        <div class="widget__mini-chart">
+                            <div class="mini-bar" style="height: 40%"></div>
+                            <div class="mini-bar" style="height: 60%"></div>
+                            <div class="mini-bar" style="height: 45%"></div>
+                            <div class="mini-bar" style="height: 75%"></div>
+                            <div class="mini-bar" style="height: 90%"></div>
+                            <div class="mini-bar" style="height: 85%"></div>
+                            <div class="mini-bar" style="height: 100%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Top Countries Widget -->
+                    <div class="dashboard-widget widget-countries">
+                        <div class="widget__header">
+                            <img src="./assets/icons/tendencia-alcista.svg" class="widget__icon" alt="countries">
+                            <h3 class="widget__title">Top Countries</h3>
+                        </div>
+                        <div class="widget__content">
+                            <ul class="countries-list">
+                                <li class="country-item">
+                                    <span class="country-flag">🇺🇸</span>
+                                    <span class="country-name">United States</span>
+                                    <span class="country-percentage">32%</span>
+                                </li>
+                                <li class="country-item">
+                                    <span class="country-flag">🇲🇽</span>
+                                    <span class="country-name">Mexico</span>
+                                    <span class="country-percentage">24%</span>
+                                </li>
+                                <li class="country-item">
+                                    <span class="country-flag">🇧🇷</span>
+                                    <span class="country-name">Brazil</span>
+                                    <span class="country-percentage">18%</span>
+                                </li>
+                                <li class="country-item">
+                                    <span class="country-flag">🇪🇸</span>
+                                    <span class="country-name">Spain</span>
+                                    <span class="country-percentage">14%</span>
+                                </li>
+                                <li class="country-item">
+                                    <span class="country-flag">🇦🇷</span>
+                                    <span class="country-name">Argentina</span>
+                                    <span class="country-percentage">12%</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Visual Chart Widget -->
+                    <div class="dashboard-widget widget-chart">
+                        <div class="widget__header">
+                            <img src="./assets/icons/verificar.svg" class="widget__icon" alt="chart">
+                            <h3 class="widget__title">Streaming Activity (Last 7 Days)</h3>
+                        </div>
+                        <div class="widget__content">
+                            <div class="visual-chart">
+                                <div class="chart-container">
+                                    <div class="chart-bar" style="height: 45%">
+                                        <span class="chart-day">Mon</span>
+                                        <span class="chart-value">45K</span>
+                                    </div>
+                                    <div class="chart-bar" style="height: 62%">
+                                        <span class="chart-day">Tue</span>
+                                        <span class="chart-value">62K</span>
+                                    </div>
+                                    <div class="chart-bar" style="height: 38%">
+                                        <span class="chart-day">Wed</span>
+                                        <span class="chart-value">38K</span>
+                                    </div>
+                                    <div class="chart-bar" style="height: 78%">
+                                        <span class="chart-day">Thu</span>
+                                        <span class="chart-value">78K</span>
+                                    </div>
+                                    <div class="chart-bar" style="height: 95%">
+                                        <span class="chart-day">Fri</span>
+                                        <span class="chart-value">95K</span>
+                                    </div>
+                                    <div class="chart-bar" style="height: 88%">
+                                        <span class="chart-day">Sat</span>
+                                        <span class="chart-value">88K</span>
+                                    </div>
+                                    <div class="chart-bar" style="height: 72%">
+                                        <span class="chart-day">Sun</span>
+                                        <span class="chart-value">72K</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Total Streams Widget -->
+                    <div class="dashboard-widget widget-streams">
+                        <div class="widget__header">
+                            <img src="./assets/icons/herramienta-de-audio-de-voz-de-microfono-con-cable.svg" class="widget__icon" alt="streams">
+                            <h3 class="widget__title">Total Streams</h3>
+                        </div>
+                        <div class="widget__content">
+                            <span class="widget__value">24.8M</span>
+                            <span class="widget__change widget__change--positive">+8.2% vs last week</span>
+                        </div>
+                        <div class="widget__progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 78%"></div>
+                            </div>
+                            <span class="progress-label">78% of monthly goal</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Filter -->
+            <div class="filter-tabs">
+                <button class="filter-tab filter-tab--active">All Artists</button>
+                <button class="filter-tab">A-Z</button>
+                <button class="filter-tab">Popular</button>
+                <button class="filter-tab">New</button>
+            </div>
+
+            <!-- Artists Grid -->
+            <section class="artists-section">
+                <div class="artists-grid">
+                    <!-- Metallica -->
+                    <article class="artist-card">
+                        <div class="artist-card__image">
+                            <img src="./assets/img/andjusticeforall.jpeg" alt="Metallica" class="artist-card__thumbnail">
+                        </div>
+                        <div class="artist-card__info">
+                            <h3 class="artist-card__name">Metallica</h3>
+                            <p class="artist-card__genre">Thrash Metal</p>
+                            <p class="artist-card__followers">25.4M Followers</p>
+                            <a href="album-detail2.html" class="artist-card__button">View Profile</a>
+                        </div>
+                    </article>
+
+                    <!-- Diomedes Diaz -->
+                    <article class="artist-card">
+                        <div class="artist-card__image">
+                            <img src="./assets/img/diomedesdiaz.jpeg" alt="Diomedes Diaz" class="artist-card__thumbnail">
+                        </div>
+                        <div class="artist-card__info">
+                            <h3 class="artist-card__name">Diomedes Diaz</h3>
+                            <p class="artist-card__genre">Vallenato</p>
+                            <p class="artist-card__followers">18.2M Followers</p>
+                            <a href="album-detail1.html" class="artist-card__button">View Profile</a>
+                        </div>
+                    </article>
+
+                    <!-- Violent Vira -->
+                    <article class="artist-card">
+                        <div class="artist-card__image">
+                            <img src="./assets/img/tildeathwasneverenough.jpg" alt="Violent Vira" class="artist-card__thumbnail">
+                        </div>
+                        <div class="artist-card__info">
+                            <h3 class="artist-card__name">Violent Vira</h3>
+                            <p class="artist-card__genre">Alternative Rock</p>
+                            <p class="artist-card__followers">5.8M Followers</p>
+                            <a href="album-detail3.html" class="artist-card__button">View Profile</a>
+                        </div>
+                    </article>
+
+                    <!-- Radiohead -->
+                    <article class="artist-card">
+                        <div class="artist-card__image">
+                            <img src="./assets/img/radiohead.jpg" alt="Radiohead" class="artist-card__thumbnail">
+                        </div>
+                        <div class="artist-card__info">
+                            <h3 class="artist-card__name">Radiohead</h3>
+                            <p class="artist-card__genre">Alternative Rock</p>
+                            <p class="artist-card__followers">22.1M Followers</p>
+                            <a href="album-detail4.html" class="artist-card__button">View Profile</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Trending Artists -->
+            <section class="trending-section">
+                <h2 class="section__title">🔥 Trending Artists</h2>
+                <div class="trending-grid">
+                    <article class="trending-card">
+                        <div class="trending-card__content">
+                            <img src="./assets/img/One.jpg" alt="Metallica trending" class="trending-card__image">
+                            <div class="trending-card__overlay">
+                                <h3 class="trending-card__name">Metallica</h3>
+                                <p class="trending-card__stats">+15% this week</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="trending-card">
+                        <div class="trending-card__content">
+                            <img src="./assets/img/violentvira.jpeg" alt="Violent Vira trending" class="trending-card__image">
+                            <div class="trending-card__overlay">
+                                <h3 class="trending-card__name">Violent Vira</h3>
+                                <p class="trending-card__stats">+28% this week</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="trending-card">
+                        <div class="trending-card__content">
+                            <img src="./assets/img/radcan.jpg" alt="Radiohead trending" class="trending-card__image">
+                            <div class="trending-card__overlay">
+                                <h3 class="trending-card__name">Radiohead</h3>
+                                <p class="trending-card__stats">+8% this week</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
+```
+```
+/* =========================================
+1. VARIABLES Y RESET GLOBAL
+========================================= */
+:root {
+    --bg-body: #0f172a;
+    --bg-header: #161920;
+    --bg-card: #1e293b;
+    --bg-card-hover: #252932;
+    --primary-blue: #2962ff;
+    --primary-blue-light: rgba(41, 98, 255, 0.15);
+    --text-main: #ffffff;
+    --text-secondary: #94a3b8;
+    --border-color: #2a2e38;
+    --header-height: 80px;
+    --sidebar-width: 240px;
+    --sidebar-width-collapsed: 80px;
+    --radius-lg: 24px;
+    --radius-md: 16px;
+    --radius-sm: 8px;
+    --success-green: #10b981;
+    --warning-orange: #f59e0b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: var(--bg-body);
+    color: var(--text-main);
+    line-height: 1.6;
+    overflow-x: hidden;
+    width: 100%;
+    min-width: 320px;
+}
+
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+img { max-width: 100%; display: block; }
+button { border: none; background: none; cursor: pointer; font-family: inherit; }
+
+/* =========================================
+2. HEADER & SIDEBAR
+========================================= */
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--bg-header);
+    border-bottom: 1px solid var(--border-color);
+    min-height: var(--header-height);
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    width: 100%;
+}
+
+.header__container {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.logo {
+    height: 32px;
+    width: auto;
+}
+
+.header__logo-text {
+    font-size: 1.25rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.header__nav {
+    display: flex;
+    margin-left: auto;
+}
+
+.nav__list {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.nav__link {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    padding: 10px 0;
+    transition: color 0.3s ease;
+    display: block;
+    position: relative;
+}
+
+.nav__link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: var(--primary-blue);
+    border-radius: 3px 3px 0 0;
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav__link:hover,
+.nav__link--active {
+    color: var(--text-main);
+}
+
+.nav__link:hover::after,
+.nav__link--active::after {
+    width: 100%;
+}
+
+.header__search {
+    flex-grow: 1;
+    max-width: 400px;
+    background-color: #232730;
+    border-radius: 50px;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.search__button {
+    background: none;
+    border: none;
+    margin-right: 10px;
+    padding: 0;
+}
+
+.search__icon {
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+    opacity: 0.7;
+}
+
+.search__input {
+    background: transparent;
+    border: none;
+    color: white;
+    width: 100%;
+    outline: none;
+    font-size: 0.9rem;
+}
+
+.search__input::placeholder {
+    color: var(--text-secondary);
+}
+
+.header__user {
+    margin-left: 1rem;
+}
+
+.user__avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid var(--border-color);
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.user__avatar:hover {
+    border-color: var(--primary-blue);
+}
+
+.user__avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* =========================================
+3. LAYOUT & SIDEBAR
+========================================= */
+.main-wrapper {
+    display: flex;
+    max-width: 1600px;
+    margin: 0 auto;
+    min-height: calc(100vh - var(--header-height));
+    width: 100%;
+}
+
+.sidebar {
+    width: var(--sidebar-width);
+    flex-shrink: 0;
+    padding: 2rem 1rem;
+    border-right: 1px solid var(--border-color);
+    overflow-y: auto;
+    height: calc(100vh - var(--header-height));
+    position: sticky;
+    top: var(--header-height);
+}
+
+.sidebar__title {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-left: 16px;
+}
+
+.sidebar__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.sidebar__link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    border-radius: 12px;
+    color: var(--text-main);
+    font-weight: 500;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: transparent;
+}
+
+.sidebar__link:hover,
+.sidebar__link--active {
+    background-color: var(--primary-blue-light);
+    color: var(--primary-blue);
+    transform: translateX(5px);
+}
+
+.link__icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    filter: invert(1);
+    transition: all 0.3s ease;
+}
+
+/* =========================================
+4. CONTENIDO PRINCIPAL
+========================================= */
+.content {
+    flex-grow: 1;
+    padding: 2rem;
+    width: 100%;
+}
+
+.content__header {
+    margin-bottom: 2rem;
+}
+
+.content__title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+.content__subtitle {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+}
+
+/* =========================================
+5. DASHBOARD DE ESTADÍSTICAS
+========================================= */
+.stats-dashboard {
+    margin-bottom: 4rem;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-areas:
+        "listeners listeners countries countries"
+        "chart chart chart chart"
+        "streams streams streams streams";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto auto;
+    gap: 24px;
+    margin-bottom: 3rem;
+}
+
+.dashboard-widget {
+    background-color: var(--bg-card);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
+    padding: 1.5rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dashboard-widget:hover {
+    border-color: var(--primary-blue);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.widget-listeners {
+    grid-area: listeners;
+}
+
+.widget-countries {
+    grid-area: countries;
+}
+
+.widget-chart {
+    grid-area: chart;
+}
+
+.widget-streams {
+    grid-area: streams;
+}
+
+.widget__header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 1.5rem;
+}
+
+.widget__icon {
+    width: 24px;
+    height: 24px;
+    filter: invert(1);
+    opacity: 0.8;
+}
+
+.widget__title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+.widget__content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.widget__value {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--text-main);
+    line-height: 1.2;
+}
+
+.widget__change {
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.widget__change--positive {
+    color: var(--success-green);
+}
+
+.widget__change--negative {
+    color: var(--warning-orange);
+}
+
+/* Mini Chart for Listeners */
+.widget__mini-chart {
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+    height: 60px;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.mini-bar {
+    flex: 1;
+    background: linear-gradient(180deg, var(--primary-blue) 0%, var(--primary-blue-light) 100%);
+    border-radius: 4px 4px 0 0;
+    min-width: 20px;
+    transition: height 0.5s ease;
+}
+
+.mini-bar:hover {
+    opacity: 0.8;
+}
+
+/* Countries List */
+.countries-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.country-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+    background-color: var(--bg-card-hover);
+    border-radius: var(--radius-sm);
+    transition: background-color 0.3s ease;
+}
+
+.country-item:hover {
+    background-color: var(--primary-blue-light);
+}
+
+.country-flag {
+    font-size: 1.5rem;
+    margin-right: 12px;
+}
+
+.country-name {
+    flex-grow: 1;
+    font-weight: 500;
+}
+
+.country-percentage {
+    font-weight: 700;
+    color: var(--primary-blue);
+    background-color: var(--primary-blue-light);
+    padding: 0.25rem 0.75rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+}
+
+/* Visual Chart */
+.visual-chart {
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.chart-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 200px;
+    gap: 12px;
+    padding: 1rem;
+    background-color: var(--bg-card-hover);
+    border-radius: var(--radius-sm);
+}
+
+.chart-bar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background: linear-gradient(180deg, var(--primary-blue) 0%, var(--primary-blue-light) 100%);
+    border-radius: 8px 8px 0 0;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+    position: relative;
+    min-height: 40px;
+}
+
+.chart-bar:hover {
+    transform: scaleY(1.05);
+    opacity: 0.9;
+}
+
+.chart-day {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    margin-top: 0.5rem;
+    font-weight: 500;
+}
+
+.chart-value {
+    font-size: 0.85rem;
+    color: var(--text-main);
+    font-weight: 700;
+    position: absolute;
+    top: -25px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.chart-bar:hover .chart-value {
+    opacity: 1;
+}
+
+/* Progress Bar */
+.widget__progress {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background-color: var(--bg-card-hover);
+    border-radius: 50px;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--primary-blue) 0%, var(--success-green) 100%);
+    border-radius: 50px;
+    transition: width 1s ease;
+}
+
+.progress-label {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+/* Filter Tabs */
+.filter-tabs {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.filter-tab {
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    background-color: var(--bg-card);
+    color: var(--text-secondary);
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.filter-tab:hover,
+.filter-tab--active {
+    background-color: var(--primary-blue);
+    color: white;
+}
+
+/* Artists Section */
+.artists-section {
+    margin-bottom: 4rem;
+}
+
+.artists-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+/* Artist Card */
+.artist-card {
+    background-color: var(--bg-card);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.artist-card:hover {
+    border-color: var(--primary-blue);
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.artist-card__image {
+    width: 100%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+}
+
+.artist-card__thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.artist-card:hover .artist-card__thumbnail {
+    transform: scale(1.05);
+}
+
+.artist-card__info {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.artist-card__name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.artist-card__genre {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.artist-card__followers {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    opacity: 0.8;
+}
+
+.artist-card__button {
+    margin-top: 0.75rem;
+    padding: 0.75rem 1.5rem;
+    background-color: rgba(41, 98, 255, 0.1);
+    color: var(--primary-blue);
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.artist-card__button:hover {
+    background-color: var(--primary-blue);
+    color: white;
+}
+
+/* Trending Section */
+.trending-section {
+    margin-bottom: 4rem;
+}
+
+.section__title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.trending-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+.trending-card {
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    position: relative;
+    aspect-ratio: 16/9;
+    cursor: pointer;
+}
+
+.trending-card__content {
+    width: 100%;
+    height: 100%;
+}
+
+.trending-card__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.trending-card:hover .trending-card__image {
+    transform: scale(1.1);
+}
+
+.trending-card__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem 1.5rem;
+    background: linear-gradient(0deg, rgba(15, 23, 42, 0.95) 0%, transparent 100%);
+}
+
+.trending-card__name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 0.5rem;
+}
+
+.trending-card__stats {
+    font-size: 0.9rem;
+    color: #10b981;
+    font-weight: 600;
+}
+
+/* =========================================
+6. RESPONSIVE
+========================================= */
+@media (max-width: 1200px) {
+    .dashboard-grid {
+        grid-template-areas:
+            "listeners countries"
+            "chart chart"
+            "streams streams";
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 1024px) {
+    .sidebar {
+        width: var(--sidebar-width-collapsed);
+        padding: 2rem 0.5rem;
+    }
+    
+    .sidebar__title,
+    .link__text {
+        display: none;
+    }
+    
+    .sidebar__link {
+        justify-content: center;
+        padding: 12px;
+    }
+    
+    .dashboard-grid {
+        grid-template-areas:
+            "listeners"
+            "countries"
+            "chart"
+            "streams";
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-wrapper {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 0;
+        border-right: none;
+        border-bottom: 1px solid var(--border-color);
+        padding: 1rem;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+    
+    .sidebar__menu {
+        flex-direction: row;
+        gap: 0.75rem;
+        width: max-content;
+    }
+    
+    .sidebar__link {
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+        padding: 10px 16px;
+        min-width: 70px;
+    }
+    
+    .link__text {
+        font-size: 0.75rem;
+        white-space: nowrap;
+    }
+    
+    .content {
+        padding: 1.5rem;
+    }
+    
+    .content__title {
+        font-size: 2rem;
+    }
+    
+    .artists-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .trending-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .dashboard-widget {
+        padding: 1.25rem;
+    }
+    
+    .widget__value {
+        font-size: 2rem;
+    }
+    
+    .chart-container {
+        height: 150px;
+    }
+    
+    .chart-day {
+        font-size: 0.65rem;
+    }
+    
+    .chart-value {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 580px) {
+    .header__container {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    
+    .header__nav {
+        order: 3;
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
+    
+    .nav__list {
+        justify-content: center;
+        gap: 1.5rem;
+    }
+    
+    .header__search {
+        order: 2;
+        margin-left: 0;
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .header__user {
+        order: 1;
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 0.5rem 0.75rem;
+    }
+    
+    .header__logo-text {
+        font-size: 1rem;
+    }
+    
+    .logo {
+        height: 28px;
+    }
+    
+    .content {
+        padding: 1rem;
+    }
+    
+    .content__title {
+        font-size: 1.75rem;
+    }
+    
+    .artists-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .artist-card__info {
+        padding: 1rem;
+    }
+    
+    .artist-card__name {
+        font-size: 1.1rem;
+    }
+    
+    .dashboard-widget {
+        padding: 1rem;
+    }
+    
+    .widget__value {
+        font-size: 1.75rem;
+    }
+    
+    .widget__title {
+        font-size: 0.9rem;
+    }
+    
+    .chart-container {
+        height: 120px;
+        gap: 6px;
+    }
+    
+    .chart-day {
+        font-size: 0.6rem;
+    }
+    
+    .chart-value {
+        font-size: 0.7rem;
+        top: -20px;
+    }
+    
+    .country-item {
+        padding: 0.5rem 0.75rem;
+    }
+    
+    .country-flag {
+        font-size: 1.25rem;
+    }
+    
+    .country-name {
+        font-size: 0.85rem;
+    }
+    
+    .country-percentage {
+        font-size: 0.75rem;
+        padding: 0.2rem 0.5rem;
+    }
+    
+    .filter-tabs {
+        gap: 0.5rem;
+    }
+    
+    .filter-tab {
+        padding: 0.6rem 1rem;
+        font-size: 0.8rem;
+    }
+    
+    .section__title {
+        font-size: 1.5rem;
+    }
+    
+    .trending-card__name {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .header__logo-text {
+        display: none;
+    }
+    
+    .content__title {
+        font-size: 1.5rem;
+    }
+    
+    .widget__value {
+        font-size: 1.5rem;
+    }
+    
+    .chart-container {
+        height: 100px;
+    }
+    
+    .mini-bar {
+        min-width: 15px;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.dashboard-widget {
+    animation: slideUp 0.6s ease forwards;
+}
+
+.dashboard-widget:nth-child(1) { animation-delay: 0.1s; }
+.dashboard-widget:nth-child(2) { animation-delay: 0.2s; }
+.dashboard-widget:nth-child(3) { animation-delay: 0.3s; }
+.dashboard-widget:nth-child(4) { animation-delay: 0.4s; }
+
+.artist-card {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+.artist-card:nth-child(1) { animation-delay: 0.1s; }
+.artist-card:nth-child(2) { animation-delay: 0.2s; }
+.artist-card:nth-child(3) { animation-delay: 0.3s; }
+.artist-card:nth-child(4) { animation-delay: 0.4s; }
+
+.trending-card {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+.trending-card:nth-child(1) { animation-delay: 0.5s; }
+.trending-card:nth-child(2) { animation-delay: 0.6s; }
+.trending-card:nth-child(3) { animation-delay: 0.7s; }
+
+/* Chart bar animation */
+@keyframes growBar {
+    from { height: 0; }
+}
+
+.chart-bar {
+    animation: growBar 1s ease forwards;
+}
+
+.chart-bar:nth-child(1) { animation-delay: 0.1s; }
+.chart-bar:nth-child(2) { animation-delay: 0.2s; }
+.chart-bar:nth-child(3) { animation-delay: 0.3s; }
+.chart-bar:nth-child(4) { animation-delay: 0.4s; }
+.chart-bar:nth-child(5) { animation-delay: 0.5s; }
+.chart-bar:nth-child(6) { animation-delay: 0.6s; }
+.chart-bar:nth-child(7) { animation-delay: 0.7s; }
+```
+______________________________________________________________
+ejercicio 2 flotante
+
+```
+    <!-- =========================================
+         REPRODUCTOR MINI FLOTANTE
+         ========================================= -->
+    <div class="mini-player">
+        <!-- Barra de Progreso -->
+        <div class="mini-player__progress-bar">
+            <input type="range" class="progress-input" value="35" min="0" max="100">
+        </div>
+        
+        <div class="mini-player__container">
+            <!-- Carátula -->
+            <div class="mini-player__cover">
+                <img src="./assets/img/One.jpg" alt="Album Art" class="cover-img">
+            </div>
+            
+            <!-- Info con Marquesina -->
+            <div class="mini-player__info">
+                <div class="marquee-wrapper">
+                    <div class="marquee-content">
+                        <span class="song-title">One</span>
+                        <span class="separator">•</span>
+                        <span class="artist-name">Metallica</span>
+                        <span class="separator">•</span>
+                        <span class="song-title">One</span>
+                        <span class="separator">•</span>
+                        <span class="artist-name">Metallica</span>
+                    </div>
+                </div>
+                <span class="playing-label">Playing from Store</span>
+            </div>
+            
+            <!-- Controles -->
+            <div class="mini-player__controls">
+                <!-- Botón Prev (SVG Inline) -->
+                <button class="ctrl-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="19 20 9 12 19 4 19 20"></polygon><line x1="5" y1="19" x2="5" y2="5"></line></svg>
+                </button>
+                
+                <!-- Botón Play/Pause (SVG Inline) -->
+                <button class="ctrl-btn main-play">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                </button>
+                
+                <!-- Botón Next (SVG Inline) -->
+                <button class="ctrl-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 4 15 12 5 20 5 4"></polygon><line x1="19" y1="5" x2="19" y2="19"></line></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+```
+
+```
+/* =========================================
+   7. MINI PLAYER FLOTANTE
+   ========================================= */
+.mini-player {
+    position: fixed;
+    bottom: 20px;
+    right: 20px; /* Cambiar a left: 20px si se prefiere izquierda */
+    width: 340px;
+    background-color: rgba(22, 25, 32, 0.95);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+    z-index: 9999;
+    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+    transition: transform 0.3s ease;
+}
+
+.mini-player:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-blue);
+}
+
+/* Barra de Progreso Personalizada */
+.mini-player__progress-bar {
+    width: 100%;
+    height: 4px;
+    background: #333;
+    cursor: pointer;
+    position: relative;
+}
+
+.progress-input {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 4px;
+    background: transparent;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+/* Personalización del Track (Riel) */
+.progress-input::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, var(--primary-blue) 35%, #333 35%);
+    border-radius: 2px;
+    border: none;
+}
+
+/* Personalización del Thumb (Manija) */
+.progress-input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    margin-top: -4px; /* Centrar sobre el track */
+    box-shadow: 0 0 10px rgba(41, 98, 255, 0.8);
+    transition: transform 0.2s;
+}
+
+.progress-input::-webkit-slider-thumb:hover {
+    transform: scale(1.3);
+}
+
+/* Contenedor Interno */
+.mini-player__container {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 12px;
+}
+
+/* Carátula */
+.mini-player__cover {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    overflow: hidden;
+    flex-shrink: 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    animation: pulse 2s infinite;
+}
+
+.cover-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Info y Marquesina */
+.mini-player__info {
+    flex-grow: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 0; /* Necesario para que funcione el text-overflow/marquesina */
+}
+
+.marquee-wrapper {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.marquee-content {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 10s linear infinite;
+    color: var(--text-main);
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.separator {
+    color: var(--primary-blue);
+    margin: 0 8px;
+}
+
+.playing-label {
+    font-size: 0.7rem;
+    color: var(--text-secondary);
+    margin-top: 2px;
+}
+
+/* Controles */
+.mini-player__controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.ctrl-btn {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s, transform 0.2s;
+}
+
+.ctrl-btn:hover {
+    color: var(--text-main);
+}
+
+.ctrl-btn.main-play {
+    color: var(--text-main);
+    background-color: var(--primary-blue);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(41, 98, 255, 0.4);
+}
+
+.ctrl-btn.main-play:hover {
+    transform: scale(1.1);
+    background-color: #1e4bd1;
+}
+
+/* Animación Marquesina */
+@keyframes marquee {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+
+/* Animación suave de carátula */
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(41, 98, 255, 0.4); }
+    70% { box-shadow: 0 0 0 10px rgba(41, 98, 255, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(41, 98, 255, 0); }
+}
+
+/* Ajuste Responsive para el Player */
+@media (max-width: 480px) {
+    .mini-player {
+        width: calc(100% - 40px);
+        left: 20px;
+        right: 20px;
+        bottom: 10px;
+    }
+    
+    .mini-player__controls {
+        gap: 8px;
+    }
+    
+    .ctrl-btn.main-play {
+        width: 28px;
+        height: 28px;
+    }
+    
+    .ctrl-btn svg {
+        width: 16px;
+        height: 16px;
+    }
+}
+```
+______________________________________________________________________________
+ejercicio 3 premium familiar y demas
+```
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicStream | Premium</title>
+    <link rel="icon" href="./assets/icons/favico.ico" type="image/png">
+    <link rel="stylesheet" href="./CSS/views/premium.css">
+</head>
+<body>
+    <!-- Header / Barra de navegación (Misma estética) -->
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <img src="./assets/img/logo.png" class="logo" alt="MusicStream logo">
+                <span class="header__logo-text">MusicStream</span>
+            </div>
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="./discover.html" class="nav__link">Discover</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="./library.html" class="nav__link">Library</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="./store.html" class="nav__link">Store</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="./premium.html" class="nav__link nav__link--active">Premium</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__user">
+                <div class="user__avatar">
+                    <a href="./profile.html"><img src="./assets/img/jugador.png" alt="User avatar" class="user__avatar-img"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenedor Principal -->
+    <main class="main-wrapper">
+        
+        <!-- Sección de Planes -->
+        <section class="pricing-section">
+            <h2 class="section__title">Elige tu Plan Premium</h2>
+            <p class="section__subtitle">Sin anuncios. Música ilimitada. Cancela cuando quieras.</p>
+            
+            <div class="pricing-grid">
+                <!-- Plan Free -->
+                <article class="pricing-card">
+                    <h3 class="pricing-card__title">Free</h3>
+                    <div class="pricing-card__price">$0<span>/mes</span></div>
+                    <ul class="pricing-card__features">
+                        <li>✓ Calidad Estándar</li>
+                        <li>✓ Con anuncios</li>
+                        <li>✓ 1 Cuenta</li>
+                        <li>✕ Sin descarga</li>
+                    </ul>
+                    <button class="pricing-card__button">Actual</button>
+                </article>
+
+                <!-- Plan Duo -->
+                <article class="pricing-card pricing-card--popular">
+                    <div class="pricing-card__badge">MÁS POPULAR</div>
+                    <h3 class="pricing-card__title">Duo</h3>
+                    <div class="pricing-card__price">$12.99<span>/mes</span></div>
+                    <ul class="pricing-card__features">
+                        <li>✓ Calidad Alta</li>
+                        <li>✓ Sin anuncios</li>
+                        <li>✓ 2 Cuentas</li>
+                        <li>✓ Descarga offline</li>
+                    </ul>
+                    <button class="pricing-card__button pricing-card__button--primary">Seleccionar</button>
+                </article>
+
+                <!-- Plan Family -->
+                <article class="pricing-card">
+                    <h3 class="pricing-card__title">Family</h3>
+                    <div class="pricing-card__price">$15.99<span>/mes</span></div>
+                    <ul class="pricing-card__features">
+                        <li>✓ Calidad Máxima</li>
+                        <li>✓ Sin anuncios</li>
+                        <li>✓ 6 Cuentas</li>
+                        <li>✓ Control parental</li>
+                    </ul>
+                    <button class="pricing-card__button">Seleccionar</button>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección de Formulario de Pago -->
+        <section class="payment-section">
+            <div class="payment-container">
+                <h2 class="section__title">Detalles de Pago</h2>
+                <form class="payment-form" action="#" method="POST">
+                    
+                    <div class="form-group">
+                        <label for="card-name" class="form-label">Nombre en la tarjeta</label>
+                        <input type="text" id="card-name" class="form-input" placeholder="Ej. Juan Pérez" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="card-number" class="form-label">Número de tarjeta</label>
+                        <input type="text" id="card-number" class="form-input" placeholder="0000 0000 0000 0000" pattern="[0-9]{16}" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="expiry" class="form-label">Vencimiento</label>
+                            <input type="text" id="expiry" class="form-input" placeholder="MM/YY" pattern="[0-9]{2}/[0-9]{2}" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cvc" class="form-label">CVC</label>
+                            <input type="text" id="cvc" class="form-input" placeholder="123" pattern="[0-9]{3}" required>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="submit-button">Suscribirse Ahora</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Simple -->
+    <footer class="footer">
+        <p>&copy; 2023 MusicStream. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+```
+
+```
+/* =========================================
+   1. VARIABLES Y RESET (Misma estética)
+   ========================================= */
+:root {
+    --bg-body: #0f172a;
+    --bg-header: #161920;
+    --bg-card: #1e293b;
+    --bg-card-hover: #252932;
+    --primary-blue: #2962ff;
+    --primary-blue-light: rgba(41, 98, 255, 0.15);
+    --text-main: #ffffff;
+    --text-secondary: #94a3b8;
+    --border-color: #2a2e38;
+    --header-height: 80px;
+    --radius-lg: 24px;
+    --radius-md: 16px;
+    --radius-sm: 8px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: var(--bg-body);
+    color: var(--text-main);
+    line-height: 1.6;
+    overflow-x: hidden;
+    min-width: 320px;
+}
+
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+img { max-width: 100%; display: block; }
+button { border: none; background: none; cursor: pointer; font-family: inherit; }
+
+/* =========================================
+   2. HEADER (Reutilizado para consistencia)
+   ========================================= */
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--bg-header);
+    border-bottom: 1px solid var(--border-color);
+    min-height: var(--header-height);
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    width: 100%;
+}
+
+.header__container {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.logo { height: 32px; width: auto; }
+.header__logo-text { font-size: 1.25rem; font-weight: 700; }
+
+.header__nav { order: 2; display: flex; margin-left: 0; }
+.nav__list { display: flex; gap: 2.5rem; }
+.nav__link {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    padding: 10px 0;
+    transition: color 0.3s ease;
+    display: block;
+    position: relative;
+}
+
+.nav__link:hover, .nav__link--active { color: var(--text-main); }
+.nav__link--active::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--primary-blue);
+    border-radius: 3px 3px 0 0;
+}
+
+.header__user { order: 4; flex-shrink: 0; margin-left: auto; }
+.user__avatar {
+    width: 40px; height: 40px; border-radius: 50%; overflow: hidden;
+    border: 2px solid var(--border-color);
+}
+.user__avatar-img { width: 100%; height: 100%; object-fit: cover; }
+
+/* =========================================
+   3. LAYOUT PRINCIPAL
+   ========================================= */
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    width: 100%;
+    gap: 4rem;
+}
+
+.section__title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.section__subtitle {
+    text-align: center;
+    color: var(--text-secondary);
+    margin-bottom: 3rem;
+}
+
+/* =========================================
+   4. TARJETAS DE PRECIOS (Pricing)
+   ========================================= */
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    align-items: stretch;
+}
+
+.pricing-card {
+    background-color: var(--bg-card);
+    border-radius: var(--radius-md);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+}
+
+/* Hover Effect: Escala y Sombra */
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    border-color: var(--primary-blue);
+}
+
+.pricing-card--popular {
+    border-color: var(--primary-blue);
+    background: linear-gradient(180deg, rgba(41,98,255,0.1) 0%, var(--bg-card) 100%);
+}
+
+.pricing-card__badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--primary-blue);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.pricing-card__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.pricing-card__price {
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--text-main);
+}
+
+.pricing-card__price span {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    font-weight: 400;
+}
+
+.pricing-card__features {
+    list-style: none;
+    margin-bottom: 2rem;
+    flex-grow: 1;
+}
+
+.pricing-card__features li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.pricing-card__features li:last-child { border-bottom: none; }
+
+.pricing-card__button {
+    width: 100%;
+    padding: 1rem;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-main);
+    transition: all 0.3s ease;
+}
+
+.pricing-card__button:hover {
+    background-color: var(--bg-card-hover);
+    border-color: var(--text-main);
+}
+
+.pricing-card__button--primary {
+    background-color: var(--primary-blue);
+    border-color: var(--primary-blue);
+    color: white;
+}
+
+.pricing-card__button--primary:hover {
+    background-color: #1e4bd1;
+}
+
+/* =========================================
+   5. FORMULARIO DE PAGO
+   ========================================= */
+.payment-section {
+    background-color: var(--bg-card);
+    border-radius: var(--radius-lg);
+    padding: 3rem;
+    border: 1px solid var(--border-color);
+}
+
+.payment-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.form-label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+}
+
+.form-input {
+    background-color: var(--bg-body);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    padding: 1rem;
+    color: var(--text-main);
+    font-size: 1rem;
+    font-family: inherit;
+    transition: all 0.3s ease;
+}
+
+/* Estado Focus */
+.form-input:focus {
+    outline: none;
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 3px var(--primary-blue-light);
+}
+
+/* Validación simple visual */
+.form-input:invalid:not(:placeholder-shown) {
+    border-color: #ef4444;
+}
+
+.submit-button {
+    background-color: var(--primary-blue);
+    color: white;
+    padding: 1rem;
+    border-radius: var(--radius-sm);
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #1e4bd1;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(41, 98, 255, 0.4);
+}
+
+/* =========================================
+   6. FOOTER
+   ========================================= */
+.footer {
+    text-align: center;
+    padding: 2rem;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    border-top: 1px solid var(--border-color);
+    margin-top: 2rem;
+}
+
+/* =========================================
+   7. RESPONSIVE (Mantiene lógica anterior)
+   ========================================= */
+
+/* TABLETS */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .main-wrapper { padding: 1.5rem; }
+    .pricing-grid { grid-template-columns: repeat(3, 1fr); }
+    .payment-section { padding: 2rem; }
+}
+
+/* CELULARES GRANDES */
+@media (max-width: 768px) and (min-width: 481px) {
+    .header__container { flex-wrap: wrap; gap: 1rem; }
+    .header__nav { order: 4; width: 100%; justify-content: center; margin-top: 0.5rem; }
+    .nav__list { gap: 1.5rem; }
+    .header__user { order: 2; margin-left: auto; }
+    
+    .main-wrapper { padding: 1.25rem; gap: 3rem; }
+    .pricing-grid { grid-template-columns: 1fr; max-width: 400px; margin: 0 auto; }
+    .payment-section { padding: 1.5rem; }
+    .section__title { font-size: 1.5rem; }
+}
+
+/* CELULARES PEQUEÑOS */
+@media (max-width: 480px) {
+    .header { padding: 0.5rem 0.75rem; min-height: auto; }
+    .header__container { flex-wrap: wrap; gap: 0.5rem; }
+    .header__nav { order: 4; width: 100%; margin-top: 0.5rem; }
+    .nav__list { gap: 1rem; width: 100%; justify-content: space-around; }
+    .nav__link { font-size: 0.8rem; }
+    .header__user { order: 2; margin-left: auto; }
+    .user__avatar { width: 36px; height: 36px; }
+    
+    .main-wrapper { padding: 1rem; }
+    .pricing-card { padding: 1.5rem; }
+    .payment-section { padding: 1.5rem; border-radius: var(--radius-md); }
+    .form-row { grid-template-columns: 1fr; gap: 1rem; }
+    .section__title { font-size: 1.25rem; }
+    .submit-button { font-size: 1rem; }
+}
+
+```
