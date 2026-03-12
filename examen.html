@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diomedes Diaz | MusicStream</title>
+    <link rel="stylesheet" href="./CSS/views/examen.css">
+    <link rel="icon" href="./assets/icons/favico.ico" type="image/png">
+</head>
+<body>
+    <!-- Header /Navegación principal -->
+    <header class="header">
+        <div class="header__container">
+            <!-- Logo -->
+            <div class="header__logo">
+                <img src="./assets/img/logo.png" class="header__logo-icon" alt="MusicStream logo">
+                <span class="header__logo-text">
+                    MusicStream
+                </span>
+            </div>
+            <!-- Barra de búsqueda -->
+            <div class="header__search">
+                <button class="search__button">
+                    <img class="search__icon" src="./assets/icons/busqueda-de-lupa_1.svg" alt="lupa de busqueda">
+                </button>
+                <input type="search" class="search__input" placeholder="Search artists, albums...">
+            </div>
+            <!-- Navegación principal -->
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link nav__link--active">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Browse</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="library.html" class="nav__link">Library</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Iconos de usuario -->
+            <div class="header__actions">
+                <button class="action__button">
+                    <a href="./cart.html"><img class="action__icon" src="assets/icons/carrito-de-compras.svg" alt="carrito-de-compras"></a>
+                </button>
+                <button class="action__button">
+                    <img class="action__icon" src="assets/icons/notificacion.svg" alt="campana de notificacion">
+                </button>
+                <div class="user__profile">
+                    <img src="./assets/img/jugador.png" alt="User profile" class="user__avatar">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Contenido principal -->
+    <main class="main">
+        <!-- Contenedor del álbum -->
+        <div class="album-container">
+            <!-- Columna derecha - Tracklist y contenido -->
+            <div class="album-content">
+                <!-- Lista de canciones -->
+                <section class="tracklist">
+                    <h2 class="tracklist__title">Purchase History</h2>
+                    <table class="tracklist__table">
+                        <thead class="tracklist__header">
+                            <tr class="tracklist__row tracklist__row--header">
+                                <th class="tracklist__cell tracklist__cell--number">Order</th>
+                                <th class="tracklist__cell tracklist__cell--title">Date</th>
+                                <th class="tracklist__cell tracklist__cell--artist">Total</th>
+                                <th class="tracklist__cell tracklist__cell--duration">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody class="tracklist__body">
+                            <!-- Track 1 -->
+                            <tr class="tracklist__row">
+                                <td class="tracklist__cell tracklist__cell--number">#MTS-2024-03AB</td>
+                                <td class="tracklist__cell tracklist__cell--title">
+                                    <span class="track__title">March 15,2024</span>
+                                </td>
+                                <td class="tracklist__cell tracklist__cell--artist">
+                                    <span class="track__artist">$9.99</span>
+                                </td>
+                                <td class="tracklist__cell tracklist__cell--duration">
+                                    <a href="#" class="collection-card__link">Details</a>
+                                    <span class="track__duration">flecha</span>
+                                </td>
+                            </tr>
+                            <!-- Track 2 -->
+                            <tr class="tracklist__row">
+                                <td class="tracklist__cell tracklist__cell--number">#MTS-2024-03AB</td>
+                                <td class="tracklist__cell tracklist__cell--title">
+                                    <span class="track__title">March 15,2024</span>
+                                </td>
+                                <td class="tracklist__cell tracklist__cell--artist">
+                                    <span class="track__artist">$9.99</span>
+                                </td>
+                                <td class="tracklist__cell tracklist__cell--duration">
+                                    <a href="#" class="collection-card__link">Details</a>
+                                    <span class="track__duration">flecha</span>
+                                </td>
+                            </tr>
+                            <!-- Track 3 -->
+                            <tr class="tracklist__row">
+                                <td class="tracklist__cell tracklist__cell--number">#MTS-2024-03AB</td>
+                                <td class="tracklist__cell tracklist__cell--title">
+                                    <span class="track__title">March 15,2024</span>
+                                </td>
+                                <td class="tracklist__cell tracklist__cell--artist">
+                                    <span class="track__artist">$9.99</span>
+                                </td>
+                                <td class="tracklist__cell tracklist__cell--duration">
+                                    <a href="#" class="collection-card__link">Details</a>
+                                    <span class="track__duration">flecha</span>
+                                </td>
+                            </tr>
+                            <!-- Track 4 -->
+                            <tr class="tracklist__row">
+                                <td class="tracklist__cell tracklist__cell--number">#MTS-2024-03AB</td>
+                                <td class="tracklist__cell tracklist__cell--title">
+                                    <span class="track__title">March 15,2024</span>
+                                </td>
+                                <td class="tracklist__cell tracklist__cell--artist">
+                                    <span class="track__artist">$9.99</span>
+                                </td>
+                                <td class="tracklist__cell tracklist__cell--duration">
+                                    <a href="#" class="collection-card__link">Details</a>
+                                    <span class="track__duration">flecha</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

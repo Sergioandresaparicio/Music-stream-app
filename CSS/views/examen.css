@@ -1,0 +1,280 @@
+/* =========================================
+1. VARIABLES Y RESET GLOBAL
+   ========================================= */
+   :root {
+    /* Colores */
+    --bg-body: #0f172a;
+    --bg-header: #161920;
+    --bg-card: #1e293b;
+    --bg-card-hover: #252932;
+    --primary-blue: #2962ff;
+    --primary-blue-light: rgba(41, 98, 255, 0.15);
+    --text-main: #ffffff;
+    --text-secondary: #94a3b8;
+    --border-color: #2a2e38;
+    --bg-input: #232730;
+    
+    /* Dimensiones */
+    --header-height: 80px;
+    --player-height: 90px;
+    --sidebar-width: 240px;
+    --radius-lg: 24px;
+    --radius-md: 16px;
+    --radius-sm: 8px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: var(--bg-body);
+    color: var(--text-main);
+    line-height: 1.6;
+    overflow-x: hidden;
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: var(--player-height);
+}
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+img { max-width: 100%; display: block; }
+button { border: none; background: none; cursor: pointer; font-family: inherit; }
+/* =========================================
+2. HEADER
+   ========================================= */
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--bg-header);
+    border-bottom: 1px solid var(--border-color);
+    min-height: var(--header-height);
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    width: 100%;
+}
+.header__container {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.header__logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+.header__logo-icon { 
+    height: 32px; 
+    width: auto;
+}
+.header__logo-text { 
+    font-size: 1.25rem; 
+    font-weight: 700;
+    white-space: nowrap;
+}
+.header__search {
+    flex-grow: 1;
+    max-width: 400px;
+    background-color: var(--bg-input);
+    border-radius: 50px;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    transition: border 0.3s;
+}
+.header__search:focus-within { 
+    border: 1px solid var(--primary-blue); 
+}
+.search__button { 
+    background: none; 
+    border: none; 
+    margin-right: 10px;
+    padding: 0;
+}
+.search__icon { 
+    width: 20px; 
+    height: 20px; 
+    filter: invert(1); 
+    opacity: 0.7; 
+}
+.search__input {
+    background: transparent; 
+    border: none; 
+    color: white; 
+    width: 100%; 
+    outline: none;
+    font-size: 0.9rem;
+}
+.search__input::placeholder { 
+    color: var(--text-secondary); 
+}
+.header__nav {
+    display: flex;
+    margin-left: auto;
+}
+.nav__list {
+    display: flex;
+    gap: 2.5rem;
+}
+.nav__link {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    padding: 10px 0;
+    transition: color 0.3s ease;
+    display: block;
+    position: relative;
+}
+.nav__link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: var(--primary-blue);
+    border-radius: 3px 3px 0 0;
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav__link:hover,
+.nav__link--active { 
+    color: var(--text-main); 
+}
+.nav__link:hover::after {
+    width: 100%;
+}
+.header__actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 1.5rem;
+}
+.action__button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--bg-card);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+.action__button:hover {
+    background-color: var(--bg-card-hover);
+}
+.action__icon {
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+    opacity: 0.9;
+}
+.user__profile {
+    margin-left: 0.5rem;
+}
+.user__avatar {
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%; 
+    object-fit: cover;
+    border: 2px solid var(--border-color);
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+.user__avatar:hover {
+    border-color: var(--primary-blue);
+}
+/* =========================================
+5. ALBUM CONTENT (DERECHA)
+   ========================================= */
+.album-content {
+    padding-top: 0.5rem;
+}
+.tracklist {
+    margin-bottom: 3rem;
+
+}
+.tracklist__title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+.tracklist__table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--bg-card);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    
+}
+.tracklist__row {
+    border-bottom: 1px solid var(--border-color);
+    transition: background-color 0.3s ease;
+}
+.tracklist__row:last-child {
+    border-bottom: none;
+}
+.tracklist__row:hover {
+    background-color: var(--bg-card-hover);
+}
+.tracklist__row--header {
+    background-color: rgba(255, 255, 255, 0.03);
+}
+.tracklist__cell {
+    padding: 1rem 1.25rem;
+    text-align: left;
+    font-size: 0.95rem;
+}
+.tracklist__cell--number {
+    width: 60px;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+.tracklist__cell--title {
+    font-weight: 600;
+    color: var(--text-main);
+}
+.tracklist__cell--artist {
+    color: var(--text-secondary);
+}
+.tracklist__cell--duration {
+    width: 80px;
+    text-align: right;
+    color: var(--text-secondary);
+}
+.track__title {
+    color: var(--text-main);
+}
+.track__artist {
+    color: var(--text-secondary);
+}
+.track__duration {
+    font-variant-numeric: tabular-nums;
+}
+.duration__icon {
+    width: 18px;
+    height: 18px;
+    filter: invert(1);
+    opacity: 0.6;
+}
+.collection-card__link {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primary-blue);
+    color: white;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.collection-card__link:hover {
+    background-color: #1e4bd1;
+    transform: translateY(-2px);
+}
