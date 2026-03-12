@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Playlist | MusicStream</title>
+    <link rel="stylesheet" href="./CSS/views/playlist-create.css">
+    <link rel="icon" href="./assets/icons/favico.ico" type="image/png">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <img src="./assets/img/logo.png" class="logo" alt="MusicStream logo">
+                <span class="header__logo-text">MusicStream</span>
+            </div>
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="discover.html" class="nav__link">Discover</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="library.html" class="nav__link">Library</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Store</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__search">
+                <button class="search__button">
+                    <img class="search__icon" src="./assets/icons/busqueda-de-lupa_1.svg" alt="search">
+                </button>
+                <input type="search" class="search__input" placeholder=" | Artists, albums, tracks">
+            </div>
+            <div class="header__user">
+                <div class="user__avatar">
+                    <img src="./assets/img/jugador.png" alt="User avatar" class="user__avatar-img">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-wrapper">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2 class="sidebar__title">MI BIBLIOTECA</h2>
+            <nav class="sidebar__nav">
+                <ul class="sidebar__menu">
+                    <li class="sidebar__menu-item">
+                        <a href="library.html" class="sidebar__link">
+                            <img src="./assets/icons/verificar.svg" class="link__icon" alt="library">
+                            <span class="link__text">Mi Biblioteca</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__menu-item">
+                        <a href="playlist-create.html" class="sidebar__link sidebar__link--active">
+                            <img src="./assets/icons/nota-musical.svg" class="link__icon" alt="playlist">
+                            <span class="link__text">Crear Playlist</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__menu-item">
+                        <a href="profile.html" class="sidebar__link">
+                            <img src="./assets/icons/herramienta-de-audio-de-voz-de-microfono-con-cable.svg" class="link__icon" alt="profile">
+                            <span class="link__text">Mi Perfil</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+            <div class="playlist-header">
+                <h1 class="page-title">Crear Nueva Playlist</h1>
+                <p class="page-subtitle">Organiza tu música favorita en playlists personalizadas</p>
+            </div>
+
+            <!-- Playlist Form -->
+            <section class="playlist-form-section">
+                <div class="playlist-form">
+                    <div class="playlist-cover-upload">
+                        <div class="cover-preview">
+                            <img src="./assets/img/logo.png" alt="Playlist cover" class="cover-preview__image" id="coverPreview">
+                            <button class="cover-preview__change">📷</button>
+                        </div>
+                        <p class="cover-preview__text">Haz clic para cambiar la portada</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="playlist-name" class="form-label">Nombre de la Playlist</label>
+                        <input type="text" id="playlist-name" class="form-input" placeholder="Ej: Mis Canciones Favoritas" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="playlist-description" class="form-label">Descripción (Opcional)</label>
+                        <textarea id="playlist-description" class="form-textarea" placeholder="Describe tu playlist..." rows="3"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="playlist-privacy" class="form-label">Privacidad</label>
+                        <select id="playlist-privacy" class="form-select">
+                            <option value="public">Pública - Cualquiera puede ver</option>
+                            <option value="private">Privada - Solo tú puedes ver</option>
+                            <option value="friends">Amigos - Solo amigos pueden ver</option>
+                        </select>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="button" class="btn btn--secondary">Cancelar</button>
+                        <a href="library.html" class="btn btn--primary">Crear Playlist</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Add Songs Section -->
+            <section class="add-songs-section">
+                <h2 class="section__title">Agregar Canciones</h2>
+                
+                <div class="search-songs">
+                    <div class="search-songs__input">
+                        <img src="./assets/icons/busqueda-de-lupa_1.svg" alt="search" class="search-songs__icon">
+                        <input type="search" class="search-songs__field" placeholder="Buscar canciones para agregar...">
+                    </div>
+                </div>
+
+                <div class="songs-list">
+                    <div class="song-item">
+                        <img src="./assets/img/One.jpg" alt="Song" class="song-item__image">
+                        <div class="song-item__info">
+                            <h4 class="song-item__title">One</h4>
+                            <p class="song-item__artist">Metallica</p>
+                        </div>
+                        <span class="song-item__duration">7:26</span>
+                        <button class="song-item__add">+</button>
+                    </div>
+
+                    <div class="song-item">
+                        <img src="./assets/img/radcan.jpg" alt="Song" class="song-item__image">
+                        <div class="song-item__info">
+                            <h4 class="song-item__title">Creep</h4>
+                            <p class="song-item__artist">Radiohead</p>
+                        </div>
+                        <span class="song-item__duration">3:58</span>
+                        <button class="song-item__add">+</button>
+                    </div>
+
+                    <div class="song-item">
+                        <img src="./assets/img/Diomedes.jpg" alt="Song" class="song-item__image">
+                        <div class="song-item__info">
+                            <h4 class="song-item__title">La Plata</h4>
+                            <p class="song-item__artist">Diomedes Diaz</p>
+                        </div>
+                        <span class="song-item__duration">4:38</span>
+                        <button class="song-item__add">+</button>
+                    </div>
+
+                    <div class="song-item">
+                        <img src="./assets/img/violentvira.jpeg" alt="Song" class="song-item__image">
+                        <div class="song-item__info">
+                            <h4 class="song-item__title">Collar Of Truth</h4>
+                            <p class="song-item__artist">Violent Vira</p>
+                        </div>
+                        <span class="song-item__duration">3:07</span>
+                        <button class="song-item__add">+</button>
+                    </div>
+
+                    <div class="song-item">
+                        <img src="./assets/img/cachon.jpg" alt="Song" class="song-item__image">
+                        <div class="song-item__info">
+                            <h4 class="song-item__title">El Santo Cachón</h4>
+                            <p class="song-item__artist">Diomedes Diaz</p>
+                        </div>
+                        <span class="song-item__duration">5:02</span>
+                        <button class="song-item__add">+</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Selected Songs -->
+            <section class="selected-songs-section">
+                <h2 class="section__title">Canciones Seleccionadas <span class="song-count">(0)</span></h2>
+                <div class="selected-songs-list">
+                    <p class="empty-message">No has agregado canciones aún</p>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

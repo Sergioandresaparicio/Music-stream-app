@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuración | MusicStream</title>
+    <link rel="stylesheet" href="CSS/views/settings.css">
+    <link rel="icon" href="./assets/icons/favico.ico" type="image/png">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <img src="./assets/img/logo.png" class="logo" alt="MusicStream logo">
+                <span class="header__logo-text">MusicStream</span>
+            </div>
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="discover.html" class="nav__link">Discover</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="library.html" class="nav__link">Library</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Store</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__search">
+                <button class="search__button">
+                    <img class="search__icon" src="./assets/icons/busqueda-de-lupa_1.svg" alt="search">
+                </button>
+                <input type="search" class="search__input" placeholder=" | Artists, albums, tracks">
+            </div>
+            <div class="header__user">
+                <div class="user__avatar">
+                    <img src="./assets/img/jugador.png" alt="User avatar" class="user__avatar-img">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-wrapper">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2 class="sidebar__title">CONFIGURACIÓN</h2>
+            <nav class="sidebar__nav">
+                <ul class="sidebar__menu">
+                    <li class="sidebar__menu-item">
+                        <a href="settings.html" class="sidebar__link sidebar__link--active">
+                            <img src="./assets/icons/reloj2.svg" class="link__icon" alt="settings">
+                            <span class="link__text">General</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__menu-item">
+                        <a href="#" class="sidebar__link">
+                            <img src="./assets/icons/notificacion.svg" class="link__icon" alt="notifications">
+                            <span class="link__text">Notificaciones</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__menu-item">
+                        <a href="#" class="sidebar__link">
+                            <img src="./assets/icons/amor-de-corazon.svg" class="link__icon" alt="privacy">
+                            <span class="link__text">Privacidad</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__menu-item">
+                        <a href="#" class="sidebar__link">
+                            <img src="./assets/icons/carrito-de-compras.svg" class="link__icon" alt="billing">
+                            <span class="link__text">Facturación</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+            <div class="settings-header">
+                <h1 class="page-title">Configuración</h1>
+                <p class="page-subtitle">Administra tu cuenta y preferencias</p>
+            </div>
+
+            <!-- Account Settings -->
+            <section class="settings-section">
+                <h2 class="section__title">Cuenta</h2>
+                <div class="settings-card">
+                    <div class="setting-item">
+                        <div class="setting-item__info">
+                            <h3 class="setting-item__title">Nombre de Usuario</h3>
+                            <p class="setting-item__description">Tu nombre visible en la plataforma</p>
+                        </div>
+                        <div class="setting-item__value">
+                            <span>Usuario MusicStream</span>
+                            <button class="btn btn--link">Editar</button>
+                        </div>
+                    </div>
+
+                    <div class="setting-item">
+                        <div class="setting-item__info">
+                            <h3 class="setting-item__title">Correo Electrónico</h3>
+                            <p class="setting-item__description">Correo asociado a tu cuenta</p>
+                        </div>
+                        <div class="setting-item__value">
+                            <span>usuario@musicstream.com</span>
+                            <button class="btn btn--link">Editar</button>
+                        </div>
+                    </div>
+
+                    <div class="setting-item">
+                        <div class="setting-item__info">
+                            <h3 class="setting-item__title">Contraseña</h3>
+                            <p class="setting-item__description">Último cambio hace 30 días</p>
+                        </div>
+                        <div class="setting-item__value">
+                            <span>••••••••</span>
+                            <button class="btn btn--link">Cambiar</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Playback Settings -->
+            <section class="settings-section">
+                <h2 class="section__title">Reproducción</h2>
+                <div class="settings-card">
+                    <div class="setting-item setting-item--toggle">
+                        <div class="setting-item__info">
+                            <h3 class="setting-item__title">Reproducción Automática</h3>
+                            <p class="setting-item__description">Reproducir canciones similares al finalizar</p>
+                        </div>
+                        <label class="toggle-switch">
+                            <input type="checkbox" checked>
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+
+                    <div class="setting-item setting-item--toggle">
+                        <div class="setting-item__info">
+                            <h3 class="setting-item__title">Normalización de Audio</h3>
+                            <p class="setting-item__description">Mantener volumen consistente entre canciones</p>
+                        </div>
+                        <label class="toggle-switch">
+                            <input type="checkbox" checked>
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+
+                    <div class="setting-item setting-item--toggle">
+                        <div class="setting-item__info">
+                            <h3 class="setting-item__title">Descargar en Calidad Alta</h3>
+                            <p class="setting-item__description">Usar más datos pero mejor calidad</p>
+                        </div>
+                        <label class="toggle-switch">
+                            <input type="checkbox">
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+
+                    <div class="setting-item">
+                        <div class="setting-item__info">
+                            <h3 class="setting-item__title">Calidad de Streaming</h3>
+                            <p class="setting-item__description">Calidad de audio para reproducción</p>
+                        </div>
+                        <select class="setting-select">
+                            <option value="low">Baja (96 kbps)</option>
+                            <option value="medium" selected>Media (160 kbps)</option>
+                            <option value="high">Alta (320 kbps)</option>
+                            <option value="lossless">Lossless (FLAC)</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Privacy Settings -->
+            <section class="settings-section">
+                <h2 class="section__title">Privacidad</h2>
+                <div class="settings-card">
+                    <div class="setting-item setting-item--toggle">
+                        <div class="setting-item__info">
+                            <h3 class="setting-item__title">Perfil Público</h3>
+                            <p class="setting-item__description">Permitir que otros vean tu perfil</p>
+                        </div>
+                        <label class="toggle-switch">
+                            <input type="checkbox" checked>
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+
+                    <div class="setting-item setting-item--toggle">
+                        <div class="setting-item__info">
+                            <h3 class="setting-item__title">Mostrar Actividad</h3>
+                            <p class="setting-item__description">Compartir lo que estás escuchando</p>
+                        </div>
+                        <label class="toggle-switch">
+                            <input type="checkbox">
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+
+                    <div class="setting-item setting-item--toggle">
+                        <div class="setting-item__info">
+                            <h3 class="setting-item__title">Historial de Escucha</h3>
+                            <p class="setting-item__description">Guardar historial de reproducción</p>
+                        </div>
+                        <label class="toggle-switch">
+                            <input type="checkbox" checked>
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Danger Zone -->
+            <section class="settings-section">
+                <h2 class="section__title section__title--danger">Zona de Peligro</h2>
+                <div class="settings-card settings-card--danger">
+                    <div class="setting-item">
+                        <div class="setting-item__info">
+                            <h3 class="setting-item__title">Eliminar Cuenta</h3>
+                            <p class="setting-item__description">Esta acción es permanente e irreversible</p>
+                        </div>
+                        <button class="btn btn--danger">Eliminar Cuenta</button>
+                    </div>
+
+                    <div class="setting-item">
+                        <div class="setting-item__info">
+                            <h3 class="setting-item__title">Cerrar Sesión en Todos los Dispositivos</h3>
+                            <p class="setting-item__description">Cerrar sesión en todos los dispositivos activos</p>
+                        </div>
+                        <button class="btn btn--secondary">Cerrar Sesión</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Save Button -->
+            <div class="settings-actions">
+                <button class="btn btn--secondary">Cancelar</button>
+                <a href="profile.html" class="btn btn--primary">Guardar Cambios</a>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

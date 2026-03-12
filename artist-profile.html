@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metallica | MusicStream</title>
+    <link rel="stylesheet" href="CSS/views/artist-profile.css">
+    <link rel="icon" href="./assets/icons/favico.ico" type="image/png">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <img src="./assets/img/logo.png" class="logo" alt="MusicStream logo">
+                <span class="header__logo-text">MusicStream</span>
+            </div>
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="discover.html" class="nav__link">Discover</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="library.html" class="nav__link">Library</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Store</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__search">
+                <button class="search__button">
+                    <img class="search__icon" src="./assets/icons/busqueda-de-lupa_1.svg" alt="search">
+                </button>
+                <input type="search" class="search__input" placeholder=" | Artists, albums, tracks">
+            </div>
+            <div class="header__user">
+                <div class="user__avatar">
+                    <img src="./assets/img/jugador.png" alt="User avatar" class="user__avatar-img">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Artist Hero -->
+    <section class="artist-hero">
+        <div class="artist-hero__background">
+            <img src="./assets/img/andjusticeforall.jpeg" alt="Metallica" class="artist-hero__bg-image">
+            <div class="artist-hero__overlay"></div>
+        </div>
+        <div class="artist-hero__content">
+            <div class="artist-hero__info">
+                <span class="artist-hero__verified">✓ Artista Verificado</span>
+                <h1 class="artist-hero__name">Metallica</h1>
+                <p class="artist-hero__followers">25.4M Seguidores</p>
+                <div class="artist-hero__actions">
+                    <button class="btn btn--primary btn--large">Seguir</button>
+                    <button class="btn btn--secondary">Compartir</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="main-wrapper">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2 class="sidebar__title">NAVEGACIÓN</h2>
+            <nav class="sidebar__nav">
+                <ul class="sidebar__menu">
+                    <li class="sidebar__menu-item">
+                        <a href="artist-profile.html" class="sidebar__link sidebar__link--active">
+                            <img src="./assets/icons/herramienta-de-audio-de-voz-de-microfono-con-cable.svg" class="link__icon" alt="profile">
+                            <span class="link__text">Perfil</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__menu-item">
+                        <a href="#" class="sidebar__link">
+                            <img src="./assets/icons/unidad-de-cd-convertido-de-png.svg" class="link__icon" alt="albums">
+                            <span class="link__text">Álbumes</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__menu-item">
+                        <a href="#" class="sidebar__link">
+                            <img src="./assets/icons/nota-musical.svg" class="link__icon" alt="songs">
+                            <span class="link__text">Canciones</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__menu-item">
+                        <a href="#" class="sidebar__link">
+                            <img src="./assets/icons/amor-de-corazon.svg" class="link__icon" alt="fans">
+                            <span class="link__text">Fans También Gustan</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+            <!-- Popular Songs -->
+            <section class="artist-section">
+                <h2 class="section__title">Canciones Populares</h2>
+                <div class="popular-songs">
+                    <div class="song-row">
+                        <span class="song-row__number">1</span>
+                        <img src="./assets/img/One.jpg" alt="One" class="song-row__image">
+                        <div class="song-row__info">
+                            <h4 class="song-row__title">One</h4>
+                            <p class="song-row__album">...And Justice For All</p>
+                        </div>
+                        <span class="song-row__plays">5.2M</span>
+                        <button class="song-row__play">▶</button>
+                    </div>
+
+                    <div class="song-row">
+                        <span class="song-row__number">2</span>
+                        <img src="./assets/img/One.jpg" alt="Enter Sandman" class="song-row__image">
+                        <div class="song-row__info">
+                            <h4 class="song-row__title">Enter Sandman</h4>
+                            <p class="song-row__album">Metallica</p>
+                        </div>
+                        <span class="song-row__plays">4.8M</span>
+                        <button class="song-row__play">▶</button>
+                    </div>
+
+                    <div class="song-row">
+                        <span class="song-row__number">3</span>
+                        <img src="./assets/img/One.jpg" alt="Master of Puppets" class="song-row__image">
+                        <div class="song-row__info">
+                            <h4 class="song-row__title">Master of Puppets</h4>
+                            <p class="song-row__album">Master of Puppets</p>
+                        </div>
+                        <span class="song-row__plays">4.5M</span>
+                        <button class="song-row__play">▶</button>
+                    </div>
+
+                    <div class="song-row">
+                        <span class="song-row__number">4</span>
+                        <img src="./assets/img/One.jpg" alt="Nothing Else Matters" class="song-row__image">
+                        <div class="song-row__info">
+                            <h4 class="song-row__title">Nothing Else Matters</h4>
+                            <p class="song-row__album">Metallica</p>
+                        </div>
+                        <span class="song-row__plays">4.2M</span>
+                        <button class="song-row__play">▶</button>
+                    </div>
+
+                    <div class="song-row">
+                        <span class="song-row__number">5</span>
+                        <img src="./assets/img/One.jpg" alt="The Unforgiven" class="song-row__image">
+                        <div class="song-row__info">
+                            <h4 class="song-row__title">The Unforgiven</h4>
+                            <p class="song-row__album">Metallica</p>
+                        </div>
+                        <span class="song-row__plays">3.9M</span>
+                        <button class="song-row__play">▶</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Albums -->
+            <section class="artist-section">
+                <h2 class="section__title">Álbumes</h2>
+                <div class="albums-grid">
+                    <article class="album-card">
+                        <div class="album-card__image">
+                            <img src="./assets/img/andjusticeforall.jpeg" alt="Album" class="album-card__thumbnail">
+                        </div>
+                        <div class="album-card__info">
+                            <h3 class="album-card__title">...And Justice For All</h3>
+                            <p class="album-card__year">1988</p>
+                        </div>
+                        <a href="album-detail2.html" class="album-card__link">Ver</a>
+                    </article>
+
+                    <article class="album-card">
+                        <div class="album-card__image">
+                            <img src="./assets/img/One.jpg" alt="Album" class="album-card__thumbnail">
+                        </div>
+                        <div class="album-card__info">
+                            <h3 class="album-card__title">Metallica</h3>
+                            <p class="album-card__year">1991</p>
+                        </div>
+                        <a href="album-detail2.html" class="album-card__link">Ver</a>
+                    </article>
+
+                    <article class="album-card">
+                        <div class="album-card__image">
+                            <img src="./assets/img/One.jpg" alt="Album" class="album-card__thumbnail">
+                        </div>
+                        <div class="album-card__info">
+                            <h3 class="album-card__title">Master of Puppets</h3>
+                            <p class="album-card__year">1986</p>
+                        </div>
+                        <a href="album-detail2.html" class="album-card__link">Ver</a>
+                    </article>
+
+                    <article class="album-card">
+                        <div class="album-card__image">
+                            <img src="./assets/img/One.jpg" alt="Album" class="album-card__thumbnail">
+                        </div>
+                        <div class="album-card__info">
+                            <h3 class="album-card__title">Ride the Lightning</h3>
+                            <p class="album-card__year">1984</p>
+                        </div>
+                        <a href="album-detail2.html" class="album-card__link">Ver</a>
+                    </article>
+                </div>
+            </section>
+
+            <!-- About -->
+            <section class="artist-section">
+                <h2 class="section__title">Acerca de</h2>
+                <div class="about-card">
+                    <p class="about-card__text">
+                        Considerada una de las figuras definitivas del "Big Four" del thrash metal, Metallica ha moldeado 
+                        el sonido del rock pesado durante más de cuatro décadas. Con una trayectoria que abarca desde la 
+                        velocidad técnica de los 80 hasta el éxito masivo global, la banda liderada por James Hetfield y 
+                        Lars Ulrich combina riffs icónicos, una energía imparable en directo y un legado que los posiciona 
+                        como leyendas vivientes del género.
+                    </p>
+                    <div class="about-card__stats">
+                        <div class="stat-box">
+                            <span class="stat-box__number">40+</span>
+                            <span class="stat-box__label">Años de Carrera</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-box__number">10</span>
+                            <span class="stat-box__label">Álbumes de Estudio</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-box__number">9</span>
+                            <span class="stat-box__label">Grammy Awards</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-box__number">25.4M</span>
+                            <span class="stat-box__label">Seguidores</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Related Artists -->
+            <section class="artist-section">
+                <h2 class="section__title">Fans También Gustan</h2>
+                <div class="related-artists">
+                    <article class="related-artist-card">
+                        <img src="./assets/img/radiohead.jpg" alt="Artist" class="related-artist-card__image">
+                        <h4 class="related-artist-card__name">Radiohead</h4>
+                        <p class="related-artist-card__genre">Alternative Rock</p>
+                    </article>
+
+                    <article class="related-artist-card">
+                        <img src="./assets/img/tildeathwasneverenough.jpg" alt="Artist" class="related-artist-card__image">
+                        <h4 class="related-artist-card__name">Violent Vira</h4>
+                        <p class="related-artist-card__genre">Alternative Rock</p>
+                    </article>
+
+                    <article class="related-artist-card">
+                        <img src="./assets/img/diomedesdiaz.jpeg" alt="Artist" class="related-artist-card__image">
+                        <h4 class="related-artist-card__name">Diomedes Diaz</h4>
+                        <p class="related-artist-card__genre">Vallenato</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
